@@ -1,0 +1,105 @@
+{
+  "artifacts": [],
+  "command": "main",
+  "experiment": {
+    "base_dir": "/Users/paulgramlich/Developer/git/aiforgood_patientclustering/dpsom/dpsom",
+    "dependencies": [
+      "numpy==1.26.4",
+      "sacred==0.8.5",
+      "tensorflow==2.16.1",
+      "tqdm==4.66.4"
+    ],
+    "mainfile": "DPSOM.py",
+    "name": "hyperopt",
+    "repositories": [
+      {
+        "commit": "a0b4af3beb868d325b312d61cbc27694aa980f82",
+        "dirty": false,
+        "url": "https://github.com/paulgramlich/aiforgood_patientclustering.git"
+      },
+      {
+        "commit": "a0b4af3beb868d325b312d61cbc27694aa980f82",
+        "dirty": false,
+        "url": "https://github.com/paulgramlich/aiforgood_patientclustering.git"
+      },
+      {
+        "commit": "a0b4af3beb868d325b312d61cbc27694aa980f82",
+        "dirty": false,
+        "url": "https://github.com/paulgramlich/aiforgood_patientclustering.git"
+      }
+    ],
+    "sources": [
+      [
+        "DPSOM.py",
+        "_sources/DPSOM_a1a7bd2c537b5fbfd417c666135c794d.py"
+      ],
+      [
+        "DPSOM_model.py",
+        "_sources/DPSOM_model_2ffc7d7fb117fb7a38af53630797ee96.py"
+      ],
+      [
+        "utils.py",
+        "_sources/utils_2f759a81fc66d2edc2eafd629a36f1eb.py"
+      ]
+    ]
+  },
+  "heartbeat": "2024-06-26T10:07:06.716592",
+  "host": {
+    "ENV": {},
+    "cpu": "Apple M3",
+    "hostname": "Pauls-Laptop.local",
+    "os": [
+      "Darwin",
+      "macOS-14.3-arm64-arm-64bit"
+    ],
+    "python_version": "3.12.2"
+  },
+  "meta": {
+    "command": "main",
+    "config_updates": {},
+    "named_configs": [],
+    "options": {
+      "--beat-interval": null,
+      "--capture": null,
+      "--comment": null,
+      "--debug": false,
+      "--enforce_clean": false,
+      "--file_storage": null,
+      "--force": false,
+      "--help": false,
+      "--id": null,
+      "--loglevel": null,
+      "--mongo_db": null,
+      "--name": null,
+      "--pdb": false,
+      "--print-config": false,
+      "--priority": null,
+      "--queue": false,
+      "--s3": null,
+      "--sql": null,
+      "--tiny_db": null,
+      "--unobserved": false,
+      "COMMAND": null,
+      "UPDATE": [],
+      "help": false,
+      "with": false
+    }
+  },
+  "resources": [],
+  "result": {
+    "AMI": {
+      "dtype": "float64",
+      "py/object": "numpy.float64",
+      "value": -0.006876791714221179
+    },
+    "NMI": {
+      "dtype": "float64",
+      "py/object": "numpy.float64",
+      "value": 0.010951636054591997
+    },
+    "Purity": 0.35
+  },
+  "start_time": "2024-06-26T10:06:07.169364",
+  "status": "COMPLETED",
+  "stop_time": "2024-06-26T10:07:04.709227"
+}
