@@ -107,17 +107,20 @@ def ex_config():
 #     decay_factor = hyper.UniformFloat(lower=0.8, upper=1.)
 #     interactive = False
 
-'''old mnist dataset
+'''old mnist dataset'''
 
 
 mnist = input_data.read_data_sets(f"../data/{ex_config()['data_set']}")
+mnist.shape()
 
 data_train = np.reshape(mnist.train.images, [-1,28,28,1])
 labels_train = mnist.train.labels
 data_val = data_train[45000:]
 labels_val = labels_train[45000:]
 data_train = data_train[:45000]
-labels_train = data_train[:45000]'''
+labels_train = data_train[:45000]
+
+
 
 processed_file_path = '/Users/paulgramlich/Developer/git/aiforgood/DATA/LBP/lbp_data_processed.csv'
 processed_data = pd.read_csv(processed_file_path, index_col=0)
