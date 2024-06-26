@@ -1,7 +1,7 @@
 import pandas as pd
 from sklearn.preprocessing import LabelEncoder, MinMaxScaler
 
-file_path = '/Users/paulgramlich/Developer/SOM-VAE_aiforgood/SOM-VAE/data/LBP/lbp_data.csv'
+file_path = '/Users/paulgramlich/Developer/git/aiforgood_patientclustering/DATA/LBP/lbp_data.csv'
 data = pd.read_csv(file_path)
 
 data.fillna(0, inplace=True)
@@ -54,7 +54,7 @@ for column in categorical_columns:
     data[column] = data[column].astype(int)
 
 # Save the label encoding mappings to a text file
-with open('/Users/paulgramlich/Developer/SOM-VAE_aiforgood/SOM-VAE/data/LBP/label_encodings.txt', 'w') as f:
+with open('/Users/paulgramlich/Developer/git/aiforgood_patientclustering/DATA/LBP/label_encodings.txt', 'w') as f:
     for column, mapping in label_encodings.items():
         f.write(f"Column: {column}\n")
         for original, encoded in mapping.items():
@@ -75,16 +75,20 @@ index_data = data[first_column]
 # Exclude 'gen12m' from scaling and start mapping from 1
 data['gen12m'] = data['gen12m'].apply(lambda x: x + 1 if x > 0 else 0)
 
+data['gen12m'] = data['gen12m'].astype(int)
+data['recovered.12m'] = data['recovered.12m'].astype(int)
+
 # Apply MinMaxScaler to all columns except 'gen12m'
 for column in data.columns[1:]:
     if column != 'gen12m':
-        mask = data[column] != -1
-        if mask.sum() > 0:  # Ensure there are values to scale
-            data_to_scale = data.loc[mask, column].values.reshape(-1, 1)
-            data.loc[mask, column] = scaler.fit_transform(data_to_scale).flatten()
+        if column != 'recovered.12m':
+            mask = data[column] != -1
+            if mask.sum() > 0:  # Ensure there are values to scale
+                data_to_scale = data.loc[mask, column].values.reshape(-1, 1)
+                data.loc[mask, column] = scaler.fit_transform(data_to_scale).flatten()
 
 data[first_column] = index_data
 
-output_file_path = '/Users/paulgramlich/Developer/SOM-VAE_aiforgood/SOM-VAE/data/LBP/lbp_data_processed.csv'
+output_file_path = '/Users/paulgramlich/Developer/git/aiforgood_patientclustering/DATA/LBP/lbp_data_processed.csv'
 data.set_index(first_column, inplace=True)
 data.to_csv(output_file_path)

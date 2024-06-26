@@ -63,12 +63,12 @@ def ex_config():
         more_runs (bool): Indicator whether to run the job once (False) or multiple times (True) outputting mean and
                           variance.
     """
-    num_epochs = 300 # 300
+    num_epochs = 100 # 300
     batch_size = 300 # 300
     latent_dim = 100 # 100
-    som_dim = [8, 8]
-    learning_rate = 0.001 # .001
-    learning_rate_pretrain = 0.001 # .001
+    som_dim = [2, 2] # [8, 8]
+    learning_rate = 0.01 # .001
+    learning_rate_pretrain = 0.01 # .001
     alpha = 10
     beta = 0.25
     gamma = 20 # 20
@@ -597,16 +597,21 @@ def main(latent_dim, som_dim, learning_rate, decay_factor, alpha, beta, gamma, t
     elif data_set == "LBP":
         print("using LBP")
 
-        # todo add to imports:
-
-
-        processed_file_path = '//dpsom/data/csv/lbp_data_processed.csv'
+        processed_file_path = '/Users/paulgramlich/Developer/git/aiforgood/DATA/LBP/lbp_data_processed.csv'
         processed_data = pd.read_csv(processed_file_path, index_col=0)
 
+        processed_data = processed_data.drop(columns=['recovered.12m'])
         labels_train = processed_data.iloc[:, 0].values
         data_train = processed_data.iloc[:, 1:].values
 
-        print(labels_train)
+        ''' Note: If you want to use recovered.12m (simpler mapping of gen12m) instead of gen12m 
+        processed_data = processed_data.drop(columns=['gen12m'])
+        labels_train = processed_data['recovered.12m'].values
+        data_columns = [col for col in processed_data.columns if col != 'recovered.12m']
+        data_train = processed_data[data_columns].values
+        '''
+
+        # print(labels_train)
 
         num_samples = data_train.shape[0]
         num_features = data_train.shape[1]

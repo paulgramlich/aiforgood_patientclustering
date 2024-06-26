@@ -4,15 +4,21 @@ from sklearn.metrics import normalized_mutual_info_score, adjusted_mutual_info_s
 import numpy as np
 
 # Load the dataset
-file_path = '/Users/paulgramlich/PycharmProjects/AlforGood_vfinal/dpsom/data/csv/lbp_data_processed.csv'
+file_path = '/Users/paulgramlich/Developer/git/aiforgood/DATA/LBP/lbp_data_processed.csv'
 df = pd.read_csv(file_path, index_col=0)
 
 # Separate features and labels
 X = df.drop(columns=['gen12m'])
+df = df.drop(columns=['recovered.12m'])
 y_true = df['gen12m']
-
-# Perform k-means clustering
 n_clusters = 8
+
+'''X = df.drop(columns=['recovered.12m'])
+df = df.drop(columns=['gen12m'])
+y_true = df['recovered.12m']
+n_clusters = 2'''
+
+
 kmeans = KMeans(n_clusters=n_clusters, random_state=42)
 y_pred = kmeans.fit_predict(X)
 
