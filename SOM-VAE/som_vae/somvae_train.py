@@ -23,6 +23,7 @@ from sklearn.metrics import mean_squared_error
 from tqdm import tqdm, trange
 import sacred
 from sacred.stflow import LogFileWriter
+from sklearn.model_selection import train_test_split
 
 # from labwatch.assistant import LabAssistant
 # from labwatch.optimizers.random_search import RandomSearch
@@ -106,6 +107,9 @@ def ex_config():
 #     decay_factor = hyper.UniformFloat(lower=0.8, upper=1.)
 #     interactive = False
 
+'''old mnist dataset
+
+
 mnist = input_data.read_data_sets(f"../data/{ex_config()['data_set']}")
 
 data_train = np.reshape(mnist.train.images, [-1,28,28,1])
@@ -113,7 +117,72 @@ labels_train = mnist.train.labels
 data_val = data_train[45000:]
 labels_val = labels_train[45000:]
 data_train = data_train[:45000]
-labels_train = data_train[:45000]
+labels_train = data_train[:45000]'''
+
+processed_file_path = '/Users/paulgramlich/Developer/git/aiforgood/DATA/LBP/lbp_data_processed.csv'
+processed_data = pd.read_csv(processed_file_path, index_col=0)
+
+processed_data = processed_data.drop(columns=['recovered.12m'])
+labels_train = processed_data.iloc[:, 0].values
+data_train = processed_data.iloc[:, 1:].values
+
+''' Note: If you want to use recovered.12m (simpler mapping of gen12m) instead of gen12m 
+processed_data = processed_data.drop(columns=['gen12m'])
+labels_train = processed_data['recovered.12m'].values
+data_columns = [col for col in processed_data.columns if col != 'recovered.12m']
+data_train = processed_data[data_columns].values
+'''
+
+# print(labels_train)
+
+num_samples = data_train.shape[0]
+num_features = data_train.shape[1]
+print(f"num_features: {num_features}")
+target_num_features = 28 * 28
+
+# Check if padding is needed and apply accordingly
+if num_features < target_num_features:
+    data_train_padded = np.pad(data_train, ((0, 0), (0, target_num_features - num_features)), 'constant',
+                               constant_values=0)
+    print(f"data_train_padded.shape: {data_train_padded.shape}")
+elif num_features > target_num_features:
+    data_train_padded = data_train[:, :target_num_features]
+    print(f"data_train_padded.shape: {data_train_padded.shape}")
+else:
+    data_train_padded = data_train
+
+# Reshape the data
+data_train_reshaped = np.reshape(data_train_padded, (num_samples, 28, 28, 1))
+if num_samples > 1:
+    # Shuffle the data before splitting to ensure randomness
+    indices = np.arange(num_samples)
+    np.random.shuffle(indices)
+    data_train_reshaped = data_train_reshaped[indices]
+    labels_train = labels_train[indices]
+
+    # Split the data
+    data_total, data_test, labels_total, labels_test = train_test_split(data_train_reshaped, labels_train,
+                                                                        test_size=0.5, random_state=42)
+
+    # Ensure data_total is not empty before further splitting
+    if len(data_total) > 1:
+        data_train, data_val, labels_train, labels_val = train_test_split(data_total, labels_total,
+                                                                          test_size=0.15,
+                                                                          random_state=42)
+        print(
+            f"data_train.shape: {data_train.shape}, data_val.shape: {data_val.shape}, data_test.shape: {data_test.shape}")
+
+        # Check for non-zero data in each set
+        if not np.any(data_train):
+            print("Warning: Training set contains only zeros.")
+        if not np.any(data_val):
+            print("Warning: Validation set contains only zeros.")
+        if not np.any(data_test):
+            print("Warning: Test set contains only zeros.")
+    else:
+        print("Not enough samples to create a validation set.")
+else:
+    print("Not enough samples to create a test set.")
 
 
 @ex.capture

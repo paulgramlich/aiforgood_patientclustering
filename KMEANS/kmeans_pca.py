@@ -11,6 +11,7 @@ df = pd.read_csv(file_path, index_col=0)
 
 # Separate features and labels
 X = df.drop(columns=['gen12m'])
+df = df.drop(columns=['recovered.12m'])
 y_true = df['gen12m']
 
 # Apply PCA for dimensionality reduction to 2 components for visualization
