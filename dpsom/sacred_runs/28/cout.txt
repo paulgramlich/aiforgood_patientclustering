@@ -1,0 +1,4758 @@
+INFO - hyperopt - Running command 'main'
+INFO - hyperopt - Started run with ID "28"
+labels_test.shape: (10000,)
+data_test.shape: (10000, 28, 28, 1)
+data_train.shape: (51000, 28, 28, 1)
+data_val.shape: (10000, 28, 28, 1)
+labels_train.shape: (51000, 28, 28, 1)
+labels_val.shape: (10000, 28, 28, 1)
+Initializing global variables...
+2024-06-19 14:35:02.421254: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:388] MLIR V1 optimization pass is not enabled
+Variables initialized.
+
+**********Starting job hyperopt_10_8-8_2024-06-19_1befc********* 
+
+  0%|          | 0/3621000 [00:00<?, ?it/s]Number of batches: 10200
+
+
+Autoencoder Pretraining...
+
+Starting epoch 1/15
+Batch 1/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 547.0509033203125
+Running validation...
+Epoch 1, Step 0: Train Loss = 545.6373291015625, Test Loss = 546.4733276367188
+  0%|          | 1/3621000 [00:00<363:48:57,  2.76it/s, epoch=0, test_loss=546, train_loss=546]Batch 2/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 546.2191162109375
+Batch 3/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 546.1476440429688
+Batch 4/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 545.610595703125
+Batch 5/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 545.3660278320312
+Batch 6/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 545.4848022460938
+Batch 7/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 544.8836669921875
+Batch 8/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 544.5948486328125
+Batch 9/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 544.2756958007812
+Batch 10/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 544.2562255859375
+Batch 11/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 544.1681518554688
+Batch 12/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 543.8568725585938
+Batch 13/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 543.9616088867188
+Batch 14/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 543.6876831054688
+Batch 15/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 543.6134033203125
+Batch 16/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 543.1460571289062
+Batch 17/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 543.0633544921875
+Batch 18/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 542.8461303710938
+Batch 19/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 542.603515625
+Batch 20/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 542.6909790039062
+Batch 21/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 542.0689697265625
+Batch 22/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 541.5672607421875
+Batch 23/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 541.3397216796875
+  0%|          | 23/3621000 [00:00<15:40:40, 64.16it/s, epoch=0, test_loss=546, train_loss=541]Batch 24/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 541.0773315429688
+Batch 25/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 540.8316650390625
+Batch 26/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 540.0506591796875
+Batch 27/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 540.6642456054688
+Batch 28/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 540.1130981445312
+Batch 29/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 539.0988159179688
+Batch 30/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 537.68017578125
+Batch 31/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 537.4850463867188
+Batch 32/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 537.1967163085938
+Batch 33/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 535.5636596679688
+Batch 34/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 535.958984375
+Batch 35/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 531.747314453125
+Batch 36/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 532.0247192382812
+Batch 37/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 533.6935424804688
+Batch 38/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 528.4212036132812
+Batch 39/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 529.9920043945312
+Batch 40/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 524.2048950195312
+Batch 41/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 519.70654296875
+Batch 42/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 519.2162475585938
+Batch 43/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 512.3092041015625
+Batch 44/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 504.8863525390625
+Batch 45/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 502.40704345703125
+Batch 46/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 477.8524169921875
+Batch 47/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 488.306884765625
+Batch 48/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 496.7212829589844
+Batch 49/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 460.22589111328125
+  0%|          | 49/3621000 [00:00<8:24:17, 119.67it/s, epoch=0, test_loss=546, train_loss=460]Batch 50/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 478.85333251953125
+Batch 51/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 464.2257385253906
+Batch 52/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 455.0888366699219
+Batch 53/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 427.58935546875
+Batch 54/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 410.45025634765625
+Batch 55/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 444.83087158203125
+Batch 56/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 394.2760314941406
+Batch 57/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 393.8731689453125
+Batch 58/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 354.98681640625
+Batch 59/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 362.86761474609375
+Batch 60/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 357.78607177734375
+Batch 61/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 279.9317626953125
+Batch 62/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 280.9473571777344
+Batch 63/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 347.69940185546875
+Batch 64/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 329.77056884765625
+Batch 65/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 408.4225769042969
+Batch 66/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 302.0748291015625
+Batch 67/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 283.62701416015625
+Batch 68/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 275.4593811035156
+  0%|          | 68/3621000 [00:00<7:11:29, 139.86it/s, epoch=0, test_loss=546, train_loss=275]Batch 69/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 235.8750762939453
+Batch 70/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 271.4742126464844
+Batch 71/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 255.25022888183594
+Batch 72/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 222.81565856933594
+Batch 73/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 256.41241455078125
+Batch 74/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 238.13156127929688
+Batch 75/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 242.36239624023438
+Batch 76/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 253.78713989257812
+Batch 77/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 239.6988525390625
+Batch 78/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 265.5774841308594
+Batch 79/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 207.71971130371094
+Batch 80/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 265.1683654785156
+Batch 81/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 327.0783386230469
+Batch 82/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 239.19015502929688
+Batch 83/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 260.2644958496094
+Batch 84/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 251.2354736328125
+Batch 85/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 229.67630004882812
+Batch 86/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 209.65533447265625
+Batch 87/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 235.54200744628906
+Batch 88/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 238.03759765625
+Batch 89/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 250.77520751953125
+Batch 90/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 262.7795104980469
+Batch 91/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 239.98690795898438
+Batch 92/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 237.28240966796875
+  0%|          | 92/3621000 [00:00<5:59:12, 168.00it/s, epoch=0, test_loss=546, train_loss=237]Batch 93/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 268.25567626953125
+Batch 94/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 223.9210662841797
+Batch 95/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 205.17645263671875
+Batch 96/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 225.1396026611328
+Batch 97/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 236.85130310058594
+Batch 98/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 256.07318115234375
+Batch 99/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 267.2643737792969
+Batch 100/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 233.85791015625
+Batch 101/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 238.785400390625
+Running validation...
+Epoch 1, Step 100: Train Loss = 236.47537231445312, Test Loss = 219.6298065185547
+Batch 102/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 206.6148223876953
+Batch 103/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 211.02734375
+Batch 104/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 258.4399108886719
+Batch 105/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 217.8247528076172
+Batch 106/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 242.29144287109375
+Batch 107/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 200.66229248046875
+Batch 108/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 197.2939910888672
+Batch 109/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 228.92572021484375
+Batch 110/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 231.70069885253906
+Batch 111/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 257.060302734375
+Batch 112/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 199.46444702148438
+Batch 113/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 204.6874542236328
+Batch 114/10200
+Batch data shape: (5, 28, 28, 1)
+  0%|          | 113/3621000 [00:00<5:58:48, 168.19it/s, epoch=0, test_loss=220, train_loss=205]Train Loss: 182.8561553955078
+Batch 115/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 176.68971252441406
+Batch 116/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 202.160400390625
+Batch 117/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 205.10861206054688
+Batch 118/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 202.44192504882812
+Batch 119/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 223.93006896972656
+Batch 120/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 234.29620361328125
+Batch 121/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 219.6600341796875
+Batch 122/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 213.4842529296875
+Batch 123/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 196.43438720703125
+Batch 124/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 241.08999633789062
+Batch 125/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 214.33294677734375
+Batch 126/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 198.93072509765625
+Batch 127/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 261.8642578125
+Batch 128/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 238.028564453125
+Batch 129/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 215.46697998046875
+Batch 130/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 251.70167541503906
+Batch 131/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 228.30096435546875
+Batch 132/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 215.13998413085938
+Batch 133/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 198.1795654296875
+Batch 134/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 236.21470642089844
+Batch 135/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 248.4095916748047
+  0%|          | 135/3621000 [00:00<5:31:19, 182.14it/s, epoch=0, test_loss=220, train_loss=248]Batch 136/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 210.78709411621094
+Batch 137/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 195.20367431640625
+Batch 138/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 192.71046447753906
+Batch 139/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 229.37501525878906
+Batch 140/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 226.14108276367188
+Batch 141/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 190.98130798339844
+Batch 142/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 222.54563903808594
+Batch 143/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 195.08026123046875
+Batch 144/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 255.2706756591797
+Batch 145/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 252.03623962402344
+Batch 146/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 229.60467529296875
+Batch 147/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 203.40634155273438
+Batch 148/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 228.3960418701172
+Batch 149/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 220.9654998779297
+Batch 150/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 177.13587951660156
+Batch 151/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 207.0749969482422
+Batch 152/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 219.52064514160156
+Batch 153/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 198.76622009277344
+Batch 154/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 178.52906799316406
+Batch 155/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 223.1143341064453
+Batch 156/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 214.17022705078125
+  0%|          | 156/3621000 [00:01<5:38:32, 178.26it/s, epoch=0, test_loss=220, train_loss=214]Batch 157/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 200.39390563964844
+Batch 158/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 223.3834228515625
+Batch 159/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 241.06307983398438
+Batch 160/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 249.85401916503906
+Batch 161/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 212.97607421875
+Batch 162/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 186.79916381835938
+Batch 163/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 176.25340270996094
+Batch 164/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 184.0563201904297
+Batch 165/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 225.08958435058594
+Batch 166/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 196.48519897460938
+Batch 167/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 190.76918029785156
+Batch 168/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 187.0577392578125
+Batch 169/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 207.53355407714844
+Batch 170/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 242.25880432128906
+Batch 171/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 182.7097625732422
+Batch 172/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 216.9558868408203
+Batch 173/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 243.75326538085938
+Batch 174/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 206.57235717773438
+Batch 175/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 201.81260681152344
+Batch 176/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 219.02444458007812
+Batch 177/10200
+Batch data shape: (5, 28, 28, 1)
+  0%|          | 176/3621000 [00:01<5:39:29, 177.75it/s, epoch=0, test_loss=220, train_loss=219]Train Loss: 231.5684051513672
+Batch 178/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 215.0537872314453
+Batch 179/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 187.66714477539062
+Batch 180/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 208.9696502685547
+Batch 181/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 191.22003173828125
+Batch 182/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 225.3522186279297
+Batch 183/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 226.2880859375
+Batch 184/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 203.63735961914062
+Batch 185/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 184.78509521484375
+Batch 186/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 210.93324279785156
+Batch 187/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 179.06927490234375
+Batch 188/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 258.2420349121094
+Batch 189/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 220.0514678955078
+Batch 190/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 216.63768005371094
+Batch 191/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 184.68707275390625
+Batch 192/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 192.38409423828125
+Batch 193/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 204.3321533203125
+Batch 194/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 196.48724365234375
+Batch 195/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 199.1991729736328
+  0%|          | 195/3621000 [00:01<5:52:35, 171.15it/s, epoch=0, test_loss=220, train_loss=199]Batch 196/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 220.7803192138672
+Batch 197/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 219.81475830078125
+Batch 198/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 240.40081787109375
+Batch 199/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 217.79095458984375
+Batch 200/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 215.22483825683594
+Batch 201/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 179.33709716796875
+Running validation...
+Epoch 1, Step 200: Train Loss = 176.94235229492188, Test Loss = 211.6484375
+Batch 202/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 179.68833923339844
+Batch 203/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 212.823974609375
+Batch 204/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 220.78292846679688
+Batch 205/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 192.71054077148438
+Batch 206/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 178.8150177001953
+Batch 207/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 231.95938110351562
+Batch 208/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 239.81375122070312
+Batch 209/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 165.4636993408203
+Batch 210/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 238.515380859375
+Batch 211/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 206.28086853027344
+Batch 212/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 198.7105255126953
+Batch 213/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 225.34803771972656
+  0%|          | 213/3621000 [00:01<5:50:37, 172.11it/s, epoch=0, test_loss=212, train_loss=225]Batch 214/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 217.62330627441406
+Batch 215/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 178.16004943847656
+Batch 216/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 195.47894287109375
+Batch 217/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 169.32232666015625
+Batch 218/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 206.17849731445312
+Batch 219/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 242.67218017578125
+Batch 220/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 188.702392578125
+Batch 221/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 191.10585021972656
+Batch 222/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 183.84205627441406
+Batch 223/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 189.67750549316406
+Batch 224/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 202.50082397460938
+Batch 225/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 230.1142578125
+Batch 226/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 186.21182250976562
+Batch 227/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 183.4739532470703
+Batch 228/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 190.00479125976562
+Batch 229/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 222.781494140625
+Batch 230/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 224.19448852539062
+Batch 231/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 253.930419921875
+Batch 232/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 195.71961975097656
+  0%|          | 232/3621000 [00:01<5:42:46, 176.05it/s, epoch=0, test_loss=212, train_loss=196]Batch 233/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 207.05007934570312
+Batch 234/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 177.4421844482422
+Batch 235/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 221.20407104492188
+Batch 236/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 198.11428833007812
+Batch 237/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 240.8238983154297
+Batch 238/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 194.74423217773438
+Batch 239/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 185.0060272216797
+Batch 240/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 208.08389282226562
+Batch 241/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 235.42926025390625
+Batch 242/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 197.71759033203125
+Batch 243/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 211.67466735839844
+Batch 244/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 231.6088409423828
+Batch 245/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 191.4866943359375
+Batch 246/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 208.96514892578125
+Batch 247/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 184.05303955078125
+Batch 248/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 261.6604309082031
+Batch 249/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 177.35638427734375
+Batch 250/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 212.99688720703125
+Batch 251/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 179.86990356445312
+Batch 252/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 254.54502868652344
+Batch 253/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 185.0303497314453
+  0%|          | 253/3621000 [00:01<5:26:29, 184.83it/s, epoch=0, test_loss=212, train_loss=185]Batch 254/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 184.22378540039062
+Batch 255/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 203.32913208007812
+Batch 256/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 183.1164093017578
+Batch 257/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 233.67892456054688
+Batch 258/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 233.29351806640625
+Batch 259/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 195.3029022216797
+Batch 260/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 170.9418487548828
+Batch 261/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 212.35595703125
+Batch 262/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 244.21133422851562
+Batch 263/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 186.0234375
+Batch 264/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 211.4073944091797
+Batch 265/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 195.36795043945312
+Batch 266/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 223.5332489013672
+Batch 267/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 231.84925842285156
+Batch 268/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 179.6558074951172
+Batch 269/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 195.6765899658203
+Batch 270/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 266.37628173828125
+Batch 271/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 236.5317840576172
+Batch 272/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 214.81289672851562
+  0%|          | 272/3621000 [00:01<5:29:34, 183.10it/s, epoch=0, test_loss=212, train_loss=215]Batch 273/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 203.880859375
+Batch 274/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 198.46395874023438
+Batch 275/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 236.27236938476562
+Batch 276/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 219.1928253173828
+Batch 277/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 218.9291229248047
+Batch 278/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 183.7818145751953
+Batch 279/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 235.2963409423828
+Batch 280/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 217.25103759765625
+Batch 281/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 220.79017639160156
+Batch 282/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 208.2412567138672
+Batch 283/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 208.01988220214844
+Batch 284/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 154.86785888671875
+Batch 285/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 219.21389770507812
+Batch 286/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 198.1315460205078
+Batch 287/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 232.25527954101562
+Batch 288/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 241.84129333496094
+Batch 289/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 192.76406860351562
+Batch 290/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 207.62142944335938
+Batch 291/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 146.75416564941406
+Batch 292/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 198.0174560546875
+  0%|          | 292/3621000 [00:01<5:27:01, 184.52it/s, epoch=0, test_loss=212, train_loss=198]Batch 293/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 199.8137664794922
+Batch 294/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 186.8046112060547
+Batch 295/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 194.8682403564453
+Batch 296/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 182.66751098632812
+Batch 297/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 202.16558837890625
+Batch 298/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 179.33526611328125
+Batch 299/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 203.75375366210938
+Batch 300/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 200.24526977539062
+Batch 301/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 237.54676818847656
+Running validation...
+Epoch 1, Step 300: Train Loss = 239.09677124023438, Test Loss = 222.950439453125
+Batch 302/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 196.93170166015625
+Batch 303/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 193.00413513183594
+Batch 304/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 197.6060791015625
+Batch 305/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 198.17010498046875
+Batch 306/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 200.1525421142578
+Batch 307/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 193.82814025878906
+Batch 308/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 213.86883544921875
+Batch 309/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 172.313232421875
+Batch 310/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 210.0629119873047
+Batch 311/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 179.98097229003906
+  0%|          | 311/3621000 [00:01<5:31:45, 181.90it/s, epoch=0, test_loss=223, train_loss=180]Batch 312/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 220.72434997558594
+Batch 313/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 181.0214080810547
+Batch 314/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 185.95849609375
+Batch 315/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 209.79232788085938
+Batch 316/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 200.8721160888672
+Batch 317/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 188.6060791015625
+Batch 318/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 186.46340942382812
+Batch 319/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 218.685546875
+Batch 320/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 179.4779052734375
+Batch 321/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 218.32322692871094
+Batch 322/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 180.64691162109375
+Batch 323/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 226.5167236328125
+Batch 324/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 169.34930419921875
+Batch 325/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 233.9834442138672
+Batch 326/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 180.9285125732422
+Batch 327/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 183.5374755859375
+Batch 328/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 172.42059326171875
+Batch 329/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 194.8224334716797
+Batch 330/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 234.4598846435547
+  0%|          | 330/3621000 [00:02<5:28:07, 183.90it/s, epoch=0, test_loss=223, train_loss=234]Batch 331/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 229.13331604003906
+Batch 332/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 182.3085479736328
+Batch 333/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 194.95809936523438
+Batch 334/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 248.0831298828125
+Batch 335/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 140.9068145751953
+Batch 336/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 216.93145751953125
+Batch 337/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 206.55191040039062
+Batch 338/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 211.8157958984375
+Batch 339/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 212.60626220703125
+Batch 340/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 188.37515258789062
+Batch 341/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 210.43463134765625
+Batch 342/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 225.69851684570312
+Batch 343/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 198.23040771484375
+Batch 344/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 215.4231719970703
+Batch 345/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 243.82537841796875
+Batch 346/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 250.53477478027344
+Batch 347/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 230.84402465820312
+Batch 348/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 207.70335388183594
+Batch 349/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 220.67759704589844
+  0%|          | 349/3621000 [00:02<5:28:15, 183.83it/s, epoch=0, test_loss=223, train_loss=221]Batch 350/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 253.28640747070312
+Batch 351/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 190.55770874023438
+Batch 352/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 232.5402374267578
+Batch 353/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 251.11550903320312
+Batch 354/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 231.38743591308594
+Batch 355/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 192.83087158203125
+Batch 356/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 174.57212829589844
+Batch 357/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 182.77554321289062
+Batch 358/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 235.9534912109375
+Batch 359/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 151.70989990234375
+Batch 360/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 219.54092407226562
+Batch 361/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 209.3323211669922
+Batch 362/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 187.70767211914062
+Batch 363/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 207.60557556152344
+Batch 364/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 200.48683166503906
+Batch 365/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 198.7847900390625
+Batch 366/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 169.85006713867188
+Batch 367/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 221.4117889404297
+Batch 368/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 169.60690307617188
+  0%|          | 368/3621000 [00:02<5:27:38, 184.17it/s, epoch=0, test_loss=223, train_loss=170]Batch 369/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 248.1027374267578
+Batch 370/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 216.75311279296875
+Batch 371/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 243.76870727539062
+Batch 372/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 176.69479370117188
+Batch 373/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 206.63999938964844
+Batch 374/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 215.80194091796875
+Batch 375/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 181.41696166992188
+Batch 376/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 210.18214416503906
+Batch 377/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 170.27865600585938
+Batch 378/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 219.57962036132812
+Batch 379/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 235.70343017578125
+Batch 380/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 185.50181579589844
+Batch 381/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 190.38037109375
+Batch 382/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 251.91004943847656
+Batch 383/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 201.83016967773438
+Batch 384/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 202.39854431152344
+Batch 385/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 203.16171264648438
+Batch 386/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 205.23678588867188
+Batch 387/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 230.87742614746094
+  0%|          | 387/3621000 [00:02<5:28:58, 183.43it/s, epoch=0, test_loss=223, train_loss=231]Batch 388/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 225.20005798339844
+Batch 389/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 210.53436279296875
+Batch 390/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 233.5648651123047
+Batch 391/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 217.72100830078125
+Batch 392/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 175.0237274169922
+Batch 393/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 181.72361755371094
+Batch 394/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 197.8612060546875
+Batch 395/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 181.47425842285156
+Batch 396/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 187.32777404785156
+Batch 397/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 260.5394592285156
+Batch 398/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 192.61378479003906
+Batch 399/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 191.63465881347656
+Batch 400/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 212.3106231689453
+Batch 401/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 216.50599670410156
+Running validation...
+Epoch 1, Step 400: Train Loss = 213.33038330078125, Test Loss = 180.89730834960938
+Batch 402/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 196.1952362060547
+Batch 403/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 220.53829956054688
+Batch 404/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 202.50311279296875
+Batch 405/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 200.68179321289062
+Batch 406/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 160.72662353515625
+  0%|          | 406/3621000 [00:02<5:40:19, 177.31it/s, epoch=0, test_loss=181, train_loss=161]Batch 407/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 184.89846801757812
+Batch 408/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 203.3796844482422
+Batch 409/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 191.37745666503906
+Batch 410/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 180.42149353027344
+Batch 411/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 220.42567443847656
+Batch 412/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 171.19578552246094
+Batch 413/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 243.60952758789062
+Batch 414/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 205.74769592285156
+Batch 415/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 199.0507354736328
+Batch 416/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 182.98155212402344
+Batch 417/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 169.55152893066406
+Batch 418/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 208.3142547607422
+Batch 419/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 183.0968017578125
+Batch 420/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 246.20945739746094
+Batch 421/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 224.8017120361328
+Batch 422/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 220.3273162841797
+Batch 423/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 199.4702606201172
+Batch 424/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 212.54986572265625
+  0%|          | 424/3621000 [00:02<5:39:03, 177.97it/s, epoch=0, test_loss=181, train_loss=213]Batch 425/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 185.76841735839844
+Batch 426/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 221.072998046875
+Batch 427/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 179.02223205566406
+Batch 428/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 218.71690368652344
+Batch 429/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 197.4871368408203
+Batch 430/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 198.11114501953125
+Batch 431/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 174.8123779296875
+Batch 432/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 178.31881713867188
+Batch 433/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 202.77247619628906
+Batch 434/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 183.60923767089844
+Batch 435/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 183.96945190429688
+Batch 436/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 213.7401885986328
+Batch 437/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 211.038818359375
+Batch 438/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 194.44650268554688
+Batch 439/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 216.2364044189453
+Batch 440/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 188.19923400878906
+Batch 441/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 200.72125244140625
+Batch 442/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 207.0216064453125
+  0%|          | 442/3621000 [00:02<5:38:37, 178.20it/s, epoch=0, test_loss=181, train_loss=207]Batch 443/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 186.69667053222656
+Batch 444/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 199.4513397216797
+Batch 445/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 170.6959991455078
+Batch 446/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 240.1942596435547
+Batch 447/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 225.03009033203125
+Batch 448/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 182.03250122070312
+Batch 449/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 175.25584411621094
+Batch 450/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 239.50843811035156
+Batch 451/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 159.95606994628906
+Batch 452/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 159.76870727539062
+Batch 453/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 219.97161865234375
+Batch 454/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 192.04705810546875
+Batch 455/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 218.47988891601562
+Batch 456/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 216.6652374267578
+Batch 457/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 223.68605041503906
+Batch 458/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 200.8548583984375
+Batch 459/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 227.648193359375
+Batch 460/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 233.23880004882812
+Batch 461/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 174.73924255371094
+  0%|          | 461/3621000 [00:02<5:35:26, 179.89it/s, epoch=0, test_loss=181, train_loss=175]Batch 462/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 209.4656982421875
+Batch 463/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 177.35598754882812
+Batch 464/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 194.36569213867188
+Batch 465/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 194.5077667236328
+Batch 466/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 211.06808471679688
+Batch 467/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 190.25912475585938
+Batch 468/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 155.55203247070312
+Batch 469/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 210.7440643310547
+Batch 470/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 224.88059997558594
+Batch 471/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 220.1178436279297
+Batch 472/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 177.91233825683594
+Batch 473/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 225.3065643310547
+Batch 474/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 244.94131469726562
+Batch 475/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 168.42869567871094
+Batch 476/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 178.68084716796875
+Batch 477/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 224.16094970703125
+Batch 478/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 247.77015686035156
+Batch 479/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 220.5859832763672
+Batch 480/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 198.02255249023438
+Batch 481/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 185.09347534179688
+  0%|          | 481/3621000 [00:02<5:25:05, 185.61it/s, epoch=0, test_loss=181, train_loss=185]Batch 482/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 211.0634765625
+Batch 483/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 205.36672973632812
+Batch 484/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 230.0889129638672
+Batch 485/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 172.59225463867188
+Batch 486/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 252.1587677001953
+Batch 487/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 171.0951690673828
+Batch 488/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 175.8624267578125
+Batch 489/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 193.80587768554688
+Batch 490/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 206.12464904785156
+Batch 491/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 212.24671936035156
+Batch 492/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 209.42648315429688
+Batch 493/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 167.53076171875
+Batch 494/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 194.75025939941406
+Batch 495/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 219.996826171875
+Batch 496/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 198.39566040039062
+Batch 497/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 206.2300567626953
+Batch 498/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 230.85208129882812
+Batch 499/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 186.78753662109375
+Batch 500/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 205.21298217773438
+  0%|          | 500/3621000 [00:03<5:34:18, 180.49it/s, epoch=0, test_loss=181, train_loss=205]Batch 501/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 230.3751678466797
+Running validation...
+Epoch 1, Step 500: Train Loss = 223.97085571289062, Test Loss = 205.04193115234375
+Batch 502/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 205.25502014160156
+Batch 503/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 213.1750946044922
+Batch 504/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 192.80238342285156
+Batch 505/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 230.8622283935547
+Batch 506/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 185.15965270996094
+Batch 507/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 214.94252014160156
+Batch 508/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 231.7390594482422
+Batch 509/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 187.8683624267578
+Batch 510/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 206.73104858398438
+Batch 511/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 212.60166931152344
+Batch 512/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 215.12271118164062
+Batch 513/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 199.18508911132812
+Batch 514/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 180.6679229736328
+Batch 515/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 203.24057006835938
+Batch 516/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 204.394287109375
+Batch 517/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 238.01638793945312
+Batch 518/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 179.71951293945312
+Batch 519/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 184.22084045410156
+  0%|          | 519/3621000 [00:03<5:37:36, 178.74it/s, epoch=0, test_loss=205, train_loss=184]Batch 520/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 212.7666778564453
+Batch 521/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 217.43856811523438
+Batch 522/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 173.39053344726562
+Batch 523/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 161.31704711914062
+Batch 524/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 189.10150146484375
+Batch 525/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 221.12571716308594
+Batch 526/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 219.19137573242188
+Batch 527/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 187.2908172607422
+Batch 528/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 251.278564453125
+Batch 529/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 173.44668579101562
+Batch 530/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 236.6187286376953
+Batch 531/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 190.39173889160156
+Batch 532/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 169.62448120117188
+Batch 533/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 163.26541137695312
+Batch 534/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 217.5128173828125
+Batch 535/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 175.0545196533203
+Batch 536/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 201.80296325683594
+Batch 537/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 204.26271057128906
+Batch 538/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 171.40345764160156
+  0%|          | 538/3621000 [00:03<5:36:00, 179.58it/s, epoch=0, test_loss=205, train_loss=171]Batch 539/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 179.206298828125
+Batch 540/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 159.94268798828125
+Batch 541/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 201.6997833251953
+Batch 542/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 206.41744995117188
+Batch 543/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 191.08050537109375
+Batch 544/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 204.2206573486328
+Batch 545/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 182.68653869628906
+Batch 546/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 205.99591064453125
+Batch 547/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 190.63247680664062
+Batch 548/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 186.03504943847656
+Batch 549/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 196.65342712402344
+Batch 550/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 215.41664123535156
+Batch 551/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 224.8834686279297
+Batch 552/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 215.80763244628906
+Batch 553/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 199.8640899658203
+Batch 554/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 220.2434844970703
+Batch 555/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 185.14122009277344
+Batch 556/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 191.99862670898438
+Batch 557/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 172.9470977783203
+  0%|          | 557/3621000 [00:03<5:31:13, 182.18it/s, epoch=0, test_loss=205, train_loss=173]Batch 558/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 186.3509979248047
+Batch 559/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 227.6953582763672
+Batch 560/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 231.18589782714844
+Batch 561/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 196.84515380859375
+Batch 562/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 211.33798217773438
+Batch 563/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 180.9676055908203
+Batch 564/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 229.14947509765625
+Batch 565/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 193.80401611328125
+Batch 566/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 200.22210693359375
+Batch 567/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 185.9697723388672
+Batch 568/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 132.16775512695312
+Batch 569/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 184.6439666748047
+Batch 570/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 251.51470947265625
+Batch 571/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 169.93905639648438
+Batch 572/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 188.28317260742188
+Batch 573/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 159.87757873535156
+Batch 574/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 172.1796875
+Batch 575/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 182.66168212890625
+Batch 576/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 199.92788696289062
+  0%|          | 576/3621000 [00:03<5:41:17, 176.80it/s, epoch=0, test_loss=205, train_loss=200]Batch 577/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 191.35231018066406
+Batch 578/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 179.34890747070312
+Batch 579/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 156.16429138183594
+Batch 580/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 217.50146484375
+Batch 581/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 176.81484985351562
+Batch 582/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 200.5440673828125
+Batch 583/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 175.11305236816406
+Batch 584/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 172.09918212890625
+Batch 585/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 189.5643768310547
+Batch 586/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 175.00596618652344
+Batch 587/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 195.1070098876953
+Batch 588/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 211.559326171875
+Batch 589/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 199.2164306640625
+Batch 590/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 183.28648376464844
+Batch 591/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 196.44346618652344
+Batch 592/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 204.097412109375
+Batch 593/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 197.2156219482422
+Batch 594/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 234.9395751953125
+  0%|          | 594/3621000 [00:03<5:57:55, 168.58it/s, epoch=0, test_loss=205, train_loss=235]Batch 595/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 158.71461486816406
+Batch 596/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 204.68795776367188
+Batch 597/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 187.08050537109375
+Batch 598/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 183.5370635986328
+Batch 599/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 184.741943359375
+Batch 600/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 206.69761657714844
+Batch 601/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 181.36131286621094
+Running validation...
+Epoch 1, Step 600: Train Loss = 178.9067840576172, Test Loss = 190.47679138183594
+Batch 602/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 205.6556854248047
+Batch 603/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 175.8754425048828
+Batch 604/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 180.9859619140625
+Batch 605/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 193.65585327148438
+Batch 606/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 220.3710479736328
+Batch 607/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 200.39590454101562
+Batch 608/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 201.92649841308594
+Batch 609/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 185.01837158203125
+Batch 610/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 164.5117645263672
+Batch 611/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 189.33116149902344
+  0%|          | 611/3621000 [00:03<5:58:19, 168.39it/s, epoch=0, test_loss=190, train_loss=189]Batch 612/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 201.34149169921875
+Batch 613/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 214.3491973876953
+Batch 614/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 183.94256591796875
+Batch 615/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 209.53143310546875
+Batch 616/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 195.2899627685547
+Batch 617/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 229.98104858398438
+Batch 618/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 209.32427978515625
+Batch 619/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 226.9169464111328
+Batch 620/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 196.3998260498047
+Batch 621/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 213.9294891357422
+Batch 622/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 191.15957641601562
+Batch 623/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 211.26559448242188
+Batch 624/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 235.02410888671875
+Batch 625/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 231.9186553955078
+Batch 626/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 220.5778350830078
+Batch 627/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 209.53732299804688
+Batch 628/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 182.29641723632812
+Batch 629/10200
+Batch data shape: (5, 28, 28, 1)
+  0%|          | 628/3621000 [00:03<6:06:59, 164.42it/s, epoch=0, test_loss=190, train_loss=182]Train Loss: 225.4303741455078
+Batch 630/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 222.21295166015625
+Batch 631/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 190.40843200683594
+Batch 632/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 194.0953826904297
+Batch 633/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 177.2428741455078
+Batch 634/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 179.44268798828125
+Batch 635/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 171.97377014160156
+Batch 636/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 189.66416931152344
+Batch 637/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 176.06988525390625
+Batch 638/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 167.1280059814453
+Batch 639/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 180.29421997070312
+Batch 640/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 194.88482666015625
+Batch 641/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 208.15411376953125
+Batch 642/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 207.4252471923828
+Batch 643/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 205.2997589111328
+Batch 644/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 207.4837646484375
+Batch 645/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 183.98162841796875
+  0%|          | 645/3621000 [00:03<6:08:59, 163.53it/s, epoch=0, test_loss=190, train_loss=184]Batch 646/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 193.8194122314453
+Batch 647/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 207.19007873535156
+Batch 648/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 237.15853881835938
+Batch 649/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 177.08189392089844
+Batch 650/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 213.85369873046875
+Batch 651/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 194.04039001464844
+Batch 652/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 157.82806396484375
+Batch 653/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 188.0111846923828
+Batch 654/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 215.07363891601562
+Batch 655/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 182.01791381835938
+Batch 656/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 179.10394287109375
+Batch 657/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 213.6916961669922
+Batch 658/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 174.51124572753906
+Batch 659/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 173.05874633789062
+Batch 660/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 189.62281799316406
+Batch 661/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 214.95346069335938
+Batch 662/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 182.8580322265625
+Batch 663/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 198.56243896484375
+Batch 664/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 195.66563415527344
+Batch 665/10200
+Batch data shape: (5, 28, 28, 1)
+  0%|          | 664/3621000 [00:03<5:56:51, 169.08it/s, epoch=0, test_loss=190, train_loss=196]Train Loss: 186.65914916992188
+Batch 666/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 217.22877502441406
+Batch 667/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 195.95506286621094
+Batch 668/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 202.04949951171875
+Batch 669/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 212.4596405029297
+Batch 670/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 207.77200317382812
+Batch 671/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 252.28602600097656
+Batch 672/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 194.58738708496094
+Batch 673/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 184.2067413330078
+Batch 674/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 201.1417694091797
+Batch 675/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 182.10293579101562
+Batch 676/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 190.71253967285156
+Batch 677/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 161.42828369140625
+Batch 678/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 194.062744140625
+Batch 679/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 215.31361389160156
+Batch 680/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 242.60191345214844
+Batch 681/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 222.11770629882812
+Batch 682/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 204.43934631347656
+  0%|          | 682/3621000 [00:04<5:50:43, 172.04it/s, epoch=0, test_loss=190, train_loss=204]Batch 683/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 202.9738311767578
+Batch 684/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 202.57080078125
+Batch 685/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 232.79652404785156
+Batch 686/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 162.4990692138672
+Batch 687/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 205.53076171875
+Batch 688/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 229.28167724609375
+Batch 689/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 172.50521850585938
+Batch 690/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 253.46702575683594
+Batch 691/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 215.45880126953125
+Batch 692/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 193.12229919433594
+Batch 693/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 168.21446228027344
+Batch 694/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 174.0513153076172
+Batch 695/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 228.22752380371094
+Batch 696/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 242.65576171875
+Batch 697/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 187.77259826660156
+Batch 698/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 211.07516479492188
+Batch 699/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 190.20272827148438
+Batch 700/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 191.0099334716797
+Batch 701/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 245.10670471191406
+Running validation...
+Epoch 1, Step 700: Train Loss = 248.46180725097656, Test Loss = 175.12326049804688
+  0%|          | 701/3621000 [00:04<5:42:33, 176.14it/s, epoch=0, test_loss=175, train_loss=248]Batch 702/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 177.43788146972656
+Batch 703/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 171.72279357910156
+Batch 704/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 168.4561004638672
+Batch 705/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 166.9681396484375
+Batch 706/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 192.4049835205078
+Batch 707/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 161.89476013183594
+Batch 708/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 209.24700927734375
+Batch 709/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 220.87232971191406
+Batch 710/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 183.03500366210938
+Batch 711/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 210.0897216796875
+Batch 712/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 241.93048095703125
+Batch 713/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 187.0834197998047
+Batch 714/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 221.33111572265625
+Batch 715/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 198.3238525390625
+Batch 716/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 208.6956024169922
+Batch 717/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 215.02210998535156
+Batch 718/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 218.42266845703125
+Batch 719/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 222.08541870117188
+Batch 720/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 208.5370635986328
+  0%|          | 720/3621000 [00:04<5:38:02, 178.49it/s, epoch=0, test_loss=175, train_loss=209]Batch 721/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 246.6483612060547
+Batch 722/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 224.06661987304688
+Batch 723/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 177.4165802001953
+Batch 724/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 173.35072326660156
+Batch 725/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 191.6776123046875
+Batch 726/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 186.4180145263672
+Batch 727/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 184.4284210205078
+Batch 728/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 191.5942840576172
+Batch 729/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 200.81979370117188
+Batch 730/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 235.35154724121094
+Batch 731/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 226.8234100341797
+Batch 732/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 229.34832763671875
+Batch 733/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 182.148193359375
+Batch 734/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 179.02745056152344
+Batch 735/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 211.8917694091797
+Batch 736/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 174.52093505859375
+Batch 737/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 154.83311462402344
+Batch 738/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 198.89138793945312
+Batch 739/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 206.56944274902344
+  0%|          | 739/3621000 [00:04<5:37:37, 178.71it/s, epoch=0, test_loss=175, train_loss=207]Batch 740/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 195.06605529785156
+Batch 741/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 248.84371948242188
+Batch 742/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 185.66583251953125
+Batch 743/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 184.0653839111328
+Batch 744/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 189.41421508789062
+Batch 745/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 226.78379821777344
+Batch 746/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 211.30047607421875
+Batch 747/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 161.62672424316406
+Batch 748/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 223.7603759765625
+Batch 749/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 200.08889770507812
+Batch 750/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 227.56886291503906
+Batch 751/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 237.90997314453125
+Batch 752/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 202.8021697998047
+Batch 753/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 209.1700897216797
+Batch 754/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 152.32827758789062
+Batch 755/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 185.55307006835938
+Batch 756/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 175.80264282226562
+Batch 757/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 208.63693237304688
+  0%|          | 757/3621000 [00:04<5:41:26, 176.71it/s, epoch=0, test_loss=175, train_loss=209]Batch 758/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 213.59483337402344
+Batch 759/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 204.02923583984375
+Batch 760/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 211.11073303222656
+Batch 761/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 220.39169311523438
+Batch 762/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 183.865966796875
+Batch 763/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 167.3002471923828
+Batch 764/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 199.37648010253906
+Batch 765/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 179.0962371826172
+Batch 766/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 207.35597229003906
+Batch 767/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 190.13462829589844
+Batch 768/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 229.46299743652344
+Batch 769/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 200.79298400878906
+Batch 770/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 186.72715759277344
+Batch 771/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 219.9169921875
+Batch 772/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 159.89024353027344
+Batch 773/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 180.69268798828125
+Batch 774/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 224.4121856689453
+Batch 775/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 178.60182189941406
+Batch 776/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 197.96331787109375
+  0%|          | 776/3621000 [00:04<5:35:55, 179.62it/s, epoch=0, test_loss=175, train_loss=198]Batch 777/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 205.64320373535156
+Batch 778/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 193.12606811523438
+Batch 779/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 192.20640563964844
+Batch 780/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 186.05532836914062
+Batch 781/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 204.1425018310547
+Batch 782/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 188.11041259765625
+Batch 783/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 189.9869384765625
+Batch 784/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 169.56332397460938
+Batch 785/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 167.23092651367188
+Batch 786/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 171.86688232421875
+Batch 787/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 228.0662384033203
+Batch 788/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 241.9739227294922
+Batch 789/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 247.45632934570312
+Batch 790/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 212.93934631347656
+Batch 791/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 221.5251922607422
+Batch 792/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 252.0615997314453
+Batch 793/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 223.3550567626953
+Batch 794/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 220.67312622070312
+Batch 795/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 198.94223022460938
+  0%|          | 795/3621000 [00:04<5:36:33, 179.28it/s, epoch=0, test_loss=175, train_loss=199]Batch 796/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 214.63751220703125
+Batch 797/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 256.0228271484375
+Batch 798/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 214.59512329101562
+Batch 799/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 200.71084594726562
+Batch 800/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 158.37258911132812
+Batch 801/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 228.21141052246094
+Running validation...
+Epoch 1, Step 800: Train Loss = 227.28831481933594, Test Loss = 153.81765747070312
+Batch 802/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 224.18307495117188
+Batch 803/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 162.82989501953125
+Batch 804/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 217.68902587890625
+Batch 805/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 198.97335815429688
+Batch 806/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 187.3798370361328
+Batch 807/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 189.57366943359375
+Batch 808/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 206.88282775878906
+Batch 809/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 224.5138702392578
+Batch 810/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 191.5592041015625
+Batch 811/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 209.3509063720703
+Batch 812/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 224.92837524414062
+Batch 813/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 172.08168029785156
+Batch 814/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 196.4953155517578
+Batch 815/10200
+Batch data shape: (5, 28, 28, 1)
+  0%|          | 814/3621000 [00:04<5:35:22, 179.91it/s, epoch=0, test_loss=154, train_loss=196]Train Loss: 194.29156494140625
+Batch 816/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 232.79388427734375
+Batch 817/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 194.46910095214844
+Batch 818/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 237.6190948486328
+Batch 819/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 147.88807678222656
+Batch 820/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 155.03057861328125
+Batch 821/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 212.64505004882812
+Batch 822/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 176.23976135253906
+Batch 823/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 208.1166229248047
+Batch 824/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 235.17596435546875
+Batch 825/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 221.06411743164062
+Batch 826/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 193.342529296875
+Batch 827/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 178.5391082763672
+Batch 828/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 176.31410217285156
+Batch 829/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 213.63575744628906
+Batch 830/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 195.10675048828125
+Batch 831/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 209.7506103515625
+Batch 832/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 208.77923583984375
+  0%|          | 832/3621000 [00:04<5:40:53, 176.99it/s, epoch=0, test_loss=154, train_loss=209]Batch 833/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 220.0771942138672
+Batch 834/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 223.9723358154297
+Batch 835/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 168.5445556640625
+Batch 836/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 170.2615966796875
+Batch 837/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 226.83172607421875
+Batch 838/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 207.23289489746094
+Batch 839/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 204.3105010986328
+Batch 840/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 239.2164764404297
+Batch 841/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 215.09457397460938
+Batch 842/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 158.1307373046875
+Batch 843/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 250.11776733398438
+Batch 844/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 184.6135711669922
+Batch 845/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 219.77490234375
+Batch 846/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 198.05133056640625
+Batch 847/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 169.19161987304688
+Batch 848/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 234.3331298828125
+Batch 849/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 213.98533630371094
+Batch 850/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 201.2831573486328
+Batch 851/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 230.26319885253906
+Batch 852/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 176.85276794433594
+  0%|          | 852/3621000 [00:05<5:32:06, 181.68it/s, epoch=0, test_loss=154, train_loss=177]Batch 853/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 184.9400634765625
+Batch 854/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 206.95556640625
+Batch 855/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 205.79603576660156
+Batch 856/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 213.48785400390625
+Batch 857/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 181.75973510742188
+Batch 858/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 194.24331665039062
+Batch 859/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 194.08395385742188
+Batch 860/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 225.6719207763672
+Batch 861/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 204.75262451171875
+Batch 862/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 222.73458862304688
+Batch 863/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 179.96014404296875
+Batch 864/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 200.7282257080078
+Batch 865/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 195.66122436523438
+Batch 866/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 193.36251831054688
+Batch 867/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 210.1894989013672
+Batch 868/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 203.23013305664062
+Batch 869/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 160.30844116210938
+Batch 870/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 221.2728729248047
+Batch 871/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 190.77947998046875
+  0%|          | 871/3621000 [00:05<5:32:03, 181.70it/s, epoch=0, test_loss=154, train_loss=191]Batch 872/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 233.38157653808594
+Batch 873/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 203.31700134277344
+Batch 874/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 221.35499572753906
+Batch 875/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 231.94467163085938
+Batch 876/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 178.48959350585938
+Batch 877/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 229.8277587890625
+Batch 878/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 207.6232147216797
+Batch 879/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 238.1706085205078
+Batch 880/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 180.9903106689453
+Batch 881/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 194.96221923828125
+Batch 882/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 186.3690948486328
+Batch 883/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 169.91200256347656
+Batch 884/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 207.45263671875
+Batch 885/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 201.4061737060547
+Batch 886/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 190.75186157226562
+Batch 887/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 186.534423828125
+Batch 888/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 146.65029907226562
+Batch 889/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 217.77220153808594
+Batch 890/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 163.213134765625
+Batch 891/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 186.88299560546875
+  0%|          | 891/3621000 [00:05<5:25:30, 185.36it/s, epoch=0, test_loss=154, train_loss=187]Batch 892/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 191.39537048339844
+Batch 893/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 222.8744354248047
+Batch 894/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 181.9636688232422
+Batch 895/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 178.8558349609375
+Batch 896/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 203.10586547851562
+Batch 897/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 205.02337646484375
+Batch 898/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 207.78990173339844
+Batch 899/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 206.93675231933594
+Batch 900/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 220.66531372070312
+Batch 901/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 214.1358642578125
+Running validation...
+Epoch 1, Step 900: Train Loss = 213.2561492919922, Test Loss = 195.13487243652344
+Batch 902/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 201.599853515625
+Batch 903/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 156.8217010498047
+Batch 904/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 183.03057861328125
+Batch 905/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 202.18283081054688
+Batch 906/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 196.40667724609375
+Batch 907/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 164.96615600585938
+Batch 908/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 192.8897247314453
+Batch 909/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 191.70999145507812
+Batch 910/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 188.36497497558594
+  0%|          | 910/3621000 [00:05<5:26:57, 184.53it/s, epoch=0, test_loss=195, train_loss=188]Batch 911/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 187.7161102294922
+Batch 912/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 221.71731567382812
+Batch 913/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 186.8364715576172
+Batch 914/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 178.63926696777344
+Batch 915/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 186.9063262939453
+Batch 916/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 200.35972595214844
+Batch 917/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 218.85885620117188
+Batch 918/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 246.21182250976562
+Batch 919/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 233.7584991455078
+Batch 920/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 184.56207275390625
+Batch 921/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 187.1300048828125
+Batch 922/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 204.50074768066406
+Batch 923/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 209.9167938232422
+Batch 924/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 195.61679077148438
+Batch 925/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 205.14547729492188
+Batch 926/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 244.1085968017578
+Batch 927/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 166.51614379882812
+Batch 928/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 212.84451293945312
+Batch 929/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 233.2985076904297
+  0%|          | 929/3621000 [00:05<5:24:32, 185.91it/s, epoch=0, test_loss=195, train_loss=233]Batch 930/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 216.65243530273438
+Batch 931/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 198.82591247558594
+Batch 932/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 204.55552673339844
+Batch 933/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 210.28514099121094
+Batch 934/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 185.16131591796875
+Batch 935/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 217.48670959472656
+Batch 936/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 216.10072326660156
+Batch 937/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 152.57118225097656
+Batch 938/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 188.5180206298828
+Batch 939/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 199.8812255859375
+Batch 940/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 213.7666473388672
+Batch 941/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 207.1317138671875
+Batch 942/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 247.1340789794922
+Batch 943/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 179.59959411621094
+Batch 944/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 212.51051330566406
+Batch 945/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 207.76498413085938
+Batch 946/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 195.50726318359375
+Batch 947/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 212.54798889160156
+Batch 948/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 169.88479614257812
+  0%|          | 948/3621000 [00:05<5:32:45, 181.32it/s, epoch=0, test_loss=195, train_loss=170]Batch 949/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 170.62115478515625
+Batch 950/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 187.64956665039062
+Batch 951/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 229.27598571777344
+Batch 952/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 207.1615753173828
+Batch 953/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 199.11746215820312
+Batch 954/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 180.6835479736328
+Batch 955/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 199.51016235351562
+Batch 956/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 211.72756958007812
+Batch 957/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 222.8033905029297
+Batch 958/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 187.9705047607422
+Batch 959/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 207.80809020996094
+Batch 960/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 181.5347137451172
+Batch 961/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 235.41839599609375
+Batch 962/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 210.60369873046875
+Batch 963/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 176.9394073486328
+Batch 964/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 184.6108856201172
+Batch 965/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 199.5800323486328
+Batch 966/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 198.9993133544922
+Batch 967/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 209.15716552734375
+  0%|          | 967/3621000 [00:05<5:46:25, 174.16it/s, epoch=0, test_loss=195, train_loss=209]Batch 968/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 179.6536407470703
+Batch 969/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 223.77943420410156
+Batch 970/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 199.84353637695312
+Batch 971/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 168.26687622070312
+Batch 972/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 207.6781463623047
+Batch 973/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 228.02725219726562
+Batch 974/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 206.4966278076172
+Batch 975/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 202.0304412841797
+Batch 976/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 187.80307006835938
+Batch 977/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 220.89666748046875
+Batch 978/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 196.31356811523438
+Batch 979/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 181.82859802246094
+Batch 980/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 199.33119201660156
+Batch 981/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 234.6678924560547
+Batch 982/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 196.56275939941406
+Batch 983/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 197.15277099609375
+Batch 984/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 208.90411376953125
+Batch 985/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 222.41033935546875
+Batch 986/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 173.0400390625
+  0%|          | 986/3621000 [00:05<5:40:19, 177.28it/s, epoch=0, test_loss=195, train_loss=173]Batch 987/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 210.78489685058594
+Batch 988/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 201.6143798828125
+Batch 989/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 185.1704559326172
+Batch 990/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 194.44064331054688
+Batch 991/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 193.2395477294922
+Batch 992/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 204.67323303222656
+Batch 993/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 184.07533264160156
+Batch 994/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 234.4701385498047
+Batch 995/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 220.4166259765625
+Batch 996/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 176.45603942871094
+Batch 997/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 176.88462829589844
+Batch 998/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 204.58607482910156
+Batch 999/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 248.36679077148438
+Batch 1000/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 174.90524291992188
+Batch 1001/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 211.8383026123047
+Running validation...
+Epoch 1, Step 1000: Train Loss = 212.06826782226562, Test Loss = 224.49961853027344
+Batch 1002/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 226.40760803222656
+Batch 1003/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 226.92202758789062
+Batch 1004/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 188.72384643554688
+  0%|          | 1004/3621000 [00:05<5:48:22, 173.18it/s, epoch=0, test_loss=224, train_loss=189]Batch 1005/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 193.68504333496094
+Batch 1006/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 218.8133544921875
+Batch 1007/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 198.3839874267578
+Batch 1008/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 200.3291015625
+Batch 1009/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 184.90660095214844
+Batch 1010/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 218.64315795898438
+Batch 1011/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 189.37681579589844
+Batch 1012/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 186.22531127929688
+Batch 1013/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 198.63584899902344
+Batch 1014/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 226.8926239013672
+Batch 1015/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 167.85415649414062
+Batch 1016/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 152.7244110107422
+Batch 1017/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 217.5740203857422
+Batch 1018/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 241.60467529296875
+Batch 1019/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 202.09275817871094
+Batch 1020/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 220.86514282226562
+Batch 1021/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 206.52346801757812
+Batch 1022/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 199.53883361816406
+Batch 1023/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 214.01181030273438
+Batch 1024/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 215.02818298339844
+  0%|          | 1024/3621000 [00:05<5:34:15, 180.49it/s, epoch=0, test_loss=224, train_loss=215]Batch 1025/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 196.57923889160156
+Batch 1026/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 214.59999084472656
+Batch 1027/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 185.84390258789062
+Batch 1028/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 165.04861450195312
+Batch 1029/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 179.6517791748047
+Batch 1030/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 231.33802795410156
+Batch 1031/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 224.08042907714844
+Batch 1032/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 241.8975830078125
+Batch 1033/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 214.17141723632812
+Batch 1034/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 200.76295471191406
+Batch 1035/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 213.41358947753906
+Batch 1036/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 219.24539184570312
+Batch 1037/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 188.70083618164062
+Batch 1038/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 203.1208038330078
+Batch 1039/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 202.08802795410156
+Batch 1040/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 168.60855102539062
+Batch 1041/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 195.33770751953125
+Batch 1042/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 203.23988342285156
+Batch 1043/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 268.532470703125
+  0%|          | 1043/3621000 [00:06<5:36:14, 179.43it/s, epoch=0, test_loss=224, train_loss=269]Batch 1044/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 186.7316436767578
+Batch 1045/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 211.2893829345703
+Batch 1046/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 188.69227600097656
+Batch 1047/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 201.37554931640625
+Batch 1048/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 210.61630249023438
+Batch 1049/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 191.56422424316406
+Batch 1050/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 166.56443786621094
+Batch 1051/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 189.3968505859375
+Batch 1052/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 169.9856719970703
+Batch 1053/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 195.15757751464844
+Batch 1054/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 223.05718994140625
+Batch 1055/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 209.49136352539062
+Batch 1056/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 163.02835083007812
+Batch 1057/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 164.30703735351562
+Batch 1058/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 228.04122924804688
+Batch 1059/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 210.23251342773438
+Batch 1060/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 244.3032989501953
+Batch 1061/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 194.92823791503906
+Batch 1062/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 231.72384643554688
+Batch 1063/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 180.58213806152344
+Batch 1064/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 196.7224884033203
+  0%|          | 1064/3621000 [00:06<5:22:51, 186.87it/s, epoch=0, test_loss=224, train_loss=197]Batch 1065/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 198.00892639160156
+Batch 1066/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 204.2963409423828
+Batch 1067/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 154.7921600341797
+Batch 1068/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 177.17333984375
+Batch 1069/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 198.13182067871094
+Batch 1070/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 201.05552673339844
+Batch 1071/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 194.07186889648438
+Batch 1072/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 222.60545349121094
+Batch 1073/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 215.67251586914062
+Batch 1074/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 167.71530151367188
+Batch 1075/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 178.37472534179688
+Batch 1076/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 195.38143920898438
+Batch 1077/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 177.0312042236328
+Batch 1078/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 221.7982635498047
+Batch 1079/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 193.458740234375
+Batch 1080/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 220.84423828125
+Batch 1081/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 181.06614685058594
+Batch 1082/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 179.88320922851562
+Batch 1083/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 166.19549560546875
+  0%|          | 1083/3621000 [00:06<5:34:31, 180.35it/s, epoch=0, test_loss=224, train_loss=166]Batch 1084/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 207.21632385253906
+Batch 1085/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 209.76678466796875
+Batch 1086/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 183.13760375976562
+Batch 1087/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 198.91282653808594
+Batch 1088/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 187.7439727783203
+Batch 1089/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 198.16673278808594
+Batch 1090/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 166.3784942626953
+Batch 1091/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 201.00367736816406
+Batch 1092/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 209.87005615234375
+Batch 1093/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 186.44642639160156
+Batch 1094/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 191.95042419433594
+Batch 1095/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 194.23875427246094
+Batch 1096/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 223.5735626220703
+Batch 1097/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 213.82083129882812
+Batch 1098/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 198.12179565429688
+Batch 1099/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 195.00120544433594
+Batch 1100/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 226.5995635986328
+Batch 1101/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 222.2183380126953
+Running validation...
+Epoch 1, Step 1100: Train Loss = 221.66268920898438, Test Loss = 169.95574951171875
+Batch 1102/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 191.795654296875
+  0%|          | 1102/3621000 [00:06<5:29:35, 183.05it/s, epoch=0, test_loss=170, train_loss=192]Batch 1103/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 160.56239318847656
+Batch 1104/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 197.2816162109375
+Batch 1105/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 165.29415893554688
+Batch 1106/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 201.6623077392578
+Batch 1107/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 191.7814178466797
+Batch 1108/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 195.7090606689453
+Batch 1109/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 229.19058227539062
+Batch 1110/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 141.0623779296875
+Batch 1111/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 199.3011016845703
+Batch 1112/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 263.9901428222656
+Batch 1113/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 223.87225341796875
+Batch 1114/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 191.51455688476562
+Batch 1115/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 241.09579467773438
+Batch 1116/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 191.31124877929688
+Batch 1117/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 205.83860778808594
+Batch 1118/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 199.13189697265625
+Batch 1119/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 206.5539093017578
+Batch 1120/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 233.5675048828125
+Batch 1121/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 194.43263244628906
+  0%|          | 1121/3621000 [00:06<5:41:41, 176.57it/s, epoch=0, test_loss=170, train_loss=194]Batch 1122/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 212.0740203857422
+Batch 1123/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 176.95738220214844
+Batch 1124/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 191.5201873779297
+Batch 1125/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 203.37832641601562
+Batch 1126/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 169.01708984375
+Batch 1127/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 179.00657653808594
+Batch 1128/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 182.05545043945312
+Batch 1129/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 184.6843719482422
+Batch 1130/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 198.91905212402344
+Batch 1131/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 183.15435791015625
+Batch 1132/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 157.87606811523438
+Batch 1133/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 207.1327667236328
+Batch 1134/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 203.88148498535156
+Batch 1135/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 208.52023315429688
+Batch 1136/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 181.2506866455078
+Batch 1137/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 195.40769958496094
+Batch 1138/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 175.0558319091797
+Batch 1139/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 227.19924926757812
+Batch 1140/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 188.17884826660156
+Batch 1141/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 183.9717254638672
+Batch 1142/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 204.24578857421875
+  0%|          | 1142/3621000 [00:06<5:30:33, 182.51it/s, epoch=0, test_loss=170, train_loss=204]Batch 1143/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 174.61802673339844
+Batch 1144/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 216.86181640625
+Batch 1145/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 181.26284790039062
+Batch 1146/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 209.69996643066406
+Batch 1147/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 196.62603759765625
+Batch 1148/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 198.0717010498047
+Batch 1149/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 188.9296875
+Batch 1150/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 203.12831115722656
+Batch 1151/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 205.16790771484375
+Batch 1152/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 200.11026000976562
+Batch 1153/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 184.58651733398438
+Batch 1154/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 208.83860778808594
+Batch 1155/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 227.7028045654297
+Batch 1156/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 204.2252960205078
+Batch 1157/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 150.89651489257812
+Batch 1158/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 198.89471435546875
+Batch 1159/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 204.81640625
+Batch 1160/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 230.67791748046875
+Batch 1161/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 225.485107421875
+  0%|          | 1161/3621000 [00:06<5:39:14, 177.84it/s, epoch=0, test_loss=170, train_loss=225]Batch 1162/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 170.40444946289062
+Batch 1163/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 201.55445861816406
+Batch 1164/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 209.24880981445312
+Batch 1165/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 182.2128448486328
+Batch 1166/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 172.90492248535156
+Batch 1167/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 199.89805603027344
+Batch 1168/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 193.61697387695312
+Batch 1169/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 213.61097717285156
+Batch 1170/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 147.84556579589844
+Batch 1171/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 189.71200561523438
+Batch 1172/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 223.80682373046875
+Batch 1173/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 172.40025329589844
+Batch 1174/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 190.27308654785156
+Batch 1175/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 213.85231018066406
+Batch 1176/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 204.72613525390625
+Batch 1177/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 163.09567260742188
+Batch 1178/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 184.08889770507812
+Batch 1179/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 218.33721923828125
+Batch 1180/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 187.6806640625
+Batch 1181/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 175.95460510253906
+Batch 1182/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 207.29600524902344
+  0%|          | 1182/3621000 [00:06<5:23:45, 186.34it/s, epoch=0, test_loss=170, train_loss=207]Batch 1183/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 173.3795928955078
+Batch 1184/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 182.17320251464844
+Batch 1185/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 210.82489013671875
+Batch 1186/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 199.83567810058594
+Batch 1187/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 234.7152557373047
+Batch 1188/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 199.79269409179688
+Batch 1189/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 177.58880615234375
+Batch 1190/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 250.03103637695312
+Batch 1191/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 200.83746337890625
+Batch 1192/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 176.7181396484375
+Batch 1193/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 169.34933471679688
+Batch 1194/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 207.02001953125
+Batch 1195/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 172.9954833984375
+Batch 1196/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 124.56705474853516
+Batch 1197/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 142.68154907226562
+Batch 1198/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 216.407958984375
+Batch 1199/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 199.95132446289062
+Batch 1200/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 192.61187744140625
+Batch 1201/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 177.21914672851562
+Running validation...
+Epoch 1, Step 1200: Train Loss = 176.62852478027344, Test Loss = 211.0003662109375
+  0%|          | 1201/3621000 [00:06<5:37:24, 178.80it/s, epoch=0, test_loss=211, train_loss=177]Batch 1202/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 192.63404846191406
+Batch 1203/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 157.3688201904297
+Batch 1204/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 194.3519287109375
+Batch 1205/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 178.59170532226562
+Batch 1206/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 213.54652404785156
+Batch 1207/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 244.445556640625
+Batch 1208/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 207.77696228027344
+Batch 1209/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 209.1500701904297
+Batch 1210/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 237.35458374023438
+Batch 1211/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 169.4831085205078
+Batch 1212/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 176.43568420410156
+Batch 1213/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 157.17864990234375
+Batch 1214/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 216.01510620117188
+Batch 1215/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 210.84645080566406
+Batch 1216/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 196.85687255859375
+Batch 1217/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 197.36476135253906
+Batch 1218/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 185.6754913330078
+Batch 1219/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 179.31576538085938
+Batch 1220/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 163.0215606689453
+Batch 1221/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 194.453369140625
+Batch 1222/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 218.96348571777344
+  0%|          | 1222/3621000 [00:07<5:26:37, 184.70it/s, epoch=0, test_loss=211, train_loss=219]Batch 1223/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 179.2913818359375
+Batch 1224/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 173.8753204345703
+Batch 1225/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 159.5583953857422
+Batch 1226/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 192.71705627441406
+Batch 1227/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 186.7209014892578
+Batch 1228/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 171.06631469726562
+Batch 1229/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 195.30540466308594
+Batch 1230/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 197.42510986328125
+Batch 1231/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 161.7188720703125
+Batch 1232/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 185.04205322265625
+Batch 1233/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 164.26260375976562
+Batch 1234/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 149.41342163085938
+Batch 1235/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 189.94302368164062
+Batch 1236/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 210.1349639892578
+Batch 1237/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 179.52392578125
+Batch 1238/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 188.96707153320312
+Batch 1239/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 230.88906860351562
+Batch 1240/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 226.2655487060547
+Batch 1241/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 194.3282012939453
+  0%|          | 1241/3621000 [00:07<5:31:06, 182.21it/s, epoch=0, test_loss=211, train_loss=194]Batch 1242/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 167.845947265625
+Batch 1243/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 211.62603759765625
+Batch 1244/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 198.075439453125
+Batch 1245/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 197.80259704589844
+Batch 1246/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 196.61038208007812
+Batch 1247/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 207.12399291992188
+Batch 1248/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 171.77511596679688
+Batch 1249/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 219.62185668945312
+Batch 1250/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 196.18673706054688
+Batch 1251/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 209.6865234375
+Batch 1252/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 184.0098419189453
+Batch 1253/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 197.5592041015625
+Batch 1254/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 169.20050048828125
+Batch 1255/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 213.2891845703125
+Batch 1256/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 224.05770874023438
+Batch 1257/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 191.5691680908203
+Batch 1258/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 230.67164611816406
+Batch 1259/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 202.75225830078125
+Batch 1260/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 166.047607421875
+  0%|          | 1260/3621000 [00:07<5:29:24, 183.15it/s, epoch=0, test_loss=211, train_loss=166]Batch 1261/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 135.35223388671875
+Batch 1262/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 147.45767211914062
+Batch 1263/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 185.26258850097656
+Batch 1264/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 172.55714416503906
+Batch 1265/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 185.95960998535156
+Batch 1266/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 208.71923828125
+Batch 1267/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 185.72930908203125
+Batch 1268/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 227.03302001953125
+Batch 1269/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 205.64306640625
+Batch 1270/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 201.46478271484375
+Batch 1271/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 185.01747131347656
+Batch 1272/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 197.2514190673828
+Batch 1273/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 187.3584747314453
+Batch 1274/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 205.6320343017578
+Batch 1275/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 178.26014709472656
+Batch 1276/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 174.43185424804688
+Batch 1277/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 204.22299194335938
+Batch 1278/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 198.5653533935547
+Batch 1279/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 195.16229248046875
+  0%|          | 1279/3621000 [00:07<5:32:24, 181.49it/s, epoch=0, test_loss=211, train_loss=195]Batch 1280/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 126.95743560791016
+Batch 1281/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 187.49932861328125
+Batch 1282/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 185.85572814941406
+Batch 1283/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 180.72598266601562
+Batch 1284/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 177.19602966308594
+Batch 1285/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 182.9701690673828
+Batch 1286/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 147.8014373779297
+Batch 1287/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 251.01815795898438
+Batch 1288/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 181.20486450195312
+Batch 1289/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 184.02215576171875
+Batch 1290/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 208.41970825195312
+Batch 1291/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 231.1867218017578
+Batch 1292/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 197.2941131591797
+Batch 1293/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 194.8778533935547
+Batch 1294/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 137.748779296875
+Batch 1295/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 176.36434936523438
+Batch 1296/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 198.67523193359375
+Batch 1297/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 204.4553985595703
+Batch 1298/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 186.39324951171875
+Batch 1299/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 217.97552490234375
+  0%|          | 1299/3621000 [00:07<5:27:20, 184.29it/s, epoch=0, test_loss=211, train_loss=218]Batch 1300/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 182.3047332763672
+Batch 1301/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 216.4669952392578
+Running validation...
+Epoch 1, Step 1300: Train Loss = 216.55120849609375, Test Loss = 200.32345581054688
+Batch 1302/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 188.57159423828125
+Batch 1303/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 238.44410705566406
+Batch 1304/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 206.71273803710938
+Batch 1305/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 207.0731201171875
+Batch 1306/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 180.8740692138672
+Batch 1307/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 202.92709350585938
+Batch 1308/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 211.2099609375
+Batch 1309/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 210.96556091308594
+Batch 1310/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 183.58055114746094
+Batch 1311/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 262.3105163574219
+Batch 1312/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 237.3605499267578
+Batch 1313/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 149.64907836914062
+Batch 1314/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 202.36817932128906
+Batch 1315/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 201.99456787109375
+Batch 1316/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 175.32366943359375
+Batch 1317/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 201.90586853027344
+Batch 1318/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 209.16665649414062
+  0%|          | 1318/3621000 [00:07<5:43:42, 175.52it/s, epoch=0, test_loss=200, train_loss=209]Batch 1319/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 220.39186096191406
+Batch 1320/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 207.65272521972656
+Batch 1321/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 161.50181579589844
+Batch 1322/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 186.89613342285156
+Batch 1323/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 214.68267822265625
+Batch 1324/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 184.16790771484375
+Batch 1325/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 190.90028381347656
+Batch 1326/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 185.4632568359375
+Batch 1327/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 216.2972869873047
+Batch 1328/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 233.22970581054688
+Batch 1329/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 200.12709045410156
+Batch 1330/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 196.36497497558594
+Batch 1331/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 216.97402954101562
+Batch 1332/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 156.2153778076172
+Batch 1333/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 201.35836791992188
+Batch 1334/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 209.39739990234375
+Batch 1335/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 184.89048767089844
+Batch 1336/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 206.68246459960938
+  0%|          | 1336/3621000 [00:07<6:05:53, 164.88it/s, epoch=0, test_loss=200, train_loss=207]Batch 1337/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 207.74412536621094
+Batch 1338/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 220.97303771972656
+Batch 1339/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 216.9083709716797
+Batch 1340/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 235.088623046875
+Batch 1341/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 146.35260009765625
+Batch 1342/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 180.5435791015625
+Batch 1343/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 196.2215118408203
+Batch 1344/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 191.37451171875
+Batch 1345/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 220.03387451171875
+Batch 1346/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 195.89065551757812
+Batch 1347/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 228.20701599121094
+Batch 1348/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 166.559814453125
+Batch 1349/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 215.1424560546875
+Batch 1350/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 191.1446990966797
+Batch 1351/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 143.1684112548828
+Batch 1352/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 224.85665893554688
+Batch 1353/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 193.43882751464844
+  0%|          | 1353/3621000 [00:07<6:05:53, 164.88it/s, epoch=0, test_loss=200, train_loss=193]Batch 1354/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 168.74441528320312
+Batch 1355/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 189.85682678222656
+Batch 1356/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 206.186279296875
+Batch 1357/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 208.89590454101562
+Batch 1358/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 189.5242156982422
+Batch 1359/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 174.42523193359375
+Batch 1360/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 180.45870971679688
+Batch 1361/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 237.49412536621094
+Batch 1362/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 165.71768188476562
+Batch 1363/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 201.52267456054688
+Batch 1364/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 195.7806854248047
+Batch 1365/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 207.7209014892578
+Batch 1366/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 196.46022033691406
+Batch 1367/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 217.20176696777344
+Batch 1368/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 195.67904663085938
+Batch 1369/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 158.56680297851562
+Batch 1370/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 205.6309814453125
+  0%|          | 1370/3621000 [00:07<6:20:27, 158.57it/s, epoch=0, test_loss=200, train_loss=206]Batch 1371/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 163.23468017578125
+Batch 1372/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 200.54769897460938
+Batch 1373/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 193.06497192382812
+Batch 1374/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 200.3544464111328
+Batch 1375/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 178.03538513183594
+Batch 1376/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 154.01919555664062
+Batch 1377/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 205.92919921875
+Batch 1378/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 207.1865692138672
+Batch 1379/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 198.8211669921875
+Batch 1380/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 189.6033172607422
+Batch 1381/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 166.5487518310547
+Batch 1382/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 176.3658447265625
+Batch 1383/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 212.28500366210938
+Batch 1384/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 190.52386474609375
+Batch 1385/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 193.96885681152344
+Batch 1386/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 215.51449584960938
+Batch 1387/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 197.82484436035156
+Batch 1388/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 197.71621704101562
+  0%|          | 1388/3621000 [00:08<6:12:31, 161.94it/s, epoch=0, test_loss=200, train_loss=198]Batch 1389/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 179.44464111328125
+Batch 1390/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 203.60020446777344
+Batch 1391/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 219.44212341308594
+Batch 1392/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 191.62701416015625
+Batch 1393/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 215.61505126953125
+Batch 1394/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 194.3546905517578
+Batch 1395/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 183.82687377929688
+Batch 1396/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 213.39242553710938
+Batch 1397/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 192.88674926757812
+Batch 1398/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 204.74996948242188
+Batch 1399/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 179.37701416015625
+Batch 1400/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 200.19696044921875
+Batch 1401/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 178.9160614013672
+Running validation...
+Epoch 1, Step 1400: Train Loss = 179.8762969970703, Test Loss = 190.5806427001953
+Batch 1402/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 174.02349853515625
+Batch 1403/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 155.31814575195312
+Batch 1404/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 182.84262084960938
+Batch 1405/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 194.1996307373047
+  0%|          | 1405/3621000 [00:08<6:26:30, 156.08it/s, epoch=0, test_loss=191, train_loss=194]Batch 1406/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 177.805419921875
+Batch 1407/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 214.15631103515625
+Batch 1408/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 155.8284912109375
+Batch 1409/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 211.98153686523438
+Batch 1410/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 224.04312133789062
+Batch 1411/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 198.77853393554688
+Batch 1412/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 220.64508056640625
+Batch 1413/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 202.95974731445312
+Batch 1414/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 232.75405883789062
+Batch 1415/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 213.98593139648438
+Batch 1416/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 190.38607788085938
+Batch 1417/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 195.64370727539062
+Batch 1418/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 210.44546508789062
+Batch 1419/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 239.39744567871094
+Batch 1420/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 208.64979553222656
+Batch 1421/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 215.21133422851562
+Batch 1422/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 219.40939331054688
+Batch 1423/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 193.45632934570312
+Batch 1424/10200
+  0%|          | 1423/3621000 [00:08<6:15:03, 160.84it/s, epoch=0, test_loss=191, train_loss=193]Batch data shape: (5, 28, 28, 1)
+Train Loss: 190.86297607421875
+Batch 1425/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 183.57373046875
+Batch 1426/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 145.17091369628906
+Batch 1427/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 204.07769775390625
+Batch 1428/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 211.30299377441406
+Batch 1429/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 196.4272003173828
+Batch 1430/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 156.28614807128906
+Batch 1431/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 210.3106231689453
+Batch 1432/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 222.4939422607422
+Batch 1433/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 212.63015747070312
+Batch 1434/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 168.2717742919922
+Batch 1435/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 210.20407104492188
+Batch 1436/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 203.1190185546875
+Batch 1437/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 165.74827575683594
+Batch 1438/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 211.486572265625
+Batch 1439/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 194.02134704589844
+Batch 1440/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 194.44009399414062
+Batch 1441/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 204.10655212402344
+  0%|          | 1441/3621000 [00:08<6:08:20, 163.78it/s, epoch=0, test_loss=191, train_loss=204]Batch 1442/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 195.67404174804688
+Batch 1443/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 231.22158813476562
+Batch 1444/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 192.34690856933594
+Batch 1445/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 199.52117919921875
+Batch 1446/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 218.6409454345703
+Batch 1447/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 193.70237731933594
+Batch 1448/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 176.34971618652344
+Batch 1449/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 172.77976989746094
+Batch 1450/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 224.059326171875
+Batch 1451/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 176.4998016357422
+Batch 1452/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 201.55612182617188
+Batch 1453/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 232.2024688720703
+Batch 1454/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 138.83135986328125
+Batch 1455/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 138.77989196777344
+Batch 1456/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 208.69964599609375
+Batch 1457/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 195.36514282226562
+Batch 1458/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 217.95965576171875
+Batch 1459/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 181.5671844482422
+  0%|          | 1459/3621000 [00:08<6:02:01, 166.64it/s, epoch=0, test_loss=191, train_loss=182]Batch 1460/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 230.93209838867188
+Batch 1461/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 220.97927856445312
+Batch 1462/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 189.81390380859375
+Batch 1463/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 201.70626831054688
+Batch 1464/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 172.12498474121094
+Batch 1465/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 181.82887268066406
+Batch 1466/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 216.4613037109375
+Batch 1467/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 201.27169799804688
+Batch 1468/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 206.9835662841797
+Batch 1469/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 232.28001403808594
+Batch 1470/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 192.5181427001953
+Batch 1471/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 212.89437866210938
+Batch 1472/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 189.72129821777344
+Batch 1473/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 216.61114501953125
+Batch 1474/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 170.39756774902344
+Batch 1475/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 195.01072692871094
+Batch 1476/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 203.46658325195312
+  0%|          | 1476/3621000 [00:08<6:06:47, 164.47it/s, epoch=0, test_loss=191, train_loss=203]Batch 1477/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 197.53126525878906
+Batch 1478/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 182.41278076171875
+Batch 1479/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 219.3951873779297
+Batch 1480/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 171.55029296875
+Batch 1481/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 185.55479431152344
+Batch 1482/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 169.7620391845703
+Batch 1483/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 142.75868225097656
+Batch 1484/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 219.33721923828125
+Batch 1485/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 213.13006591796875
+Batch 1486/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 194.7811737060547
+Batch 1487/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 172.81857299804688
+Batch 1488/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 207.39947509765625
+Batch 1489/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 168.33370971679688
+Batch 1490/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 190.80909729003906
+Batch 1491/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 185.49485778808594
+Batch 1492/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 170.19454956054688
+Batch 1493/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 197.44847106933594
+Batch 1494/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 191.82957458496094
+Batch 1495/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 213.63453674316406
+Batch 1496/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 192.2538299560547
+Batch 1497/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 213.01278686523438
+  0%|          | 1497/3621000 [00:08<5:42:36, 176.07it/s, epoch=0, test_loss=191, train_loss=213]Batch 1498/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 186.79464721679688
+Batch 1499/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 181.16944885253906
+Batch 1500/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 186.8131866455078
+Batch 1501/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 178.73870849609375
+Running validation...
+Epoch 1, Step 1500: Train Loss = 179.74098205566406, Test Loss = 183.49838256835938
+Batch 1502/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 180.30340576171875
+Batch 1503/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 231.3756866455078
+Batch 1504/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 186.89825439453125
+Batch 1505/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 195.94070434570312
+Batch 1506/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 204.40013122558594
+Batch 1507/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 186.44802856445312
+Batch 1508/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 175.91403198242188
+Batch 1509/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 219.32598876953125
+Batch 1510/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 156.26593017578125
+Batch 1511/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 205.3827362060547
+Batch 1512/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 208.04478454589844
+Batch 1513/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 168.12542724609375
+Batch 1514/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 180.06472778320312
+Batch 1515/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 169.06617736816406
+  0%|          | 1515/3621000 [00:08<5:57:33, 168.71it/s, epoch=0, test_loss=183, train_loss=169]Batch 1516/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 170.00912475585938
+Batch 1517/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 213.2322998046875
+Batch 1518/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 198.71734619140625
+Batch 1519/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 188.82252502441406
+Batch 1520/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 192.3649139404297
+Batch 1521/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 204.0220184326172
+Batch 1522/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 168.36611938476562
+Batch 1523/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 223.23544311523438
+Batch 1524/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 202.35365295410156
+Batch 1525/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 204.48431396484375
+Batch 1526/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 165.31256103515625
+Batch 1527/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 211.91050720214844
+Batch 1528/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 186.1903839111328
+Batch 1529/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 192.62913513183594
+Batch 1530/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 213.86386108398438
+Batch 1531/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 201.2698211669922
+Batch 1532/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 171.6202850341797
+Batch 1533/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 177.11024475097656
+Batch 1534/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 184.1335906982422
+Batch 1535/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 193.95616149902344
+Batch 1536/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 174.37570190429688
+  0%|          | 1536/3621000 [00:08<5:37:51, 178.55it/s, epoch=0, test_loss=183, train_loss=174]Batch 1537/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 210.4529266357422
+Batch 1538/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 193.9673614501953
+Batch 1539/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 182.61834716796875
+Batch 1540/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 195.95753479003906
+Batch 1541/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 198.08114624023438
+Batch 1542/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 119.88783264160156
+Batch 1543/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 230.75637817382812
+Batch 1544/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 194.98928833007812
+Batch 1545/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 180.92849731445312
+Batch 1546/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 201.88369750976562
+Batch 1547/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 222.47064208984375
+Batch 1548/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 182.42803955078125
+Batch 1549/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 219.0399627685547
+Batch 1550/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 176.09548950195312
+Batch 1551/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 198.5437774658203
+Batch 1552/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 187.9891357421875
+Batch 1553/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 207.30096435546875
+Batch 1554/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 202.7778778076172
+  0%|          | 1554/3621000 [00:09<5:47:45, 173.46it/s, epoch=0, test_loss=183, train_loss=203]Batch 1555/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 193.5589599609375
+Batch 1556/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 204.81858825683594
+Batch 1557/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 187.75367736816406
+Batch 1558/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 211.14434814453125
+Batch 1559/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 223.89598083496094
+Batch 1560/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 162.14260864257812
+Batch 1561/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 206.2149658203125
+Batch 1562/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 196.7240447998047
+Batch 1563/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 181.65673828125
+Batch 1564/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 196.28387451171875
+Batch 1565/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 228.4655303955078
+Batch 1566/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 221.9668426513672
+Batch 1567/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 228.39573669433594
+Batch 1568/10200
+Batch data shape: (5, 28, 28, 1)
+Train Loss: 195.65403747558594
+Batch 1569/10200
+Batch data shape: (5, 28, 28, 1)

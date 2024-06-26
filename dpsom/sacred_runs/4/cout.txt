@@ -1,0 +1,13 @@
+INFO - hyperopt - Running command 'main'
+INFO - hyperopt - Started run with ID "4"
+labels_test.shape: (10000,)
+data_test.shape: (10000, 28, 28, 1)
+2024-06-08 08:40:36.928024: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:388] MLIR V1 optimization pass is not enabled
+
+**********Starting job hyperopt_100_8-8_2024-06-08_37011********* 
+
+  0%|          | 0/60350 [00:00<?, ?it/s]
+
+Autoencoder Pretraining...
+
+  0%|          | 113/60350 [00:08<1:18:54, 12.72it/s, epoch=0, test_loss=184, train_loss=193]

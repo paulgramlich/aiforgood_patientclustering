@@ -1,0 +1,984 @@
+INFO - hyperopt - Running command 'main'
+INFO - hyperopt - Started run with ID "16"
+num_features: 359
+data_train_padded.shape: (928, 784)
+data_train.shape: (630, 28, 28, 1), data_val.shape: (112, 28, 28, 1), data_test.shape: (186, 28, 28, 1)
+Initializing global variables...
+2024-06-08 10:21:25.843286: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:388] MLIR V1 optimization pass is not enabled
+Variables initialized.
+
+**********Starting job hyperopt_100_8-8_2024-06-08_3c853********* 
+
+  0%|          | 0/4260 [00:00<?, ?it/s]Number of batches: 12
+
+
+Autoencoder Pretraining...
+
+Starting epoch 1/15
+Batch 1/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: 567.46337890625
+Running validation...
+Epoch 1, Step 0: Train Loss = 563.2109375, Test Loss = 563.4837646484375
+  0%|          | 1/4260 [00:00<14:17,  4.97it/s, epoch=0, test_loss=563, train_loss=563]Batch 2/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: 563.0083618164062
+Batch 3/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: 560.9036865234375
+Batch 4/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: 557.71240234375
+Batch 5/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: 556.0279541015625
+Batch 6/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: 554.6485595703125
+  0%|          | 6/4260 [00:00<03:13, 22.01it/s, epoch=0, test_loss=563, train_loss=555]Batch 7/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: 553.5245971679688
+Batch 8/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: 551.8037719726562
+Batch 9/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: 551.0302124023438
+Batch 10/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: 549.901611328125
+Batch 11/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: 549.083740234375
+  0%|          | 11/4260 [00:00<02:15, 31.40it/s, epoch=0, test_loss=563, train_loss=549]Batch 12/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: 548.2656860351562
+Starting epoch 2/15
+Batch 1/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: 547.2950439453125
+Running validation...
+Epoch 2, Step 0: Train Loss = 546.3338623046875, Test Loss = 546.2975463867188
+Batch 2/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: 546.2881469726562
+Batch 3/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: 545.1797485351562
+  0%|          | 15/4260 [00:00<02:06, 33.60it/s, epoch=1, test_loss=546, train_loss=545]Batch 4/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: 544.1143798828125
+Batch 5/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: 543.049072265625
+Batch 6/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: 541.74609375
+Batch 7/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: 540.1612548828125
+Batch 8/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: 539.552734375
+  0%|          | 20/4260 [00:00<01:50, 38.31it/s, epoch=1, test_loss=546, train_loss=540]Batch 9/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: 537.400634765625
+Batch 10/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: 535.708984375
+Batch 11/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: 533.9650268554688
+Batch 12/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: 531.5126953125
+Starting epoch 3/15
+Batch 1/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: 529.2620849609375
+Running validation...
+Epoch 3, Step 0: Train Loss = 526.7410278320312, Test Loss = 525.294921875
+  1%|          | 25/4260 [00:00<01:50, 38.19it/s, epoch=2, test_loss=525, train_loss=527]Batch 2/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: 525.843017578125
+Batch 3/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: 522.0115966796875
+Batch 4/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: 519.48095703125
+Batch 5/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: 515.3298950195312
+Batch 6/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: 508.730224609375
+  1%|          | 30/4260 [00:00<01:44, 40.44it/s, epoch=2, test_loss=525, train_loss=509]Batch 7/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: 503.45428466796875
+Batch 8/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: 500.1363830566406
+Batch 9/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: 489.9888610839844
+Batch 10/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: 482.5934143066406
+Batch 11/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: 471.1922302246094
+  1%|          | 35/4260 [00:00<01:43, 40.68it/s, epoch=2, test_loss=525, train_loss=471]Batch 12/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: 462.2525329589844
+Starting epoch 4/15
+Batch 1/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: 441.3028564453125
+Running validation...
+Epoch 4, Step 0: Train Loss = 430.0802001953125, Test Loss = 424.4025573730469
+Batch 2/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: 428.85198974609375
+Batch 3/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: 403.5632629394531
+Batch 4/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: 391.0047607421875
+  1%|          | 40/4260 [00:01<01:45, 40.04it/s, epoch=3, test_loss=424, train_loss=391]Batch 5/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: 362.7537841796875
+Batch 6/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: 343.69873046875
+Batch 7/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: 283.5333251953125
+Batch 8/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: 314.522705078125
+Batch 9/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: 256.3394775390625
+  1%|          | 45/4260 [00:01<01:42, 41.12it/s, epoch=3, test_loss=424, train_loss=256]Batch 10/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: 246.51742553710938
+Batch 11/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: 218.64300537109375
+Batch 12/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: 201.14288330078125
+Starting epoch 5/15
+Batch 1/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: 188.1142578125
+Running validation...
+Epoch 5, Step 0: Train Loss = 163.6559600830078, Test Loss = 116.7327880859375
+Batch 2/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: 130.73672485351562
+  1%|          | 50/4260 [00:01<01:45, 40.03it/s, epoch=4, test_loss=117, train_loss=131]Batch 3/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: 97.59397888183594
+Batch 4/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: 116.21748352050781
+Batch 5/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: 78.2236099243164
+Batch 6/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -11.753623962402344
+Batch 7/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -88.2393798828125
+  1%|▏         | 55/4260 [00:01<01:43, 40.66it/s, epoch=4, test_loss=117, train_loss=-88.2]Batch 8/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: 77.90855407714844
+Batch 9/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -75.50260162353516
+Batch 10/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -90.46780395507812
+Batch 11/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -161.1455841064453
+Batch 12/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -137.26962280273438
+  1%|▏         | 60/4260 [00:01<01:43, 40.57it/s, epoch=4, test_loss=117, train_loss=-137] Starting epoch 6/15
+Batch 1/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -145.8721923828125
+Running validation...
+Epoch 6, Step 0: Train Loss = -214.69839477539062, Test Loss = -451.87689208984375
+Batch 2/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -327.2479553222656
+Batch 3/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -613.4742431640625
+Batch 4/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -384.1285095214844
+Batch 5/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -450.76617431640625
+  2%|▏         | 65/4260 [00:01<01:47, 39.03it/s, epoch=5, test_loss=-452, train_loss=-451]Batch 6/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -983.21875
+Batch 7/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -1536.42138671875
+Batch 8/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -349.3944091796875
+Batch 9/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -2191.321533203125
+Batch 10/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -1393.2109375
+  2%|▏         | 70/4260 [00:01<01:45, 39.77it/s, epoch=5, test_loss=-452, train_loss=-1.39e+3]Batch 11/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -2038.081298828125
+Batch 12/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -2340.54052734375
+Starting epoch 7/15
+Batch 1/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -2831.480712890625
+Running validation...
+Epoch 7, Step 0: Train Loss = -2935.466552734375, Test Loss = -5537.708984375
+Batch 2/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -3460.1064453125
+Batch 3/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -6959.12890625
+  2%|▏         | 75/4260 [00:02<01:48, 38.53it/s, epoch=6, test_loss=-5.54e+3, train_loss=-6.96e+3]Batch 4/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -4313.2509765625
+Batch 5/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -5198.65576171875
+Batch 6/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -6575.9755859375
+Batch 7/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -16268.41015625
+  2%|▏         | 79/4260 [00:02<01:47, 38.79it/s, epoch=6, test_loss=-5.54e+3, train_loss=-1.63e+4]Batch 8/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -4398.69970703125
+Batch 9/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -30250.3359375
+Batch 10/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -11396.572265625
+Batch 11/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -20582.955078125
+  2%|▏         | 83/4260 [00:02<01:48, 38.67it/s, epoch=6, test_loss=-5.54e+3, train_loss=-2.06e+4]Batch 12/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -16467.8359375
+Starting epoch 8/15
+Batch 1/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -24745.29296875
+Running validation...
+Epoch 8, Step 0: Train Loss = -32208.9375, Test Loss = -54771.23828125
+Batch 2/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -40227.39453125
+Batch 3/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -35675.73828125
+  2%|▏         | 87/4260 [00:02<01:48, 38.49it/s, epoch=7, test_loss=-5.48e+4, train_loss=-3.57e+4]Batch 4/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -34087.1953125
+Batch 5/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -48082.0703125
+Batch 6/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -70225.0
+Batch 7/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -127956.25
+  2%|▏         | 91/4260 [00:02<01:49, 38.09it/s, epoch=7, test_loss=-5.48e+4, train_loss=-1.28e+5]Batch 8/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -28585.91015625
+Batch 9/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -145084.21875
+Batch 10/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -112642.84375
+Batch 11/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -135871.421875
+  2%|▏         | 95/4260 [00:02<01:48, 38.44it/s, epoch=7, test_loss=-5.48e+4, train_loss=-1.36e+5]Batch 12/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -155480.0
+Starting epoch 9/15
+Batch 1/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -190961.53125
+Running validation...
+Epoch 9, Step 0: Train Loss = -162772.5, Test Loss = -278663.53125
+Batch 2/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -205255.234375
+Batch 3/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -292570.46875
+  2%|▏         | 99/4260 [00:02<01:48, 38.52it/s, epoch=8, test_loss=-2.79e+5, train_loss=-2.93e+5]Batch 4/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -258066.5
+Batch 5/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -331966.6875
+Batch 6/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -359346.15625
+Batch 7/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -745215.125
+Batch 8/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -168949.1875
+  2%|▏         | 104/4260 [00:02<01:44, 39.93it/s, epoch=8, test_loss=-2.79e+5, train_loss=-1.69e+5]Batch 9/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -881035.875
+Batch 10/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -618256.875
+Batch 11/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -817371.5
+Batch 12/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -725263.375
+Starting epoch 10/15
+Batch 1/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -769669.875
+Running validation...
+Epoch 10, Step 0: Train Loss = -637972.375, Test Loss = -1266497.5
+  3%|▎         | 109/4260 [00:02<01:49, 38.03it/s, epoch=9, test_loss=-1.27e+6, train_loss=-6.38e+5]Batch 2/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -831338.1875
+Batch 3/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -1442373.0
+Batch 4/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -1136649.0
+Batch 5/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -1353983.75
+Batch 6/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -1905530.375
+  3%|▎         | 114/4260 [00:03<01:44, 39.74it/s, epoch=9, test_loss=-1.27e+6, train_loss=-1.91e+6]Batch 7/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -3575027.5
+Batch 8/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -668469.375
+Batch 9/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -3540605.0
+Batch 10/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -3465180.0
+Batch 11/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -3183944.0
+  3%|▎         | 119/4260 [00:03<01:43, 40.05it/s, epoch=9, test_loss=-1.27e+6, train_loss=-3.18e+6]Batch 12/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -2718010.0
+Starting epoch 11/15
+Batch 1/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -2210909.25
+Running validation...
+Epoch 11, Step 0: Train Loss = -2288766.75, Test Loss = -6148709.5
+Batch 2/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -3584207.25
+Batch 3/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -5681645.0
+Batch 4/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -4265629.0
+  3%|▎         | 124/4260 [00:03<01:44, 39.56it/s, epoch=10, test_loss=-6.15e+6, train_loss=-4.27e+6]Batch 5/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -4259364.0
+Batch 6/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -6687137.5
+Batch 7/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -13255943.0
+Batch 8/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -2391481.25
+Batch 9/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -11691207.0
+  3%|▎         | 129/4260 [00:03<01:42, 40.26it/s, epoch=10, test_loss=-6.15e+6, train_loss=-1.17e+7]Batch 10/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -9591590.0
+Batch 11/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -15631385.0
+Batch 12/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -10014566.0
+Starting epoch 12/15
+Batch 1/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -6499535.0
+Running validation...
+Epoch 12, Step 0: Train Loss = -11679905.0, Test Loss = -22979476.0
+Batch 2/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -16167776.0
+  3%|▎         | 134/4260 [00:03<01:43, 39.78it/s, epoch=11, test_loss=-2.3e+7, train_loss=-1.62e+7] Batch 3/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -20656076.0
+Batch 4/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -10596453.0
+Batch 5/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -17297320.0
+Batch 6/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -26653604.0
+Batch 7/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -49522008.0
+  3%|▎         | 139/4260 [00:03<01:41, 40.66it/s, epoch=11, test_loss=-2.3e+7, train_loss=-4.95e+7]Batch 8/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -8843330.0
+Batch 9/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -35010956.0
+Batch 10/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -33447372.0
+Batch 11/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -44269464.0
+Batch 12/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -29816332.0
+  3%|▎         | 144/4260 [00:03<01:41, 40.56it/s, epoch=11, test_loss=-2.3e+7, train_loss=-2.98e+7]Starting epoch 13/15
+Batch 1/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -37437756.0
+Running validation...
+Epoch 13, Step 0: Train Loss = -28642194.0, Test Loss = -70974936.0
+Batch 2/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -56160800.0
+Batch 3/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -62897776.0
+Batch 4/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -41707800.0
+Batch 5/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -61133544.0
+  3%|▎         | 149/4260 [00:03<01:41, 40.39it/s, epoch=12, test_loss=-7.1e+7, train_loss=-6.11e+7]Batch 6/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -93903984.0
+Batch 7/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -158687792.0
+Batch 8/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -24116372.0
+Batch 9/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -138213600.0
+Batch 10/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -78762880.0
+  4%|▎         | 154/4260 [00:04<01:41, 40.38it/s, epoch=12, test_loss=-7.1e+7, train_loss=-7.88e+7]Batch 11/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -94133440.0
+Batch 12/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -63890560.0
+Starting epoch 14/15
+Batch 1/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -102079480.0
+Running validation...
+Epoch 14, Step 0: Train Loss = -90017600.0, Test Loss = -172906784.0
+Batch 2/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -125541008.0
+Batch 3/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -163571872.0
+  4%|▎         | 159/4260 [00:04<01:43, 39.70it/s, epoch=13, test_loss=-1.73e+8, train_loss=-1.64e+8]Batch 4/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -123748720.0
+Batch 5/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -174728896.0
+Batch 6/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -183979888.0
+Batch 7/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -342762880.0
+  4%|▍         | 163/4260 [00:04<01:43, 39.55it/s, epoch=13, test_loss=-1.73e+8, train_loss=-3.43e+8]Batch 8/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -83101368.0
+Batch 9/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -325435520.0
+Batch 10/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -239226144.0
+Batch 11/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -225097136.0
+Batch 12/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -260564368.0
+  4%|▍         | 168/4260 [00:04<01:40, 40.81it/s, epoch=13, test_loss=-1.73e+8, train_loss=-2.61e+8]Starting epoch 15/15
+Batch 1/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -187634208.0
+Running validation...
+Epoch 15, Step 0: Train Loss = -316262976.0, Test Loss = -545163520.0
+Batch 2/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -346320128.0
+Batch 3/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -394449632.0
+Batch 4/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -248865328.0
+Batch 5/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -417149888.0
+  4%|▍         | 173/4260 [00:04<01:43, 39.56it/s, epoch=14, test_loss=-5.45e+8, train_loss=-4.17e+8]Batch 6/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -457292992.0
+Batch 7/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -823259136.0
+Batch 8/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -168663440.0
+Batch 9/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -560459776.0
+Batch 10/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -564498048.0
+  4%|▍         | 178/4260 [00:04<01:41, 40.11it/s, epoch=14, test_loss=-5.45e+8, train_loss=-5.64e+8]Batch 11/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -791598080.0
+Batch 12/12
+Getting next batch...
+Batch data obtained.
+Batch data shape: (50, 28, 28, 1)
+Train Loss: -725094080.0
+
+
+SOM initialization...
+
+ 10%|▉         | 412/4260 [00:06<00:24, 160.22it/s, epoch=4, test_loss=7.64e+7, train_loss=2.06e+7]  
+
+Training...
+
+ 11%|█         | 468/4260 [00:08<02:18, 27.36it/s, cah=[nan], cr_ratio=nan, cs_ratio=nan, epoch=3, ssom=[nan], test_loss=nan, train_loss=nan, vae=[nan], vc_ratio=nan]]]]INFO:tensorflow:Restoring parameters from ../models/hyperopt_100_8-8_2024-06-08_3c853/hyperopt_100_8-8_2024-06-08_3c853.ckpt
+INFO - tensorflow - Restoring parameters from ../models/hyperopt_100_8-8_2024-06-08_3c853/hyperopt_100_8-8_2024-06-08_3c853.ckpt
+Evaluation...
+/Users/paulgramlich/PycharmProjects/pythonProject/venv/lib/python3.12/site-packages/sklearn/metrics/cluster/_supervised.py:66: UserWarning: Clustering metrics expects discrete values but received continuous values for label, and binary values for target
+  warnings.warn(msg, UserWarning)
+/Users/paulgramlich/PycharmProjects/pythonProject/venv/lib/python3.12/site-packages/sklearn/metrics/cluster/_supervised.py:66: UserWarning: Clustering metrics expects discrete values but received binary values for label, and continuous values for target
+  warnings.warn(msg, UserWarning)
+ 94%|█████████▍| 4020/4260 [04:10<00:14, 16.05it/s, cah=[nan], cr_ratio=nan, cs_ratio=nan, epoch=299, ssom=[nan], test_loss=nan, train_loss=nan, vae=[nan], vc_ratio=nan]
+
+ NMI: 0.0, AMI: 0.0, PUR: 0.7.  Name: %r.
+
+
+ Time: 251.15387892723083
+INFO - hyperopt - Result: {'NMI': 0.0, 'Purity': 0.7, 'AMI': 0.0}
+INFO - hyperopt - Completed after 0:04:11

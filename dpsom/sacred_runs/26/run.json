@@ -1,0 +1,93 @@
+{
+  "artifacts": [],
+  "command": "main",
+  "experiment": {
+    "base_dir": "/Users/paulgramlich/PycharmProjects/pythonProject/dpsom/dpsom",
+    "dependencies": [
+      "numpy==1.26.4",
+      "sacred==0.8.5",
+      "tensorflow==2.16.1",
+      "tqdm==4.66.4"
+    ],
+    "mainfile": "DPSOM.py",
+    "name": "hyperopt",
+    "repositories": [
+      {
+        "commit": "e3096a49ab83dc5823881bfded82cee2dca1220f",
+        "dirty": true,
+        "url": "https://github.com/ratschlab/dpsom"
+      },
+      {
+        "commit": "e3096a49ab83dc5823881bfded82cee2dca1220f",
+        "dirty": true,
+        "url": "https://github.com/ratschlab/dpsom"
+      },
+      {
+        "commit": "e3096a49ab83dc5823881bfded82cee2dca1220f",
+        "dirty": true,
+        "url": "https://github.com/ratschlab/dpsom"
+      }
+    ],
+    "sources": [
+      [
+        "DPSOM.py",
+        "_sources/DPSOM_49a731cd8a08f86703602287986268eb.py"
+      ],
+      [
+        "DPSOM_model.py",
+        "_sources/DPSOM_model_2ffc7d7fb117fb7a38af53630797ee96.py"
+      ],
+      [
+        "utils.py",
+        "_sources/utils_2f759a81fc66d2edc2eafd629a36f1eb.py"
+      ]
+    ]
+  },
+  "heartbeat": "2024-06-19T12:19:11.670933",
+  "host": {
+    "ENV": {},
+    "cpu": "Apple M3",
+    "hostname": "Pauls-Laptop.lan",
+    "os": [
+      "Darwin",
+      "macOS-14.3-arm64-arm-64bit"
+    ],
+    "python_version": "3.12.2"
+  },
+  "meta": {
+    "command": "main",
+    "config_updates": {},
+    "named_configs": [],
+    "options": {
+      "--beat-interval": null,
+      "--capture": null,
+      "--comment": null,
+      "--debug": false,
+      "--enforce_clean": false,
+      "--file_storage": null,
+      "--force": false,
+      "--help": false,
+      "--id": null,
+      "--loglevel": null,
+      "--mongo_db": null,
+      "--name": null,
+      "--pdb": false,
+      "--print-config": false,
+      "--priority": null,
+      "--queue": false,
+      "--s3": null,
+      "--sql": null,
+      "--tiny_db": null,
+      "--unobserved": false,
+      "COMMAND": null,
+      "UPDATE": [],
+      "help": false,
+      "with": false
+    }
+  },
+  "resources": [],
+  "result": null,
+  "start_time": "2024-06-19T12:18:58.141903",
+  "status": "INTERRUPTED",
+  "stop_time": "2024-06-19T12:19:11.671994"
+}

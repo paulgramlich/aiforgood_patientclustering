@@ -1,0 +1,23 @@
+INFO - hyperopt - Running command 'main'
+INFO - hyperopt - Started run with ID "14"
+num_features: 359
+data_train_padded.shape: (928, 784)
+data_train.shape: (630, 28, 28, 1), data_val.shape: (112, 28, 28, 1), data_test.shape: (186, 28, 28, 1)
+Initializing global variables...
+2024-06-08 10:14:21.132248: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:388] MLIR V1 optimization pass is not enabled
+Variables initialized.
+
+**********Starting job hyperopt_100_8-8_2024-06-08_7dd2c********* 
+
+  0%|          | 0/710 [00:00<?, ?it/s]Number of batches: 2
+
+
+Autoencoder Pretraining...
+
+Starting epoch 1/15
+Batch 1/2
+Getting next batch...
+Batch data obtained.
+Batch data shape: (300, 28, 28, 1)
+Train Loss: 567.8265991210938
+Running validation...

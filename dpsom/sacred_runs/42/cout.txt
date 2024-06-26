@@ -1,0 +1,6 @@
+INFO - hyperopt - Running command 'main'
+INFO - hyperopt - Started run with ID "42"
+labels_test.shape: (10000,)
+data_test.shape: (10000, 28, 28, 1)
+Min: 0.0
+Max: 1.0

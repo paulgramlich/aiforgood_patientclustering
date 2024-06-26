@@ -1,0 +1,17 @@
+INFO - hyperopt - Running command 'main'
+INFO - hyperopt - Started run with ID "6"
+num_features: 359
+labels_test.shape: (186,)
+data_test.shape: (186, 28, 28, 1)
+data_train.shape: (630, 28, 28, 1)
+data_val.shape: (186, 28, 28, 1)
+labels_train.shape: (630, 28, 28, 1)
+labels_val.shape: (186, 28, 28, 1)
+2024-06-08 08:47:32.023347: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:388] MLIR V1 optimization pass is not enabled
+
+**********Starting job hyperopt_100_8-8_2024-06-08_b87be********* 
+
+  0%|          | 0/710 [00:00<?, ?it/s]
+
+Autoencoder Pretraining...
+
