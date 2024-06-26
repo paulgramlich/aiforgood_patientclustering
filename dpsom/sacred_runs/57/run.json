@@ -1,0 +1,120 @@
+{
+  "artifacts": [],
+  "command": "main",
+  "experiment": {
+    "base_dir": "/Users/paulgramlich/Developer/git/aiforgood_patientclustering/dpsom/dpsom",
+    "dependencies": [
+      "numpy==1.26.4",
+      "sacred==0.8.5",
+      "tensorflow==2.16.1",
+      "tqdm==4.66.4"
+    ],
+    "mainfile": "DPSOM.py",
+    "name": "hyperopt",
+    "repositories": [
+      {
+        "commit": "20242c14a685de58073db390d9f1fe5f6efaf82c",
+        "dirty": true,
+        "url": "https://github.com/paulgramlich/aiforgood_patientclustering.git"
+      },
+      {
+        "commit": "20242c14a685de58073db390d9f1fe5f6efaf82c",
+        "dirty": true,
+        "url": "https://github.com/paulgramlich/aiforgood_patientclustering.git"
+      },
+      {
+        "commit": "20242c14a685de58073db390d9f1fe5f6efaf82c",
+        "dirty": true,
+        "url": "https://github.com/paulgramlich/aiforgood_patientclustering.git"
+      }
+    ],
+    "sources": [
+      [
+        "DPSOM.py",
+        "_sources/DPSOM_ceed94acb276ce02c38a3a7e3032f518.py"
+      ],
+      [
+        "DPSOM_model.py",
+        "_sources/DPSOM_model_2ffc7d7fb117fb7a38af53630797ee96.py"
+      ],
+      [
+        "utils.py",
+        "_sources/utils_2f759a81fc66d2edc2eafd629a36f1eb.py"
+      ]
+    ]
+  },
+  "heartbeat": "2024-06-26T12:52:11.839070",
+  "host": {
+    "ENV": {},
+    "cpu": "Apple M3",
+    "hostname": "Pauls-Laptop.lan",
+    "os": [
+      "Darwin",
+      "macOS-14.3-arm64-arm-64bit"
+    ],
+    "python_version": "3.12.2"
+  },
+  "meta": {
+    "command": "main",
+    "config_updates": {},
+    "named_configs": [],
+    "options": {
+      "--beat-interval": null,
+      "--capture": null,
+      "--comment": null,
+      "--debug": false,
+      "--enforce_clean": false,
+      "--file_storage": null,
+      "--force": false,
+      "--help": false,
+      "--id": null,
+      "--loglevel": null,
+      "--mongo_db": null,
+      "--name": null,
+      "--pdb": false,
+      "--print-config": false,
+      "--priority": null,
+      "--queue": false,
+      "--s3": null,
+      "--sql": null,
+      "--tiny_db": null,
+      "--unobserved": false,
+      "COMMAND": null,
+      "UPDATE": [],
+      "help": false,
+      "with": false
+    }
+  },
+  "resources": [],
+  "result": {
+    "AMI": {
+      "dtype": "float64",
+      "py/object": "numpy.float64",
+      "value": -0.00870877280357977
+    },
+    "Calinski-Harabasz Index": {
+      "dtype": "float64",
+      "py/object": "numpy.float64",
+      "value": 1.3908111479617928
+    },
+    "Davies-Bouldin Index": {
+      "dtype": "float64",
+      "py/object": "numpy.float64",
+      "value": 5.38938699932863
+    },
+    "NMI": {
+      "dtype": "float64",
+      "py/object": "numpy.float64",
+      "value": 0.0389357676241294
+    },
+    "Purity": 0.37,
+    "Silhouette Score": {
+      "dtype": "float64",
+      "py/object": "numpy.float64",
+      "value": -0.1747741665320514
+    }
+  },
+  "start_time": "2024-06-26T12:51:06.246741",
+  "status": "COMPLETED",
+  "stop_time": "2024-06-26T12:52:09.833213"
+}

@@ -1,0 +1,118 @@
+INFO - hyperopt - Running command 'main'
+INFO - hyperopt - Started run with ID "56"
+using LBP
+num_features: 358
+data_train_padded.shape: (928, 784)
+data_train.shape: (394, 28, 28, 1), data_val.shape: (70, 28, 28, 1), data_test.shape: (464, 28, 28, 1)
+Initializing global variables...
+2024-06-26 14:48:28.540768: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:388] MLIR V1 optimization pass is not enabled
+Variables initialized.
+
+**********Starting job hyperopt_100_8-8_2024-06-26_532ed********* 
+
+  0%|          | 0/155 [00:00<?, ?it/s]Number of batches: 1
+
+
+Autoencoder Pretraining...
+
+Starting epoch 1/15
+Batch 1/1
+Batch data shape: (300, 28, 28, 1)
+Train Loss: 561.5324096679688
+Running validation...
+Epoch 1, Step 0: Train Loss = 1725.588623046875, Test Loss = 1772.6121826171875
+  1%|          | 1/155 [00:00<01:05,  2.35it/s, epoch=0, test_loss=1.77e+3, train_loss=1.73e+3]Starting epoch 2/15
+Batch 1/1
+Batch data shape: (300, 28, 28, 1)
+Train Loss: 1730.322021484375
+Running validation...
+Epoch 2, Step 0: Train Loss = 71914.5234375, Test Loss = 74678.109375
+  1%|▏         | 2/155 [00:00<00:38,  4.01it/s, epoch=1, test_loss=7.47e+4, train_loss=7.19e+4]Starting epoch 3/15
+Batch 1/1
+Batch data shape: (300, 28, 28, 1)
+Train Loss: 71960.1796875
+Running validation...
+Epoch 3, Step 0: Train Loss = 898980.875, Test Loss = 933940.375
+  2%|▏         | 3/155 [00:00<00:29,  5.13it/s, epoch=2, test_loss=9.34e+5, train_loss=8.99e+5]Starting epoch 4/15
+Batch 1/1
+Batch data shape: (300, 28, 28, 1)
+Train Loss: 901347.125
+Running validation...
+Epoch 4, Step 0: Train Loss = 13747.810546875, Test Loss = 13697.94140625
+  3%|▎         | 4/155 [00:00<00:25,  5.95it/s, epoch=3, test_loss=1.37e+4, train_loss=1.37e+4]Starting epoch 5/15
+Batch 1/1
+Batch data shape: (300, 28, 28, 1)
+Train Loss: 13479.6328125
+Running validation...
+Epoch 5, Step 0: Train Loss = 17740.599609375, Test Loss = 18458.3828125
+  3%|▎         | 5/155 [00:00<00:23,  6.42it/s, epoch=4, test_loss=1.85e+4, train_loss=17740.6]Starting epoch 6/15
+Batch 1/1
+Batch data shape: (300, 28, 28, 1)
+Train Loss: 17685.51171875
+Running validation...
+Epoch 6, Step 0: Train Loss = 152182.015625, Test Loss = 159484.140625
+  4%|▍         | 6/155 [00:01<00:23,  6.39it/s, epoch=5, test_loss=1.59e+5, train_loss=1.52e+5]Starting epoch 7/15
+Batch 1/1
+Batch data shape: (300, 28, 28, 1)
+Train Loss: 151979.84375
+Running validation...
+Epoch 7, Step 0: Train Loss = 153173.5, Test Loss = 158079.078125
+  5%|▍         | 7/155 [00:01<00:22,  6.72it/s, epoch=6, test_loss=1.58e+5, train_loss=1.53e+5]Starting epoch 8/15
+Batch 1/1
+Batch data shape: (300, 28, 28, 1)
+Train Loss: 150835.890625
+Running validation...
+Epoch 8, Step 0: Train Loss = 19759.419921875, Test Loss = 20134.48046875
+  5%|▌         | 8/155 [00:01<00:21,  6.87it/s, epoch=7, test_loss=2.01e+4, train_loss=1.98e+4]Starting epoch 9/15
+Batch 1/1
+Batch data shape: (300, 28, 28, 1)
+Train Loss: 19343.69140625
+Running validation...
+Epoch 9, Step 0: Train Loss = 61780.70703125, Test Loss = 63806.92578125
+  6%|▌         | 9/155 [00:01<00:20,  7.22it/s, epoch=8, test_loss=6.38e+4, train_loss=6.18e+4]Starting epoch 10/15
+Batch 1/1
+Batch data shape: (300, 28, 28, 1)
+Train Loss: 61824.33984375
+Running validation...
+Epoch 10, Step 0: Train Loss = 29136.99609375, Test Loss = 28826.95703125
+  6%|▋         | 10/155 [00:01<00:19,  7.37it/s, epoch=9, test_loss=2.88e+4, train_loss=2.91e+4]Starting epoch 11/15
+Batch 1/1
+Batch data shape: (300, 28, 28, 1)
+Train Loss: 28632.06640625
+Running validation...
+Epoch 11, Step 0: Train Loss = 29451.9296875, Test Loss = 31468.8671875
+  7%|▋         | 11/155 [00:01<00:19,  7.47it/s, epoch=10, test_loss=3.15e+4, train_loss=2.95e+4]Starting epoch 12/15
+Batch 1/1
+Batch data shape: (300, 28, 28, 1)
+Train Loss: 30642.001953125
+Running validation...
+Epoch 12, Step 0: Train Loss = 16408.658203125, Test Loss = 16231.462890625
+  8%|▊         | 12/155 [00:01<00:19,  7.48it/s, epoch=11, test_loss=1.62e+4, train_loss=1.64e+4]Starting epoch 13/15
+Batch 1/1
+Batch data shape: (300, 28, 28, 1)
+Train Loss: 15846.6669921875
+Running validation...
+Epoch 13, Step 0: Train Loss = 26234.51953125, Test Loss = 27341.5390625
+  8%|▊         | 13/155 [00:02<00:18,  7.52it/s, epoch=12, test_loss=2.73e+4, train_loss=2.62e+4]Starting epoch 14/15
+Batch 1/1
+Batch data shape: (300, 28, 28, 1)
+Train Loss: 26307.501953125
+Running validation...
+Epoch 14, Step 0: Train Loss = 36782.21875, Test Loss = 38545.203125
+  9%|▉         | 14/155 [00:02<00:18,  7.50it/s, epoch=13, test_loss=3.85e+4, train_loss=3.68e+4]Starting epoch 15/15
+Batch 1/1
+Batch data shape: (300, 28, 28, 1)
+Train Loss: 36636.21875
+Running validation...
+Epoch 15, Step 0: Train Loss = 10490.66796875, Test Loss = 9887.8271484375
+ 10%|▉         | 15/155 [00:02<00:18,  7.52it/s, epoch=14, test_loss=9.89e+3, train_loss=1.05e+4]
+
+SOM initialization...
+
+ 22%|██▏       | 34/155 [00:03<00:09, 13.40it/s, epoch=3, test_loss=278, train_loss=273]         
+
+Training...
+
+ 23%|██▎       | 36/155 [00:04<00:19,  6.14it/s, cah=[-1.04116815e-07], cr_ratio=8.51e+3, cs_ratio=-2.5e-8, epoch=0, ssom=[4.158882], test_loss=3.66e+4, train_loss=3.5e+4, vae=[35380.02], vc_ratio=-3.4e+11]/Users/paulgramlich/Developer/git/aiforgood_patientclustering/dpsom/dpsom/DPSOM.py:411: RuntimeWarning: divide by zero encountered in scalar divide
+  vae_cah_ratio=elbo_loss[0]/cah_loss[0]
+ 28%|██▊       | 43/155 [00:08<00:57,  1.95it/s, cah=[2.5046356e-07], cr_ratio=4.84e+3, cs_ratio=5.8e-9, epoch=7, ssom=[4.158882], test_loss=6965.87, train_loss=6.65e+3, vae=[6947.2], vc_ratio=inf]         

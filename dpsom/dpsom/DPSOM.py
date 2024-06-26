@@ -28,6 +28,7 @@ import csv
 import numpy.random as nprand
 import pandas as pd
 import matplotlib.pyplot as plt
+from sklearn.metrics import normalized_mutual_info_score, adjusted_mutual_info_score, silhouette_score, calinski_harabasz_score, davies_bouldin_score
 
 ex = sacred.Experiment("hyperopt")
 ex.observers.append(sacred.observers.FileStorageObserver.create("../sacred_runs"))
@@ -63,12 +64,12 @@ def ex_config():
         more_runs (bool): Indicator whether to run the job once (False) or multiple times (True) outputting mean and
                           variance.
     """
-    num_epochs = 100 # 300
-    batch_size = 300 # 300
+    num_epochs = 80 # 300
+    batch_size = 200 # 300
     latent_dim = 100 # 100
-    som_dim = [2, 2] # [8, 8]
-    learning_rate = 0.01 # .001
-    learning_rate_pretrain = 0.01 # .001
+    som_dim = [8, 8] # [8, 8]
+    learning_rate = 0.0001 # .001
+    learning_rate_pretrain = 0.0001 # .001
     alpha = 10
     beta = 0.25
     gamma = 20 # 20
@@ -439,6 +440,7 @@ def train_model(model, data_train, data_val, generator, lr_val, num_epochs, batc
         results = evaluate_model(model, generator, len_data_val, x, modelpath, epochs)
     return results
 
+from sklearn.metrics import silhouette_score, calinski_harabasz_score, davies_bouldin_score
 
 @ex.capture
 def evaluate_model(model, generator, len_data_val, x, modelpath, epochs, batch_size, latent_dim, som_dim,
@@ -494,23 +496,36 @@ def evaluate_model(model, generator, len_data_val, x, modelpath, epochs, batch_s
 
         test_k_all = []
         labels_val_all = []
+        data_val_all = [] # new
+
         print("Evaluation...")
         for i in range(num_batches):
             batch_data, batch_labels, ii = next(val_gen)
             labels_val_all.extend(batch_labels)
+            data_val_all.extend(batch_data)  # new
             test_k = sess.run(model.k,
                                   feed_dict={x: batch_data, is_training: True, z: np.zeros((batch_size, latent_dim))})
 
             test_k_all.extend(test_k)
 
+        data_val_all = np.array(data_val_all)  # new
+        data_val_all_reshaped = data_val_all.reshape(data_val_all.shape[0], -1)
+
         test_nmi = metrics.normalized_mutual_info_score(np.array(labels_val_all), test_k_all, average_method='geometric')
         test_purity = cluster_purity(np.array(test_k_all), np.array(labels_val_all))
         test_ami = metrics.adjusted_mutual_info_score(test_k_all, labels_val_all)
+        # New metrics
+        silhouette_avg = silhouette_score(data_val_all_reshaped, test_k_all)
+        calinski_harabasz = calinski_harabasz_score(data_val_all_reshaped, test_k_all)
+        davies_bouldin = davies_bouldin_score(data_val_all_reshaped, test_k_all)
 
     results = {}
     results["NMI"] = test_nmi
     results["Purity"] = test_purity
     results["AMI"] = test_ami
+    results["Silhouette Score"] = silhouette_avg  # new
+    results["Calinski-Harabasz Index"] = calinski_harabasz  # new
+    results["Davies-Bouldin Index"] = davies_bouldin  # new
 
     if np.abs(test_ami-0.) < 0.0001 and np.abs(test_nmi-0.125) < 0.0001:
         return None
@@ -536,8 +551,13 @@ def evaluate_model(model, generator, len_data_val, x, modelpath, epochs, batch_s
             % (epochs, som_dim[0], som_dim[1], latent_dim, batch_size, learning_rate, beta,
                gamma, theta, alpha, dropout, decay_factor, prior_var, prior, epochs_pretrain))
 
-    f.write(", RESULTS NMI: %f, AMI: %f, Purity: %f.  Name: %r \n"
-            % (results["NMI"], results["AMI"], results["Purity"], ex_name))
+    '''f.write(", RESULTS NMI: %f, AMI: %f, Purity: %f.  Name: %r \n"
+            % (results["NMI"], results["AMI"], results["Purity"], ex_name))'''
+
+    f.write(
+        ", RESULTS NMI: %f, AMI: %f, Purity: %f, Silhouette Score: %f, Calinski-Harabasz Index: %f, Davies-Bouldin Index: %f. Name: %r \n"
+        % (results["NMI"], results["AMI"], results["Purity"], results["Silhouette Score"],
+           results["Calinski-Harabasz Index"], results["Davies-Bouldin Index"], ex_name)) # new
     f.close()
     return results
 
