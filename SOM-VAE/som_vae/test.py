@@ -77,7 +77,7 @@ def ex_config():
     mnist = True
 
 mnist = input_data.read_data_sets(f"../data/{ex_config()['data_set']}")
-mnist.shape()
+# print(mnist.shape()): The result is that mnist.train.images is a tensor (an n-dimensional array) with a shape of [55000, 784]
 
 data_train = np.reshape(mnist.train.images, [-1, 28, 28, 1])
 labels_train = mnist.train.labels
@@ -85,3 +85,6 @@ data_val = data_train[45000:]
 labels_val = labels_train[45000:]
 data_train = data_train[:45000]
 labels_train = data_train[:45000]
+
+print(data_train.shape())
+

@@ -110,7 +110,7 @@ def ex_config():
 '''old mnist dataset'''
 
 
-mnist = input_data.read_data_sets(f"../data/{ex_config()['data_set']}")
+'''mnist = input_data.read_data_sets(f"../data/{ex_config()['data_set']}")
 mnist.shape()
 
 data_train = np.reshape(mnist.train.images, [-1,28,28,1])
@@ -118,12 +118,12 @@ labels_train = mnist.train.labels
 data_val = data_train[45000:]
 labels_val = labels_train[45000:]
 data_train = data_train[:45000]
-labels_train = data_train[:45000]
+labels_train = data_train[:45000]'''
 
 
 
-processed_file_path = '/DATA/LBP/lbp_data_processed.csv'
-processed_data = pd.read_csv(processed_file_path, index_col=0)
+mnist = '../../DATA/LBP/lbp_data_processed.csv'
+processed_data = pd.read_csv(mnist, index_col=0)
 
 processed_data = processed_data.drop(columns=['recovered.12m'])
 labels_train = processed_data.iloc[:, 0].values
@@ -154,20 +154,16 @@ elif num_features > target_num_features:
 else:
     data_train_padded = data_train
 
-# Reshape the data
 data_train_reshaped = np.reshape(data_train_padded, (num_samples, 28, 28, 1))
 if num_samples > 1:
-    # Shuffle the data before splitting to ensure randomness
     indices = np.arange(num_samples)
     np.random.shuffle(indices)
     data_train_reshaped = data_train_reshaped[indices]
     labels_train = labels_train[indices]
 
-    # Split the data
     data_total, data_test, labels_total, labels_test = train_test_split(data_train_reshaped, labels_train,
                                                                         test_size=0.5, random_state=42)
 
-    # Ensure data_total is not empty before further splitting
     if len(data_total) > 1:
         data_train, data_val, labels_train, labels_val = train_test_split(data_total, labels_total,
                                                                           test_size=0.15,
