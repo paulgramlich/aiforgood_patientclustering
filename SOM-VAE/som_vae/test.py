@@ -86,5 +86,6 @@ labels_val = labels_train[45000:]
 data_train = data_train[:45000]
 labels_train = data_train[:45000]
 
-print(data_train.shape())
+print(f"data train{data_train.shape}")
+print(f"labels train{labels_train.shape}")
 
