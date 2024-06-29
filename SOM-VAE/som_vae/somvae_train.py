@@ -293,10 +293,10 @@ def train_model(model, x, lr_val, num_epochs, patience, batch_size, logdir,
                     if i%100 == 0:
                         train_loss, summary = sess.run([model.loss, summaries], feed_dict={x: batch_data})
                         train_writer.add_summary(summary, tf.train.global_step(sess, model.global_step))
-                    train_step_SOMVAE.run(feed_dict={x: batch_data, lr_val:learning_rate})
-                    train_step_prob.run(feed_dict={x: batch_data, lr_val:learning_rate*100})
+                    train_step_SOMVAE.run(feed_dict={x: batch_data, lr_val: learning_rate})
+                    train_step_prob.run(feed_dict={x: batch_data, lr_val: learning_rate*100})
                     if interactive:
-                        pbar.set_postfix(epoch=epoch, train_loss=train_loss, test_loss=test_loss, refresh=False)
+                        pbar.set_postfix(epoch=epoch, train_loss=train_loss, test_loss=test_loss, refresh=True)
                         pbar.update(1)
 
         except KeyboardInterrupt:
