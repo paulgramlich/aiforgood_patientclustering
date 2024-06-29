@@ -88,7 +88,7 @@ def ex_config():
     interactive = True
     data_set = "MNIST_data"
     save_model = False
-    time_series = True
+    time_series = False
     mnist = True
 
 
@@ -118,7 +118,12 @@ labels_train = mnist.train.labels
 data_val = data_train[45000:]
 labels_val = labels_train[45000:]
 data_train = data_train[:45000]
-labels_train = data_train[:45000]'''
+labels_train = data_train[:45000]
+
+Shapes:
+data train (45000, 28, 28, 1) 
+labels train (45000, 28, 28, 1)
+'''
 
 
 
