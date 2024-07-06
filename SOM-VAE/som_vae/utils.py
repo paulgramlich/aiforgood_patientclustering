@@ -135,12 +135,18 @@ def compute_AMI(cluster_assignments, class_assignments):
 
 def compute_silhouette_score(data, cluster_assignments):
     """Computes the Silhouette Score for the clustering."""
-    return silhouette_score(data, cluster_assignments)
+    num_samples = data.shape[0]
+    reshaped_data = data.reshape(num_samples, -1)
+    return silhouette_score(reshaped_data, cluster_assignments)
 
 def compute_calinski_harabasz_score(data, cluster_assignments):
     """Computes the Calinski-Harabasz Index for the clustering."""
-    return calinski_harabasz_score(data, cluster_assignments)
+    num_samples = data.shape[0]
+    reshaped_data = data.reshape(num_samples, -1)
+    return calinski_harabasz_score(reshaped_data, cluster_assignments)
 
 def compute_davies_bouldin_score(data, cluster_assignments):
     """Computes the Davies-Bouldin Index for the clustering."""
-    return davies_bouldin_score(data, cluster_assignments)
+    num_samples = data.shape[0]
+    reshaped_data = data.reshape(num_samples, -1)
+    return davies_bouldin_score(reshaped_data, cluster_assignments)
