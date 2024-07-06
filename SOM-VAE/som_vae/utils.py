@@ -10,6 +10,8 @@ import numpy as np
 from sklearn.metrics import (normalized_mutual_info_score, adjusted_mutual_info_score,
                              mean_squared_error, silhouette_score,
                              calinski_harabasz_score, davies_bouldin_score)
+from scipy.special import comb
+from sklearn.utils.linear_assignment_ import linear_assignment
 
 
 def interpolate_arrays(arr1, arr2, num_steps=100, interpolation_length=0.3):
@@ -131,22 +133,136 @@ def compute_AMI(cluster_assignments, class_assignments):
     Returns:
         float: The AMI value.
     """
-    return adjusted_mutual_info_score(class_assignments, cluster_assignments)
+    assert len(cluster_assignments) == len(class_assignments), "The inputs have to be of the same length."
+
+    clusters = np.unique(cluster_assignments)
+    classes = np.unique(class_assignments)
+
+    num_samples = len(cluster_assignments)
+    num_clusters = len(clusters)
+    num_classes = len(classes)
+
+    assert num_classes > 1, "There should be more than one class."
+
+    cluster_class_counts = {cluster_: {class_: 0 for class_ in classes} for cluster_ in clusters}
+
+    for cluster_, class_ in zip(cluster_assignments, class_assignments):
+        cluster_class_counts[cluster_][class_] += 1
+
+    cluster_sizes = {cluster_: sum(list(class_dict.values())) for cluster_, class_dict in cluster_class_counts.items()}
+    class_sizes = {class_: sum([cluster_class_counts[clus][class_] for clus in clusters]) for class_ in classes}
+
+    mutual_info = 0
+    for cluster_ in clusters:
+        for class_ in classes:
+            if cluster_class_counts[cluster_][class_] > 0:
+                mutual_info += cluster_class_counts[cluster_][class_] / num_samples * \
+                               np.log((cluster_class_counts[cluster_][class_] * num_samples) /
+                                      (cluster_sizes[cluster_] * class_sizes[class_]))
+
+    cluster_entropy = -sum(
+        [(cluster_sizes[cluster_] / num_samples) * np.log(cluster_sizes[cluster_] / num_samples) for cluster_ in
+         clusters])
+    class_entropy = -sum(
+        [(class_sizes[class_] / num_samples) * np.log(class_sizes[class_] / num_samples) for class_ in classes])
+
+    expected_mutual_info = 0
+    for cluster_size in cluster_sizes.values():
+        for class_size in class_sizes.values():
+            for n_ij in range(max(1, cluster_size + class_size - num_samples), min(cluster_size, class_size) + 1):
+                expected_mutual_info += (n_ij / num_samples) * np.log(
+                    (n_ij * num_samples) / (cluster_size * class_size)) * \
+                                        (comb(cluster_size, n_ij) * comb(num_samples - cluster_size,
+                                                                         class_size - n_ij) / comb(num_samples,
+                                                                                                   class_size))
+
+    ami = (mutual_info - expected_mutual_info) / (max(cluster_entropy, class_entropy) - expected_mutual_info)
+
+    return ami
+
 
 def compute_silhouette_score(data, cluster_assignments):
-    """Computes the Silhouette Score for the clustering."""
-    num_samples = data.shape[0]
-    reshaped_data = data.reshape(num_samples, -1)
-    return silhouette_score(reshaped_data, cluster_assignments)
+    """Computes the Silhouette Score for the clustering.
+
+    Args:
+        data (np.array): The data points.
+        cluster_assignments (list): List of cluster assignments for every point.
+
+    Returns:
+        float: The Silhouette Score.
+    """
+    num_clusters = len(np.unique(cluster_assignments))
+    if num_clusters == 1 or num_clusters == len(cluster_assignments):
+        return 0
+
+    num_samples = len(data)
+    silhouette_scores = np.zeros(num_samples)
+
+    for i in range(num_samples):
+        own_cluster = cluster_assignments[i]
+        own_cluster_points = data[cluster_assignments == own_cluster]
+        other_cluster_points = data[cluster_assignments != own_cluster]
+
+        a_i = np.mean(np.linalg.norm(own_cluster_points - data[i], axis=1))
+        b_i = np.min([np.mean(
+            np.linalg.norm(other_cluster_points[cluster_assignments[cluster_assignments != own_cluster] == c] - data[i],
+                           axis=1)) for c in np.unique(cluster_assignments) if c != own_cluster])
+
+        silhouette_scores[i] = (b_i - a_i) / max(a_i, b_i)
+
+    return np.mean(silhouette_scores)
+
 
 def compute_calinski_harabasz_score(data, cluster_assignments):
-    """Computes the Calinski-Harabasz Index for the clustering."""
-    num_samples = data.shape[0]
-    reshaped_data = data.reshape(num_samples, -1)
-    return calinski_harabasz_score(reshaped_data, cluster_assignments)
+    """Computes the Calinski-Harabasz Index for the clustering.
+
+    Args:
+        data (np.array): The data points.
+        cluster_assignments (list): List of cluster assignments for every point.
+
+    Returns:
+        float: The Calinski-Harabasz Index.
+    """
+    num_clusters = len(np.unique(cluster_assignments))
+    num_samples = len(data)
+
+    overall_mean = np.mean(data, axis=0)
+    cluster_means = {c: np.mean(data[cluster_assignments == c], axis=0) for c in np.unique(cluster_assignments)}
+    cluster_sizes = {c: np.sum(cluster_assignments == c) for c in np.unique(cluster_assignments)}
+
+    between_cluster_dispersion = sum(
+        [cluster_sizes[c] * np.linalg.norm(cluster_means[c] - overall_mean) ** 2 for c in cluster_means])
+    within_cluster_dispersion = sum(
+        [np.sum(np.linalg.norm(data[cluster_assignments == c] - cluster_means[c], axis=1) ** 2) for c in cluster_means])
+
+    return (between_cluster_dispersion / (num_clusters - 1)) / (
+                within_cluster_dispersion / (num_samples - num_clusters))
+
 
 def compute_davies_bouldin_score(data, cluster_assignments):
-    """Computes the Davies-Bouldin Index for the clustering."""
-    num_samples = data.shape[0]
-    reshaped_data = data.reshape(num_samples, -1)
-    return davies_bouldin_score(reshaped_data, cluster_assignments)
+    """Computes the Davies-Bouldin Index for the clustering.
+
+    Args:
+        data (np.array): The data points.
+        cluster_assignments (list): List of cluster assignments for every point.
+
+    Returns:
+        float: The Davies-Bouldin Index.
+    """
+    num_clusters = len(np.unique(cluster_assignments))
+    cluster_means = {c: np.mean(data[cluster_assignments == c], axis=0) for c in np.unique(cluster_assignments)}
+    cluster_sizes = {c: np.sum(cluster_assignments == c) for c in np.unique(cluster_assignments)}
+
+    s = {c: np.mean(np.linalg.norm(data[cluster_assignments == c] - cluster_means[c], axis=1)) for c in cluster_means}
+
+    db_index = 0
+    for i in cluster_means:
+        max_ratio = 0
+        for j in cluster_means:
+            if i != j:
+                ratio = (s[i] + s[j]) / np.linalg.norm(cluster_means[i] - cluster_means[j])
+                if ratio > max_ratio:
+                    max_ratio = ratio
+        db_index += max_ratio
+
+    return db_index / num_clusters

@@ -335,19 +335,22 @@ def evaluate_model(model, x, modelpath, batch_size):
         test_mse_all = []
         print("Evaluation...")
         for i in range(num_batches):
-            batch_data = data_val[i*batch_size:(i+1)*batch_size]
+            batch_data = data_val[i * batch_size:(i + 1) * batch_size]
             test_k_all.extend(sess.run(model.k, feed_dict={x: batch_data}))
             test_rec = sess.run(model.reconstruction_q, feed_dict={x: batch_data})
             test_rec_all.extend(test_rec)
+
             test_mse_all.append(mean_squared_error(test_rec.flatten(), batch_data.flatten()))
 
         test_nmi = compute_NMI(test_k_all, labels_val[:len(test_k_all)])
         test_ami = compute_AMI(test_k_all, labels_val[:len(test_k_all)])
         test_purity = compute_purity(test_k_all, labels_val[:len(test_k_all)])
-        test_silhouette = compute_silhouette_score(data_val[:len(test_k_all)], test_k_all)
-        test_calinski_harabasz = compute_calinski_harabasz_score(data_val[:len(test_k_all)], test_k_all)
-        test_davies_bouldin = compute_davies_bouldin_score(data_val[:len(test_k_all)], test_k_all)
+        reshaped_data_val = data_val[:len(test_k_all)].reshape(len(test_k_all), -1)
+        test_silhouette = compute_silhouette_score(reshaped_data_val, test_k_all)
+        test_calinski_harabasz = compute_calinski_harabasz_score(reshaped_data_val, test_k_all)
+        test_davies_bouldin = compute_davies_bouldin_score(reshaped_data_val, test_k_all)
         test_mse = np.mean(test_mse_all)
+
 
     results = {}
     results["NMI"] = test_nmi
