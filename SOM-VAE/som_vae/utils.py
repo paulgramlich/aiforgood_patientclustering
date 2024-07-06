@@ -7,9 +7,6 @@ License: MIT License
 """
 
 import numpy as np
-from sklearn.metrics import (normalized_mutual_info_score, adjusted_mutual_info_score,
-                             mean_squared_error, silhouette_score,
-                             calinski_harabasz_score, davies_bouldin_score)
 from scipy.special import comb
 from sklearn.utils.linear_assignment_ import linear_assignment
 
