@@ -202,8 +202,8 @@ def compute_silhouette_score(data, cluster_assignments):
 
         a_i = np.mean(np.linalg.norm(own_cluster_points - data[i], axis=1))
         b_i = np.min([np.mean(
-            np.linalg.norm(other_cluster_points[cluster_assignments[cluster_assignments != own_cluster] == c] - data[i],
-                           axis=1)) for c in np.unique(cluster_assignments) if c != own_cluster])
+            np.linalg.norm(data[cluster_assignments == c] - data[i], axis=1)) for c in np.unique(cluster_assignments) if
+            c != own_cluster])
 
         silhouette_scores[i] = (b_i - a_i) / max(a_i, b_i)
 
@@ -232,8 +232,7 @@ def compute_calinski_harabasz_score(data, cluster_assignments):
     within_cluster_dispersion = sum(
         [np.sum(np.linalg.norm(data[cluster_assignments == c] - cluster_means[c], axis=1) ** 2) for c in cluster_means])
 
-    return (between_cluster_dispersion / (num_clusters - 1)) / (
-                within_cluster_dispersion / (num_samples - num_clusters))
+    return (between_cluster_dispersion / (num_clusters - 1)) / (within_cluster_dispersion / (num_samples - num_clusters))
 
 
 def compute_davies_bouldin_score(data, cluster_assignments):
