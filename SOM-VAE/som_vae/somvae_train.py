@@ -19,7 +19,7 @@ import numpy as np
 import tensorflow as tf
 from tensorflow.examples.tutorials.mnist import input_data
 import pandas as pd
-from sklearn.metrics import mean_squared_error
+from sklearn.metrics import mean_squared_error, adjusted_mutual_info_score
 from tqdm import tqdm, trange
 import sacred
 from sacred.stflow import LogFileWriter
@@ -72,7 +72,7 @@ def ex_config():
     """
     num_epochs = 20
     patience = 100
-    batch_size = 32
+    batch_size = 64
     latent_dim = 64
     som_dim = [8,8]
     learning_rate = 0.0005
@@ -320,7 +320,7 @@ def evaluate_model(model, x, modelpath, batch_size):
         batch_size (int): Batch size for the evaluation.
         
     Returns:
-        dict: Dictionary of evaluation results (NMI, Purity, MSE).
+        dict: Dictionary of evaluation results (NMI, Purity, MSE) and additionally AMI.
     """
     saver = tf.train.Saver(keep_checkpoint_every_n_hours=2.)
 
@@ -342,13 +342,22 @@ def evaluate_model(model, x, modelpath, batch_size):
             test_mse_all.append(mean_squared_error(test_rec.flatten(), batch_data.flatten()))
 
         test_nmi = compute_NMI(test_k_all, labels_val[:len(test_k_all)])
+        test_ami = compute_AMI(test_k_all, labels_val[:len(test_k_all)])
         test_purity = compute_purity(test_k_all, labels_val[:len(test_k_all)])
+        test_silhouette = compute_silhouette_score(data_val[:len(test_k_all)], test_k_all)
+        test_calinski_harabasz = compute_calinski_harabasz_score(data_val[:len(test_k_all)], test_k_all)
+        test_davies_bouldin = compute_davies_bouldin_score(data_val[:len(test_k_all)], test_k_all)
         test_mse = np.mean(test_mse_all)
 
     results = {}
     results["NMI"] = test_nmi
+    results["AMI"] = test_ami
     results["Purity"] = test_purity
+    results["Silhouette"] = test_silhouette
+    results["Calinski_Harabasz"] = test_calinski_harabasz
+    results["Davies_Bouldin"] = test_davies_bouldin
     results["MSE"] = test_mse
+
 #    results["optimization_target"] = 1 - test_nmi
 
     return results
@@ -371,7 +380,7 @@ def main(latent_dim, som_dim, learning_rate, decay_factor, alpha, beta, gamma, t
         save_model (bool): Indicates if the model should be saved after training and evaluation.
         
     Returns:
-        dict: Results of the evaluation (NMI, Purity, MSE).
+        dict: Results of the evaluation (NMI, Purity, MSE) and additionally, AMI.
     """
     # Dimensions for MNIST-like data
     input_length = 28

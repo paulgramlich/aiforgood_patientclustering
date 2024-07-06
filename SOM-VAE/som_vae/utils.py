@@ -7,6 +7,9 @@ License: MIT License
 """
 
 import numpy as np
+from sklearn.metrics import (normalized_mutual_info_score, adjusted_mutual_info_score,
+                             mean_squared_error, silhouette_score,
+                             calinski_harabasz_score, davies_bouldin_score)
 
 
 def interpolate_arrays(arr1, arr2, num_steps=100, interpolation_length=0.3):
@@ -116,3 +119,28 @@ def compute_purity(cluster_assignments, class_assignments):
     purity = total_intersection/num_samples
     
     return purity
+
+
+def compute_AMI(cluster_assignments, class_assignments):
+    """Computes the Adjusted Mutual Information between cluster and class assignments.
+
+    Args:
+        cluster_assignments (list): List of cluster assignments for every point.
+        class_assignments (list): List of class assignments for every point.
+
+    Returns:
+        float: The AMI value.
+    """
+    return adjusted_mutual_info_score(class_assignments, cluster_assignments)
+
+def compute_silhouette_score(data, cluster_assignments):
+    """Computes the Silhouette Score for the clustering."""
+    return silhouette_score(data, cluster_assignments)
+
+def compute_calinski_harabasz_score(data, cluster_assignments):
+    """Computes the Calinski-Harabasz Index for the clustering."""
+    return calinski_harabasz_score(data, cluster_assignments)
+
+def compute_davies_bouldin_score(data, cluster_assignments):
+    """Computes the Davies-Bouldin Index for the clustering."""
+    return davies_bouldin_score(data, cluster_assignments)
