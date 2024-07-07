@@ -11,7 +11,7 @@ df = pd.read_csv(file_path, index_col=0)
 X = df.drop(columns=['gen12m'])
 df = df.drop(columns=['recovered.12m'])
 y_true = df['gen12m']
-n_clusters = 8
+n_clusters = 64
 
 '''X = df.drop(columns=['recovered.12m'])
 df = df.drop(columns=['gen12m'])
@@ -42,11 +42,6 @@ print(f"Davies-Bouldin Index: {davies_bouldin}")
 
 pca = PCA(n_components=2)
 X_pca = pca.fit_transform(X)
-
-# Perform k-means clustering
-n_clusters = 8
-kmeans = KMeans(n_clusters=n_clusters, init='k-means++', random_state=42)
-y_pred = kmeans.fit_predict(X)
 
 # Plotting the true labels
 plt.figure(figsize=(14, 6))
