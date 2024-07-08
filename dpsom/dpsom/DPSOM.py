@@ -65,7 +65,7 @@ def ex_config():
                           variance.
     """
     num_epochs = 80 # 300
-    batch_size = 200 # 300
+    batch_size = 64 # 300
     latent_dim = 100 # 100
     som_dim = [8, 8] # [8, 8]
     learning_rate = 0.0001 # .001

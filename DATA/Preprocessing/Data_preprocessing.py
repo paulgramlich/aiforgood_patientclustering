@@ -42,7 +42,7 @@ for column in categorical_columns:
 
 label_encoder = LabelEncoder()
 label_encodings = {
-    'okom_0': mapping_okom,
+    'okom0_full': mapping_okom,
     'gen12': mapping_gen12
 }
 
@@ -78,17 +78,17 @@ data['gen12m'] = data['gen12m'].apply(lambda x: x + 1 if x > 0 else 0)
 data['gen12m'] = data['gen12m'].astype(int)
 data['recovered.12m'] = data['recovered.12m'].astype(int)
 
-# Apply MinMaxScaler to all columns except 'gen12m'
+'''# Apply MinMaxScaler to all columns except 'gen12m'
 for column in data.columns[1:]:
     if column != 'gen12m':
         if column != 'recovered.12m':
             mask = data[column] != -1
             if mask.sum() > 0:  # Ensure there are values to scale
                 data_to_scale = data.loc[mask, column].values.reshape(-1, 1)
-                data.loc[mask, column] = scaler.fit_transform(data_to_scale).flatten()
+                data.loc[mask, column] = scaler.fit_transform(data_to_scale).flatten()'''
 
 data[first_column] = index_data
 
-output_file_path = '/Users/paulgramlich/Developer/git/aiforgood_patientclustering/DATA/LBP/lbp_data_processed.csv'
+output_file_path = '../LBP/lbp_data_processed_unscaled2.csv'
 data.set_index(first_column, inplace=True)
 data.to_csv(output_file_path)

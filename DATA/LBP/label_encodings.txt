@@ -1,6 +1,15 @@
-Column: okom_0
-  Very likely -> 11
-  not at all likely -> 1
+Column: okom0_full
+  0 -> 0
+  1 -> 1
+  11 -> 2
+  2 -> 3
+  3 -> 4
+  4 -> 5
+  5 -> 6
+  6 -> 7
+  7 -> 8
+  8 -> 9
+  9 -> 10
 
 Column: gen12
   Completely recovered -> 7
@@ -56,19 +65,6 @@ Column: clu_8traject
   Recovery with relapse -> 6
   Severe ongoing -> 7
   Slow recovery/improvement -> 8
-
-Column: okom0_full
-  0 -> 0
-  1 -> 1
-  11 -> 2
-  2 -> 3
-  3 -> 4
-  4 -> 5
-  5 -> 6
-  6 -> 7
-  7 -> 8
-  8 -> 9
-  9 -> 10
 
 Column: pp_2stage_modal
   TS1 -> 0
