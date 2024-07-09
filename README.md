@@ -2,7 +2,7 @@
 # AI FOR GOOD: Patient clustering with VAE-SOM AND DPSOM 
 ### Felix Steckenbiller & Paul Gramlich - Ludwig-Maximilians-Universität München
 
-This project contains the application of a new approach (self-organizing maps) to patient clustering. 
+This project contains the application of a new approach (SOM-VAE and DPSOM) to patient clustering. 
 
 ### Dataset 
 
