@@ -309,24 +309,23 @@ def train_model(model, x, lr_val, num_epochs, patience, batch_size, logdir,
                 pbar.close()
 
 
-
 @ex.capture
 def evaluate_model(model, x, modelpath, batch_size):
     """Evaluates the performance of the trained model in terms of normalized
     mutual information, purity and mean squared error.
-    
+
     Args:
         model (SOM-VAE): Trained SOM-VAE model to evaluate.
         x (tf.Tensor): Input tensor or placeholder.
         modelpath (path): Path from which to restore the model.
         batch_size (int): Batch size for the evaluation.
-        
+
     Returns:
         dict: Dictionary of evaluation results (NMI, Purity, MSE) and additionally AMI.
     """
     saver = tf.train.Saver(keep_checkpoint_every_n_hours=2.)
 
-    num_batches = len(data_val)//batch_size
+    num_batches = len(data_val) // batch_size
 
     with tf.Session() as sess:
         sess.run(tf.global_variables_initializer())
@@ -335,23 +334,36 @@ def evaluate_model(model, x, modelpath, batch_size):
         test_k_all = []
         test_rec_all = []
         test_mse_all = []
+        data_val_all = []
+        labels_val_all = []
+
         print("Evaluation...")
         for i in range(num_batches):
             batch_data = data_val[i * batch_size:(i + 1) * batch_size]
             test_k_all.extend(sess.run(model.k, feed_dict={x: batch_data}))
             test_rec = sess.run(model.reconstruction_q, feed_dict={x: batch_data})
             test_rec_all.extend(test_rec)
+            data_val_all.extend(batch_data)
+            labels_val_all.extend(labels_val[i * batch_size:(i + 1) * batch_size])
 
-            test_mse_all.append(mean_squared_error(test_rec.flatten(), batch_data.flatten()))
+            # Check for NaN or infinity values
+            if not np.any(np.isnan(test_rec)) and not np.any(np.isinf(test_rec)):
+                test_mse_all.append(mean_squared_error(test_rec.flatten(), batch_data.flatten()))
+            else:
+                print("Warning: NaN or infinity values found in test_rec, skipping this batch.")
+
+        if not labels_val_all or not test_k_all:
+            print("Warning: labels_val_all or test_k_all is empty. Skipping plotting.")
+            return
 
         test_nmi = compute_NMI(test_k_all, labels_val[:len(test_k_all)])
         test_ami = compute_AMI(test_k_all, labels_val[:len(test_k_all)])
         test_purity = compute_purity(test_k_all, labels_val[:len(test_k_all)])
-        reshaped_data_val = data_val[:len(test_k_all)].reshape(len(test_k_all), -1)
+        reshaped_data_val = np.array(data_val_all).reshape(len(data_val_all), -1)
         test_silhouette = compute_silhouette_score(reshaped_data_val, test_k_all)
         test_calinski_harabasz = compute_calinski_harabasz_score(reshaped_data_val, test_k_all)
         test_davies_bouldin = compute_davies_bouldin_score(reshaped_data_val, test_k_all)
-        test_mse = np.mean(test_mse_all)
+        # test_mse = np.mean(test_mse_all)
 
         # PCA Visualization
         pca = PCA(n_components=2)
@@ -359,23 +371,24 @@ def evaluate_model(model, x, modelpath, batch_size):
 
         plt.figure(figsize=(14, 6))
 
-        plt.subplot(1, 2, 1)
-        plt.scatter(data_val_pca[:, 0], data_val_pca[:, 1], c=labels_val_all, cmap='viridis', s=50)
-        plt.title('True Labels')
-        plt.xlabel('PCA Component 1')
-        plt.ylabel('PCA Component 2')
-        plt.colorbar()
+        if labels_val_all:
+            plt.subplot(1, 2, 1)
+            scatter1 = plt.scatter(data_val_pca[:, 0], data_val_pca[:, 1], c=labels_val_all, cmap='viridis', s=50)
+            plt.title('True Labels')
+            plt.xlabel('PCA Component 1')
+            plt.ylabel('PCA Component 2')
+            plt.colorbar(scatter1)
 
-        plt.subplot(1, 2, 2)
-        plt.scatter(data_val_pca[:, 0], data_val_pca[:, 1], c=test_k_all, cmap='viridis', s=50)
-        plt.title('Predicted Clusters')
-        plt.xlabel('PCA Component 1')
-        plt.ylabel('PCA Component 2')
-        plt.colorbar()
+        if test_k_all:
+            plt.subplot(1, 2, 2)
+            scatter2 = plt.scatter(data_val_pca[:, 0], data_val_pca[:, 1], c=test_k_all, cmap='viridis', s=50)
+            plt.title('Predicted Clusters')
+            plt.xlabel('PCA Component 1')
+            plt.ylabel('PCA Component 2')
+            plt.colorbar(scatter2)
 
         plt.savefig('somvae_clustering.png')
-        plt.show()
-
+        plt.close()
 
     results = {}
     results["NMI"] = test_nmi
@@ -384,9 +397,7 @@ def evaluate_model(model, x, modelpath, batch_size):
     results["Silhouette"] = test_silhouette
     results["Calinski_Harabasz"] = test_calinski_harabasz
     results["Davies_Bouldin"] = test_davies_bouldin
-    results["MSE"] = test_mse
-
-#    results["optimization_target"] = 1 - test_nmi
+    # results["MSE"] = test_mse
 
     return results
  
