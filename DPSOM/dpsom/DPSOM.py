@@ -617,7 +617,7 @@ def main(latent_dim, som_dim, learning_rate, decay_factor, alpha, beta, gamma, t
     elif data_set == "LBP":
         print("using LBP")
 
-        processed_file_path = '/Users/paulgramlich/Developer/git/aiforgood/DATA/LBP/lbp_data_processed.csv'
+        processed_file_path = '../..//DATA/LBP/lbp_data_processed.csv'
         processed_data = pd.read_csv(processed_file_path, index_col=0)
 
         processed_data = processed_data.drop(columns=['recovered.12m'])

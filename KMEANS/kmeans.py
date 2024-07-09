@@ -5,7 +5,7 @@ import numpy as np
 from sklearn.decomposition import PCA
 import matplotlib.pyplot as plt
 
-file_path = '/Users/paulgramlich/Developer/git/aiforgood/DATA/LBP/lbp_data_processed.csv'
+file_path = '../DATA/LBP/lbp_data_processed.csv'
 df = pd.read_csv(file_path, index_col=0)
 
 X = df.drop(columns=['gen12m'])
