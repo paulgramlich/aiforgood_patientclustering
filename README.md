@@ -22,7 +22,8 @@ We used 2 models and 1 baseline model:
 * Baseline Model: K-MEANS++ `/KMEANS`
 
 ### Technical requirements
-#### **DPSOM and KMEANS**: current Python version (3.12.X) and current installation of all packages that were used
+#### **DPSOM and KMEANS**: 
+current Python version (3.12.X) and current installation of all packages that were used
 
 #### **SOM-VAE**: Python 3.6 with CUDA 9 and CuDNN 7.0.5 
 *Installation of right CuDNN-version:*
