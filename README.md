@@ -13,7 +13,7 @@ An scaled and unscaled version for plotting can be found in `/Data/`.
 
 `/Data/processing.py`
 Then the dataset was processed to fit the requirements of the models. 
-The provided script is just an excerpt of the code that was then inserted injected into the training files of the models.
+The provided script is just an excerpt of the code that was then injected into the training files of the models.
 
 ### Models
 We used 2 models and one baseline model: 
