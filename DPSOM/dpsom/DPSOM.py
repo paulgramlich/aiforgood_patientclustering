@@ -68,7 +68,7 @@ def ex_config():
     num_epochs = 80 # 300
     batch_size = 64 # 300
     latent_dim = 100 # 100
-    som_dim = [8, 8] # [8, 8]
+    som_dim = [3, 3] # [8, 8]
     learning_rate = 0.0001 # .001
     learning_rate_pretrain = 0.0001 # .001
     alpha = 10
