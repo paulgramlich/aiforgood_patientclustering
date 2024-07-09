@@ -2,7 +2,7 @@
 # AI FOR GOOD: Patient clustering with VAE-SOM AND DPSOM 
 ### Felix Steckenbiller & Paul Gramlich - Ludwig-Maximilians-Universität München
 
-This project contains a new approach to patient clustering. 
+This project contains the application of a new approach (self-organizing maps) to patient clustering. 
 
 ### Dataset 
 
@@ -17,7 +17,7 @@ The provided script is just an excerpt of the code that was then inserted inject
 
 ### Models
 We used 2 models and one baseline model: 
-* VAE-SOM (original model and paper: https://github.com/ratschlab/SOM-VAE) `/VAESOM`
+* VAE-SOM (original model and paper: https://github.com/ratschlab/SOM-VAE) `/SOMVAE`
 * DPSOM (original model and paper: https://github.com/ratschlab/dpsom) `/DPSOM`
 * Baseline Model: K-MEANS++ `/KMEANS`
 
