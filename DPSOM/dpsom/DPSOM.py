@@ -26,6 +26,7 @@ import time
 import random
 import csv
 import numpy.random as nprand
+from sklearn.decomposition import PCA
 import pandas as pd
 import matplotlib.pyplot as plt
 from sklearn.metrics import normalized_mutual_info_score, adjusted_mutual_info_score, silhouette_score, calinski_harabasz_score, davies_bouldin_score
@@ -496,7 +497,7 @@ def evaluate_model(model, generator, len_data_val, x, modelpath, epochs, batch_s
 
         test_k_all = []
         labels_val_all = []
-        data_val_all = [] # new
+        data_val_all = []
 
         print("Evaluation...")
         for i in range(num_batches):
@@ -523,9 +524,9 @@ def evaluate_model(model, generator, len_data_val, x, modelpath, epochs, batch_s
     results["NMI"] = test_nmi
     results["Purity"] = test_purity
     results["AMI"] = test_ami
-    results["Silhouette Score"] = silhouette_avg  # new
-    results["Calinski-Harabasz Index"] = calinski_harabasz  # new
-    results["Davies-Bouldin Index"] = davies_bouldin  # new
+    results["Silhouette Score"] = silhouette_avg
+    results["Calinski-Harabasz Index"] = calinski_harabasz
+    results["Davies-Bouldin Index"] = davies_bouldin
 
     if np.abs(test_ami-0.) < 0.0001 and np.abs(test_nmi-0.125) < 0.0001:
         return None
@@ -559,8 +560,32 @@ def evaluate_model(model, generator, len_data_val, x, modelpath, epochs, batch_s
         % (results["NMI"], results["AMI"], results["Purity"], results["Silhouette Score"],
            results["Calinski-Harabasz Index"], results["Davies-Bouldin Index"], ex_name)) # new
     f.close()
+    pca = PCA(n_components=2)
+    data_val_pca = pca.fit_transform(data_val_all_reshaped)
+
+    plt.figure(figsize=(14, 6))
+
+    plt.subplot(1, 2, 1)
+    plt.scatter(data_val_pca[:, 0], data_val_pca[:, 1], c=labels_val_all, cmap='viridis', s=50)
+    plt.title('True Labels')
+    plt.xlabel('PCA Component 1')
+    plt.ylabel('PCA Component 2')
+    plt.colorbar()
+
+    plt.subplot(1, 2, 2)
+    plt.scatter(data_val_pca[:, 0], data_val_pca[:, 1], c=test_k_all, cmap='viridis', s=50)
+    plt.title('Predicted Clusters')
+    plt.xlabel('PCA Component 1')
+    plt.ylabel('PCA Component 2')
+    plt.colorbar()
+
+    plt.show()
+
     return results
 
+def cluster_purity(y_pred, y_true):
+    contingency_matrix = pd.crosstab(y_true, y_pred)
+    return np.sum(np.amax(contingency_matrix.values, axis=0)) / np.sum(contingency_matrix.values)
 
 @ex.automain
 def main(latent_dim, som_dim, learning_rate, decay_factor, alpha, beta, gamma, theta, ex_name, more_runs, data_set,

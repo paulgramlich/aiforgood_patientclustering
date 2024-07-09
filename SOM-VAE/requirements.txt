@@ -6,3 +6,10 @@ pandas==0.21.0
 numpy==1.14.3
 tqdm==4.19.4
 scikit_learn==0.19.1
+scipy==1.0.0
+six==1.11.0
+cycler==0.10.0
+pytz==2017.3
+python-dateutil==2.6.1
+pyparsing==2.2.0
+kiwisolver==1.0.1

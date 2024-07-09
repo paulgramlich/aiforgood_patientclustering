@@ -24,6 +24,8 @@ from tqdm import tqdm, trange
 import sacred
 from sacred.stflow import LogFileWriter
 from sklearn.model_selection import train_test_split
+import matplotlib.pyplot as plt
+from sklearn.decomposition import PCA
 
 # from labwatch.assistant import LabAssistant
 # from labwatch.optimizers.random_search import RandomSearch
@@ -350,6 +352,29 @@ def evaluate_model(model, x, modelpath, batch_size):
         test_calinski_harabasz = compute_calinski_harabasz_score(reshaped_data_val, test_k_all)
         test_davies_bouldin = compute_davies_bouldin_score(reshaped_data_val, test_k_all)
         test_mse = np.mean(test_mse_all)
+
+        # PCA Visualization
+        pca = PCA(n_components=2)
+        data_val_pca = pca.fit_transform(reshaped_data_val)
+
+        plt.figure(figsize=(14, 6))
+
+        plt.subplot(1, 2, 1)
+        plt.scatter(data_val_pca[:, 0], data_val_pca[:, 1], c=labels_val_all, cmap='viridis', s=50)
+        plt.title('True Labels')
+        plt.xlabel('PCA Component 1')
+        plt.ylabel('PCA Component 2')
+        plt.colorbar()
+
+        plt.subplot(1, 2, 2)
+        plt.scatter(data_val_pca[:, 0], data_val_pca[:, 1], c=test_k_all, cmap='viridis', s=50)
+        plt.title('Predicted Clusters')
+        plt.xlabel('PCA Component 1')
+        plt.ylabel('PCA Component 2')
+        plt.colorbar()
+
+        plt.savefig('somvae_clustering.png')
+        plt.show()
 
 
     results = {}
