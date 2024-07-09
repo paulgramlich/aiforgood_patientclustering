@@ -25,8 +25,18 @@ We used 2 models and one baseline model:
 **DPSOM and KMEANS**: current Python version (3.12.X) and current installation of all packages that were used
 
 **SOM-VAE**: Python 3.6 with CUDA 9 and CuDNN 7.0.5 
-Installation of right CuDNN-version: 
+**Installation of right CuDNN-version:**
 * If needed: find installed CuDNN-version with `dpkg -l | grep cudnn` and deinstall with `dpkg --revome your-cudnn-version`
 * Change directory: `cd /SOMVAE`
 * Install CuDNN with `dkpg -i libcudnn7_7.0.5.15-1+cuda9.0_amd64.deb`
 * Fix dependencies with `apt-get install -f`
+  
+**Packages:**
+* Change directory: `cd /SOMVAE`
+* Install packages with: `pip install -r requirements.txt`
+* Install the package itself: `run pip install .`
+
+### Run/Train the models
+* SOM-VAE: `cd /SOMVAE/somvae` -> `python somvae_train.py`
+* DPSOM: `cd /DPSOM/dpsom` -> `python DPSOM.py`
+* KMEANS: `cd /KMEANS` -> `python kmeans.py`
