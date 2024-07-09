@@ -1,0 +1,27 @@
+{
+  "__doc__": "Sacred configuration for the experiment.\n\nParams:\n    num_epochs (int): Number of training epochs.\n    patience (int): Patience for the early stopping.\n    batch_size (int): Batch size for the training.\n    latent_dim (int): Dimensionality of the SOM-VAE's latent space.\n    som_dim (list): Dimensionality of the self-organizing map.\n    learning_rate (float): Learning rate for the optimization.\n    alpha (float): Weight for the commitment loss.\n    beta (float): Weight for the SOM loss.\n    gamma (float): Weight for the transition probability loss.\n    tau (float): Weight for the smoothness loss.\n    decay_factor (float): Factor for the learning rate decay.\n    name (string): Name of the experiment.\n    ex_name (string): Unique name of this particular run.\n    logdir (path): Directory for the experiment logs.\n    modelpath (path): Path for the model checkpoints.\n    interactive (bool): Indicator if there should be an interactive progress bar for the training.\n    data_set (string): Data set for the training.\n    save_model (bool): Indicator if the model checkpoints should be kept after training and evaluation.\n    time_series (bool): Indicator if the model should be trained on linearly interpolated\n        MNIST time series.\n    mnist (bool): Indicator if the model is trained on MNIST-like data.\n",
+  "alpha": 1.0,
+  "batch_size": 64,
+  "beta": 0.9,
+  "data_set": "MNIST_data",
+  "decay_factor": 0.9,
+  "ex_name": "hyperopt_64_3-3_2024-07-09_290a4",
+  "gamma": 1.8,
+  "interactive": true,
+  "latent_dim": 64,
+  "learning_rate": 0.0005,
+  "logdir": "../logs/hyperopt_64_3-3_2024-07-09_290a4",
+  "mnist": true,
+  "modelpath": "../models/hyperopt_64_3-3_2024-07-09_290a4/hyperopt_64_3-3_2024-07-09_290a4.ckpt",
+  "name": "hyperopt",
+  "num_epochs": 20,
+  "patience": 100,
+  "save_model": false,
+  "seed": 731573280,
+  "som_dim": [
+    3,
+    3
+  ],
+  "tau": 1.4,
+  "time_series": false
+}
