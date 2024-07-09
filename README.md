@@ -22,4 +22,11 @@ We used 2 models and one baseline model:
 * Baseline Model: K-MEANS++ `/KMEANS`
 
 ### Technical requirements
-Technical requirements for each model can be found in the README file in each subdirectory.
+**DPSOM and KMEANS**: current Python version (3.12.X) and current installation of all packages that were used
+
+**SOM-VAE**: Python 3.6 with CUDA 9 and CuDNN 7.0.5 
+Installation of right CuDNN-version: 
+* If needed: find installed CuDNN-version with `dpkg -l | grep cudnn` and deinstall with `dpkg --revome your-cudnn-version`
+* Change directory: `cd /SOMVAE`
+* Install CuDNN with `dkpg -i libcudnn7_7.0.5.15-1+cuda9.0_amd64.deb`
+* Fix dependencies with `apt-get install -f`
