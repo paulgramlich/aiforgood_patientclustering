@@ -9,7 +9,7 @@ This project contains the application of a new approach (self-organizing maps) t
 `/Data/preprocessing.py`
 We used a Lower Back Pain (LBP) patient dataset, that was preprocessed by us to convert categorical variables into numerical values. 
 Furthermore, NAs were removed and replaced with `0` and scaled the data from `[0,1]`.
-An scaled and unscaled version for plotting can be found in `/Data/`.
+Scaled and unscaled versions for plotting can be found in `/Data/`.
 
 `/Data/processing.py`
 Then the dataset was processed to fit the requirements of the models. 
@@ -23,7 +23,7 @@ We used 2 models and 1 baseline model:
 
 ### Technical requirements
 #### **DPSOM and KMEANS**: 
-current Python version (3.12.X) and current installation of all packages that were used
+Current Python version (3.12.X) and current installation of all packages that were used
 
 #### **SOM-VAE**: Python 3.6 with CUDA 9 and CuDNN 7.0.5 
 *Installation of right CuDNN-version:*
