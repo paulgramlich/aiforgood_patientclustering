@@ -24,8 +24,11 @@ from tqdm import tqdm, trange
 import sacred
 from sacred.stflow import LogFileWriter
 from sklearn.model_selection import train_test_split
-import matplotlib.pyplot as plt
 from sklearn.decomposition import PCA
+import matplotlib
+matplotlib.use('Agg')  # Use the Agg backend for non-interactive plotting
+
+import matplotlib.pyplot as plt
 
 # from labwatch.assistant import LabAssistant
 # from labwatch.optimizers.random_search import RandomSearch
