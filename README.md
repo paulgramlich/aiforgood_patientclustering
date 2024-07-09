@@ -6,12 +6,12 @@ This project contains the application of a new approach (self-organizing maps) t
 
 ### Dataset 
 
-`/Data/preprocessing.py`
+#### `/Data/preprocessing.py`
 We used a Lower Back Pain (LBP) patient dataset, that was preprocessed by us to convert categorical variables into numerical values. 
 Furthermore, NAs were removed and replaced with `0` and scaled the data from `[0,1]`.
 Scaled and unscaled versions for plotting can be found in `/Data/`.
 
-`/Data/processing.py`
+#### `/Data/processing.py`
 Then the dataset was processed to fit the requirements of the models. 
 The provided script is just an excerpt of the code that was then injected into the training files of the models.
 
