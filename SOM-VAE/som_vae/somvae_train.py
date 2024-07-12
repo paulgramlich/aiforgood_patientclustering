@@ -176,7 +176,7 @@ if num_samples > 1:
 
     if len(data_total) > 1:
         data_train, data_val, labels_train, labels_val = train_test_split(data_total, labels_total,
-                                                                          test_size=0.15,
+                                                                          test_size=0.5,
                                                                           random_state=42)
         print(
             f"data_train.shape: {data_train.shape}, data_val.shape: {data_val.shape}, data_test.shape: {data_test.shape}")

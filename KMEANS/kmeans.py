@@ -9,7 +9,7 @@ file_path = '../DATA/LBP/lbp_data_processed.csv'
 df = pd.read_csv(file_path, index_col=0)
 
 X = df.drop(columns=['gen12m'])
-df = df.drop(columns=['recovered.12m'])
+X = X.drop(columns=['recovered.12m'])
 y_true = df['gen12m']
 n_clusters = 9
 

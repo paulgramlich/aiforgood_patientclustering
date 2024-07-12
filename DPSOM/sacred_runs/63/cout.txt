@@ -1,0 +1,354 @@
+INFO - hyperopt - Running command 'main'
+INFO - hyperopt - Started run with ID "63"
+using LBP
+num_features: 358
+data_train_padded.shape: (928, 784)
+data_train.shape: (394, 28, 28, 1), data_val.shape: (70, 28, 28, 1), data_test.shape: (464, 28, 28, 1)
+Initializing global variables...
+2024-07-11 18:45:15.451664: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:388] MLIR V1 optimization pass is not enabled
+Variables initialized.
+
+**********Starting job hyperopt_100_3-3_2024-07-11_bc8bf********* 
+
+  0%|          | 0/810 [00:00<?, ?it/s]Number of batches: 6
+
+
+Autoencoder Pretraining...
+
+Starting epoch 1/15
+Batch 1/6
+Batch data shape: (64, 28, 28, 1)
+Train Loss: 561.3461303710938
+Running validation...
+Epoch 1, Step 0: Train Loss = 558.4290771484375, Test Loss = 558.5822143554688
+  0%|          | 1/810 [00:00<04:37,  2.92it/s, epoch=0, test_loss=559, train_loss=558]Batch 2/6
+Batch data shape: (64, 28, 28, 1)
+Train Loss: 558.678955078125
+Batch 3/6
+Batch data shape: (64, 28, 28, 1)
+Train Loss: 556.5214233398438
+Batch 4/6
+Batch data shape: (64, 28, 28, 1)
+Train Loss: 555.0053100585938
+Batch 5/6
+Batch data shape: (64, 28, 28, 1)
+Train Loss: 553.5386352539062
+  1%|          | 5/810 [00:00<01:01, 13.08it/s, epoch=0, test_loss=559, train_loss=554]Batch 6/6
+Batch data shape: (64, 28, 28, 1)
+Train Loss: 552.3779296875
+Starting epoch 2/15
+Batch 1/6
+Batch data shape: (64, 28, 28, 1)
+Train Loss: 551.4091186523438
+Running validation...
+Epoch 2, Step 0: Train Loss = 550.4956665039062, Test Loss = 550.5645141601562
+Batch 2/6
+Batch data shape: (64, 28, 28, 1)
+Train Loss: 550.46337890625
+  1%|          | 8/810 [00:00<00:47, 16.92it/s, epoch=1, test_loss=551, train_loss=550]Batch 3/6
+Batch data shape: (64, 28, 28, 1)
+Train Loss: 549.6864624023438
+Batch 4/6
+Batch data shape: (64, 28, 28, 1)
+Train Loss: 548.926513671875
+Batch 5/6
+Batch data shape: (64, 28, 28, 1)
+Train Loss: 548.1290283203125
+Batch 6/6
+Batch data shape: (64, 28, 28, 1)
+Train Loss: 547.4733276367188
+  1%|▏         | 12/810 [00:00<00:35, 22.61it/s, epoch=1, test_loss=551, train_loss=547]Starting epoch 3/15
+Batch 1/6
+Batch data shape: (64, 28, 28, 1)
+Train Loss: 546.5017700195312
+Running validation...
+Epoch 3, Step 0: Train Loss = 545.7259521484375, Test Loss = 545.76025390625
+Batch 2/6
+Batch data shape: (64, 28, 28, 1)
+Train Loss: 545.6795654296875
+Batch 3/6
+Batch data shape: (64, 28, 28, 1)
+Train Loss: 544.7738647460938
+  2%|▏         | 15/810 [00:00<00:33, 23.95it/s, epoch=2, test_loss=546, train_loss=545]Batch 4/6
+Batch data shape: (64, 28, 28, 1)
+Train Loss: 543.7174682617188
+Batch 5/6
+Batch data shape: (64, 28, 28, 1)
+Train Loss: 542.6614990234375
+Batch 6/6
+Batch data shape: (64, 28, 28, 1)
+Train Loss: 541.669921875
+Starting epoch 4/15
+Batch 1/6
+Batch data shape: (64, 28, 28, 1)
+Train Loss: 540.1671752929688
+Running validation...
+Epoch 4, Step 0: Train Loss = 538.8717651367188, Test Loss = 538.7446899414062
+  2%|▏         | 19/810 [00:00<00:29, 26.46it/s, epoch=3, test_loss=539, train_loss=539]Batch 2/6
+Batch data shape: (64, 28, 28, 1)
+Train Loss: 538.6103515625
+Batch 3/6
+Batch data shape: (64, 28, 28, 1)
+Train Loss: 537.0289306640625
+Batch 4/6
+Batch data shape: (64, 28, 28, 1)
+Train Loss: 535.2658081054688
+Batch 5/6
+Batch data shape: (64, 28, 28, 1)
+Train Loss: 532.8041381835938
+  3%|▎         | 23/810 [00:01<00:27, 28.91it/s, epoch=3, test_loss=539, train_loss=533]Batch 6/6
+Batch data shape: (64, 28, 28, 1)
+Train Loss: 531.2528076171875
+Starting epoch 5/15
+Batch 1/6
+Batch data shape: (64, 28, 28, 1)
+Train Loss: 528.1815185546875
+Running validation...
+Epoch 5, Step 0: Train Loss = 525.2648315429688, Test Loss = 525.3646240234375
+Batch 2/6
+Batch data shape: (64, 28, 28, 1)
+Train Loss: 525.488525390625
+Batch 3/6
+Batch data shape: (64, 28, 28, 1)
+Train Loss: 521.9527587890625
+  3%|▎         | 27/810 [00:01<00:26, 29.65it/s, epoch=4, test_loss=525, train_loss=522]Batch 4/6
+Batch data shape: (64, 28, 28, 1)
+Train Loss: 518.0077514648438
+Batch 5/6
+Batch data shape: (64, 28, 28, 1)
+Train Loss: 512.5491333007812
+Batch 6/6
+Batch data shape: (64, 28, 28, 1)
+Train Loss: 509.2414245605469
+Starting epoch 6/15
+Batch 1/6
+Batch data shape: (64, 28, 28, 1)
+Train Loss: 502.99212646484375
+Running validation...
+Epoch 6, Step 0: Train Loss = 496.3337707519531, Test Loss = 495.99041748046875
+  4%|▍         | 31/810 [00:01<00:26, 29.95it/s, epoch=5, test_loss=496, train_loss=496]Batch 2/6
+Batch data shape: (64, 28, 28, 1)
+Train Loss: 496.7115173339844
+Batch 3/6
+Batch data shape: (64, 28, 28, 1)
+Train Loss: 486.5872802734375
+Batch 4/6
+Batch data shape: (64, 28, 28, 1)
+Train Loss: 476.2886657714844
+Batch 5/6
+Batch data shape: (64, 28, 28, 1)
+Train Loss: 465.6485900878906
+  4%|▍         | 35/810 [00:01<00:24, 31.14it/s, epoch=5, test_loss=496, train_loss=466]Batch 6/6
+Batch data shape: (64, 28, 28, 1)
+Train Loss: 452.970947265625
+Starting epoch 7/15
+Batch 1/6
+Batch data shape: (64, 28, 28, 1)
+Train Loss: 442.7645263671875
+Running validation...
+Epoch 7, Step 0: Train Loss = 424.69085693359375, Test Loss = 427.332275390625
+Batch 2/6
+Batch data shape: (64, 28, 28, 1)
+Train Loss: 430.77789306640625
+Batch 3/6
+Batch data shape: (64, 28, 28, 1)
+Train Loss: 416.44287109375
+  5%|▍         | 39/810 [00:01<00:24, 31.24it/s, epoch=6, test_loss=427, train_loss=416]Batch 4/6
+Batch data shape: (64, 28, 28, 1)
+Train Loss: 397.546142578125
+Batch 5/6
+Batch data shape: (64, 28, 28, 1)
+Train Loss: 379.00274658203125
+Batch 6/6
+Batch data shape: (64, 28, 28, 1)
+Train Loss: 380.9888916015625
+Starting epoch 8/15
+Batch 1/6
+Batch data shape: (64, 28, 28, 1)
+Train Loss: 344.76385498046875
+Running validation...
+Epoch 8, Step 0: Train Loss = 333.34979248046875, Test Loss = 338.2059020996094
+  5%|▌         | 43/810 [00:01<00:25, 30.44it/s, epoch=7, test_loss=338, train_loss=333]Batch 2/6
+Batch data shape: (64, 28, 28, 1)
+Train Loss: 341.61358642578125
+Batch 3/6
+Batch data shape: (64, 28, 28, 1)
+Train Loss: 328.9874267578125
+Batch 4/6
+Batch data shape: (64, 28, 28, 1)
+Train Loss: 301.7880859375
+Batch 5/6
+Batch data shape: (64, 28, 28, 1)
+Train Loss: 266.3915100097656
+  6%|▌         | 47/810 [00:01<00:23, 31.98it/s, epoch=7, test_loss=338, train_loss=266]Batch 6/6
+Batch data shape: (64, 28, 28, 1)
+Train Loss: 281.20892333984375
+Starting epoch 9/15
+Batch 1/6
+Batch data shape: (64, 28, 28, 1)
+Train Loss: 259.1483154296875
+Running validation...
+Epoch 9, Step 0: Train Loss = 246.72386169433594, Test Loss = 245.896240234375
+Batch 2/6
+Batch data shape: (64, 28, 28, 1)
+Train Loss: 254.97000122070312
+Batch 3/6
+Batch data shape: (64, 28, 28, 1)
+Train Loss: 243.52304077148438
+  6%|▋         | 51/810 [00:01<00:24, 31.12it/s, epoch=8, test_loss=246, train_loss=244]Batch 4/6
+Batch data shape: (64, 28, 28, 1)
+Train Loss: 220.63230895996094
+Batch 5/6
+Batch data shape: (64, 28, 28, 1)
+Train Loss: 202.82106018066406
+Batch 6/6
+Batch data shape: (64, 28, 28, 1)
+Train Loss: 216.94125366210938
+Starting epoch 10/15
+Batch 1/6
+Batch data shape: (64, 28, 28, 1)
+Train Loss: 204.95994567871094
+Running validation...
+Epoch 10, Step 0: Train Loss = 199.63722229003906, Test Loss = 203.20359802246094
+  7%|▋         | 55/810 [00:02<00:24, 31.11it/s, epoch=9, test_loss=203, train_loss=200]Batch 2/6
+Batch data shape: (64, 28, 28, 1)
+Train Loss: 204.28182983398438
+Batch 3/6
+Batch data shape: (64, 28, 28, 1)
+Train Loss: 197.01702880859375
+Batch 4/6
+Batch data shape: (64, 28, 28, 1)
+Train Loss: 184.92767333984375
+Batch 5/6
+Batch data shape: (64, 28, 28, 1)
+Train Loss: 169.24844360351562
+  7%|▋         | 59/810 [00:02<00:23, 31.64it/s, epoch=9, test_loss=203, train_loss=169]Batch 6/6
+Batch data shape: (64, 28, 28, 1)
+Train Loss: 189.5946807861328
+Starting epoch 11/15
+Batch 1/6
+Batch data shape: (64, 28, 28, 1)
+Train Loss: 179.98712158203125
+Running validation...
+Epoch 11, Step 0: Train Loss = 176.97799682617188, Test Loss = 179.6189727783203
+Batch 2/6
+Batch data shape: (64, 28, 28, 1)
+Train Loss: 182.48275756835938
+Batch 3/6
+Batch data shape: (64, 28, 28, 1)
+Train Loss: 178.44174194335938
+  8%|▊         | 63/810 [00:02<00:23, 31.30it/s, epoch=10, test_loss=180, train_loss=178]Batch 4/6
+Batch data shape: (64, 28, 28, 1)
+Train Loss: 167.31027221679688
+Batch 5/6
+Batch data shape: (64, 28, 28, 1)
+Train Loss: 152.911376953125
+Batch 6/6
+Batch data shape: (64, 28, 28, 1)
+Train Loss: 176.42193603515625
+Starting epoch 12/15
+Batch 1/6
+Batch data shape: (64, 28, 28, 1)
+Train Loss: 166.73568725585938
+Running validation...
+Epoch 12, Step 0: Train Loss = 164.3126983642578, Test Loss = 170.84046936035156
+  8%|▊         | 67/810 [00:02<00:23, 30.99it/s, epoch=11, test_loss=171, train_loss=164]Batch 2/6
+Batch data shape: (64, 28, 28, 1)
+Train Loss: 170.85244750976562
+Batch 3/6
+Batch data shape: (64, 28, 28, 1)
+Train Loss: 168.5107879638672
+Batch 4/6
+Batch data shape: (64, 28, 28, 1)
+Train Loss: 158.88743591308594
+Batch 5/6
+Batch data shape: (64, 28, 28, 1)
+Train Loss: 143.8529815673828
+  9%|▉         | 71/810 [00:02<00:24, 30.17it/s, epoch=11, test_loss=171, train_loss=144]Batch 6/6
+Batch data shape: (64, 28, 28, 1)
+Train Loss: 167.13555908203125
+Starting epoch 13/15
+Batch 1/6
+Batch data shape: (64, 28, 28, 1)
+Train Loss: 159.2316131591797
+Running validation...
+Epoch 13, Step 0: Train Loss = 157.41622924804688, Test Loss = 173.346923828125
+Batch 2/6
+Batch data shape: (64, 28, 28, 1)
+Train Loss: 163.84576416015625
+Batch 3/6
+Batch data shape: (64, 28, 28, 1)
+Train Loss: 162.42771911621094
+  9%|▉         | 75/810 [00:02<00:24, 29.68it/s, epoch=12, test_loss=173, train_loss=162]Batch 4/6
+Batch data shape: (64, 28, 28, 1)
+Train Loss: 152.21295166015625
+Batch 5/6
+Batch data shape: (64, 28, 28, 1)
+Train Loss: 137.35238647460938
+Batch 6/6
+Batch data shape: (64, 28, 28, 1)
+Train Loss: 161.45774841308594
+Starting epoch 14/15
+Batch 1/6
+Batch data shape: (64, 28, 28, 1)
+Train Loss: 154.59767150878906
+Running validation...
+Epoch 14, Step 0: Train Loss = 153.5513916015625, Test Loss = 146.375244140625
+ 10%|▉         | 79/810 [00:02<00:24, 29.75it/s, epoch=13, test_loss=146, train_loss=154]Batch 2/6
+Batch data shape: (64, 28, 28, 1)
+Train Loss: 158.6011199951172
+Batch 3/6
+Batch data shape: (64, 28, 28, 1)
+Train Loss: 156.6780242919922
+Batch 4/6
+Batch data shape: (64, 28, 28, 1)
+Train Loss: 147.9248046875
+Batch 5/6
+Batch data shape: (64, 28, 28, 1)
+Train Loss: 134.79603576660156
+ 10%|█         | 83/810 [00:02<00:23, 31.12it/s, epoch=13, test_loss=146, train_loss=135]Batch 6/6
+Batch data shape: (64, 28, 28, 1)
+Train Loss: 157.35035705566406
+Starting epoch 15/15
+Batch 1/6
+Batch data shape: (64, 28, 28, 1)
+Train Loss: 151.56517028808594
+Running validation...
+Epoch 15, Step 0: Train Loss = 151.3948974609375, Test Loss = 144.89483642578125
+Batch 2/6
+Batch data shape: (64, 28, 28, 1)
+Train Loss: 155.71881103515625
+Batch 3/6
+Batch data shape: (64, 28, 28, 1)
+Train Loss: 154.2907257080078
+ 11%|█         | 87/810 [00:03<00:23, 30.73it/s, epoch=14, test_loss=145, train_loss=154]Batch 4/6
+Batch data shape: (64, 28, 28, 1)
+Train Loss: 145.80589294433594
+Batch 5/6
+Batch data shape: (64, 28, 28, 1)
+Train Loss: 132.77528381347656
+Batch 6/6
+Batch data shape: (64, 28, 28, 1)
+Train Loss: 154.6964874267578
+
+
+SOM initialization...
+
+ 25%|██▌       | 204/810 [00:04<00:05, 113.68it/s, epoch=3, test_loss=1.7, train_loss=1.68] 
+
+Training...
+
+ 30%|███       | 247/810 [00:08<00:47, 11.82it/s, cah=[0.57590663], cr_ratio=50.5, cs_ratio=0.3, epoch=6, ssom=[2.2033277], test_loss=146, train_loss=145, vae=[141.92923], vc_ratio=221]   
+INFO:tensorflow:Restoring parameters from ../models/hyperopt_100_3-3_2024-07-11_bc8bf/hyperopt_100_3-3_2024-07-11_bc8bf.ckpt
+INFO - tensorflow - Restoring parameters from ../models/hyperopt_100_3-3_2024-07-11_bc8bf/hyperopt_100_3-3_2024-07-11_bc8bf.ckpt
+Evaluation...
+data_val_pca.shape: (448, 2)
+test_k_all: [0, 0, 0, 0, 0, 3, 0, 0, 6, 0, 0, 0, 0, 0, 3, 0, 0, 0, 6, 0, 0, 0, 0, 0, 0, 6, 6, 0, 0, 0, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 0, 0, 0, 0, 3, 0, 0, 0, 6, 0, 0, 0, 0, 0, 0, 0, 0, 6, 0, 0, 0, 0, 0, 0, 6, 4, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 6, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 6, 0, 0, 0, 0, 0, 0, 0, 0, 6, 0, 0, 0, 0, 6, 0, 0, 0, 6, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 0, 0, 0, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 0, 0, 6, 0, 1, 6, 0, 0, 0, 0, 0, 6, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 3, 6, 0, 6, 0, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 0, 0, 0, 0, 0, 0, 6, 0, 0, 6, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 0, 0, 0, 3, 0, 0, 6, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 6, 0, 3, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 0, 0, 0, 0, 3, 0, 0, 0]
+ 85%|████████▌ | 690/810 [00:57<00:09, 12.03it/s, cah=[0.3003433], cr_ratio=51.5, cs_ratio=0.21, epoch=79, ssom=[2.2084615], test_loss=135, train_loss=135, vae=[132.0363], vc_ratio=305]
+
+ NMI: 0.030143501966106725, AMI: 0.0019042690767236698, PUR: 0.3794642857142857.  Name: %r.
+
+
+ Time: 59.03734827041626
+INFO - hyperopt - Result: {'NMI': 0.030143501966106725, 'Purity': 0.3794642857142857, 'AMI': 0.0019042690767236698, 'Silhouette Score': -0.13497297651470444, 'Calinski-Harabasz Index': 1.6066177235621735, 'Davies-Bouldin Index': 4.240377120263022}
+INFO - hyperopt - Completed after 0:00:59

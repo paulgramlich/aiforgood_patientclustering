@@ -563,7 +563,6 @@ def evaluate_model(model, generator, len_data_val, x, modelpath, epochs, batch_s
     pca = PCA(n_components=2)
     data_val_pca = pca.fit_transform(data_val_all_reshaped)
     print(f"data_val_pca.shape: {data_val_pca.shape}")
-    print(f"test_k_all: {test_k_all.shape}")
 
     plt.figure(figsize=(14, 6))
 
