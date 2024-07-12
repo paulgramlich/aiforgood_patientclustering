@@ -171,23 +171,23 @@ if num_samples > 1:
     data_train_reshaped = data_train_reshaped[indices]
     labels_train = labels_train[indices]
 
-    data_total, data_test, labels_total, labels_test = train_test_split(data_train_reshaped, labels_train,
-                                                                        test_size=0.5, random_state=42)
+    # data_total, data_test, labels_total, labels_test = train_test_split(data_train_reshaped, labels_train,
+                                                                       #  test_size=0.5, random_state=42)
 
-    if len(data_total) > 1:
-        data_train, data_val, labels_train, labels_val = train_test_split(data_total, labels_total,
+    if len(data_train_reshaped) > 1:
+        data_train, data_val, labels_train, labels_val = train_test_split(data_train_reshaped, labels_train,
                                                                           test_size=0.5,
                                                                           random_state=42)
         print(
-            f"data_train.shape: {data_train.shape}, data_val.shape: {data_val.shape}, data_test.shape: {data_test.shape}")
+            f"data_train.shape: {data_train.shape}, data_val.shape: {data_val.shape}")
 
         # Check for non-zero data in each set
         if not np.any(data_train):
             print("Warning: Training set contains only zeros.")
         if not np.any(data_val):
             print("Warning: Validation set contains only zeros.")
-        if not np.any(data_test):
-            print("Warning: Test set contains only zeros.")
+        '''if not np.any(data_test):
+            print("Warning: Test set contains only zeros.")'''
     else:
         print("Not enough samples to create a validation set.")
 else:
