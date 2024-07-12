@@ -43,7 +43,7 @@ for column in categorical_columns:
 label_encoder = LabelEncoder()
 label_encodings = {
     'okom0_full': mapping_okom,
-    'gen12': mapping_gen12
+    'gen12m': mapping_gen12
 }
 
 # Apply label encoding to each categorical column without the -1 values
