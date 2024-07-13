@@ -77,8 +77,8 @@ def ex_config():
     """
     num_epochs = 20
     patience = 100
-    batch_size = 64
-    latent_dim = 64
+    batch_size = 32 # 64
+    latent_dim = 9 #64
     som_dim = [3,3]
     learning_rate = 0.0005
     alpha = 1.0
@@ -390,7 +390,7 @@ def evaluate_model(model, x, modelpath, batch_size):
             plt.ylabel('PCA Component 2')
             plt.colorbar(scatter2)
 
-        plt.savefig(f'/plots/somvae_clustering_nmi_{test_nmi:.4f}_purity_{test_purity:.4f}.png')
+        plt.savefig(f'plots/somvae_clustering_nmi_{test_nmi:.4f}_purity_{test_purity:.4f}.png')
         plt.close()
 
     results = {}
