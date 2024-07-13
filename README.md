@@ -16,7 +16,7 @@ Then the dataset was processed to fit the requirements of the models.
 The provided script is just an excerpt of the code that was then injected into the training files of the models.
 
 ### Models
-We used 2 models and 1 baseline model: 
+Our main research focuses on SOM-VAE and is compared to a more advanced model (DPSOM) and 1 baseline model: 
 * VAE-SOM (original model and paper: https://github.com/ratschlab/SOM-VAE) `/SOMVAE`
 * DPSOM (original model and paper: https://github.com/ratschlab/dpsom) `/DPSOM`
 * Baseline Model: K-MEANS++ `/KMEANS`
