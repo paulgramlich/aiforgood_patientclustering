@@ -1,0 +1,18 @@
+INFO - hyperopt - Running command 'main'
+INFO - hyperopt - Started run with ID "29"
+2024-07-13 12:40:28.195556: I tensorflow/core/platform/cpu_feature_guard.cc:140] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2024-07-13 12:40:28.352442: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1212] Found device 0 with properties: 
+name: NVIDIA RTX A6000 major: 8 minor: 6 memoryClockRate(GHz): 1.8
+pciBusID: 0000:46:00.0
+totalMemory: 47.54GiB freeMemory: 47.27GiB
+2024-07-13 12:40:28.352488: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1312] Adding visible gpu devices: 0
+2024-07-13 12:40:28.795625: I tensorflow/core/common_runtime/gpu/gpu_device.cc:993] Creating TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 45923 MB memory) -> physical GPU (device: 0, name: NVIDIA RTX A6000, pci bus id: 0000:46:00.0, compute capability: 8.6)
+Training...
+0it [00:00, ?it/s]
+2024-07-13 12:42:27.004532: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1312] Adding visible gpu devices: 0
+2024-07-13 12:42:27.004706: I tensorflow/core/common_runtime/gpu/gpu_device.cc:993] Creating TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 2116 MB memory) -> physical GPU (device: 0, name: NVIDIA RTX A6000, pci bus id: 0000:46:00.0, compute capability: 8.6)
+INFO:tensorflow:Restoring parameters from ../models/hyperopt_64_3-3_2024-07-13_413bb/hyperopt_64_3-3_2024-07-13_413bb.ckpt
+INFO - tensorflow - Restoring parameters from ../models/hyperopt_64_3-3_2024-07-13_413bb/hyperopt_64_3-3_2024-07-13_413bb.ckpt
+Evaluation...
+Warning: labels_val_all or test_k_all is empty. Skipping plotting.
+INFO - hyperopt - Completed after 0:02:00

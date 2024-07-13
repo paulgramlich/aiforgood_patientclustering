@@ -1,0 +1,94 @@
+{
+  "artifacts": [],
+  "command": "main",
+  "experiment": {
+    "base_dir": "/root/aiforgood_patientclustering/SOM-VAE/som_vae",
+    "dependencies": [
+      "matplotlib==2.1.1",
+      "numpy==1.14.3",
+      "pandas==0.21.0",
+      "sacred==0.7.2",
+      "scikit-learn==0.19.1",
+      "scipy==1.0.0",
+      "tensorflow-gpu==1.6.0",
+      "tqdm==4.19.4"
+    ],
+    "mainfile": "somvae_train.py",
+    "name": "hyperopt",
+    "repositories": [],
+    "sources": [
+      [
+        "somvae_model.py",
+        "_sources/somvae_model_7c0abf09f30d558812573eb193f8abea.py"
+      ],
+      [
+        "somvae_train.py",
+        "_sources/somvae_train_5da928a362f1088f5f1df3e69010197a.py"
+      ],
+      [
+        "utils.py",
+        "_sources/utils_c544ebf66527f089199d1bd32e9c4590.py"
+      ]
+    ]
+  },
+  "heartbeat": "2024-07-13T12:39:32.324034",
+  "host": {
+    "ENV": {},
+    "cpu": "AMD EPYC 7543 32-Core Processor",
+    "gpus": {
+      "driver_version": "535.54.03",
+      "gpus": [
+        {
+          "model": "NVIDIA RTX A6000",
+          "persistence_mode": true,
+          "total_memory": 49140
+        }
+      ]
+    },
+    "hostname": "55310c6bdc87",
+    "os": [
+      "Linux",
+      "Linux-5.4.0-155-generic-x86_64-with-debian-stretch-sid"
+    ],
+    "python_version": "3.6.10"
+  },
+  "meta": {
+    "command": "main",
+    "options": {
+      "--beat_interval": null,
+      "--capture": null,
+      "--comment": null,
+      "--debug": false,
+      "--enforce_clean": false,
+      "--file_storage": null,
+      "--force": false,
+      "--help": false,
+      "--loglevel": null,
+      "--mongo_db": null,
+      "--name": null,
+      "--pdb": false,
+      "--print_config": false,
+      "--priority": null,
+      "--queue": false,
+      "--sql": null,
+      "--tiny_db": null,
+      "--unobserved": false,
+      "COMMAND": null,
+      "UPDATE": [],
+      "help": false,
+      "with": false
+    }
+  },
+  "resources": [],
+  "result": {
+    "AMI": 3.241162207991462e-05,
+    "Calinski_Harabasz": 0.8926052130854333,
+    "Davies_Bouldin": 6.498836646787144,
+    "NMI": 0.061671266652370466,
+    "Purity": 0.40234375,
+    "Silhouette": -0.10392942624317095
+  },
+  "start_time": "2024-07-13T12:39:25.292221",
+  "status": "COMPLETED",
+  "stop_time": "2024-07-13T12:39:32.320943"
+}

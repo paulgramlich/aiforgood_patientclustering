@@ -77,7 +77,7 @@ def ex_config():
     """
     num_epochs = 20
     patience = 20
-    batch_size = 128 # 64
+    batch_size = 512 # 64
     latent_dim = 64 #64
     som_dim = [3,3]
     learning_rate = 0.00005

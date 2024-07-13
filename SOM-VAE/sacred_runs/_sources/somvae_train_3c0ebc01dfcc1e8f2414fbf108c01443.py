@@ -76,8 +76,8 @@ def ex_config():
         mnist (bool): Indicator if the model is trained on MNIST-like data.
     """
     num_epochs = 20
-    patience = 20
-    batch_size = 128 # 64
+    patience = 100
+    batch_size = 96 # 64
     latent_dim = 64 #64
     som_dim = [3,3]
     learning_rate = 0.00005

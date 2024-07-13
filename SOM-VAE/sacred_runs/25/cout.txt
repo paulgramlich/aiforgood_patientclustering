@@ -1,0 +1,11 @@
+INFO - hyperopt - Running command 'main'
+INFO - hyperopt - Started run with ID "25"
+2024-07-13 12:37:00.303492: I tensorflow/core/platform/cpu_feature_guard.cc:140] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2024-07-13 12:37:00.438643: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1212] Found device 0 with properties: 
+name: NVIDIA RTX A6000 major: 8 minor: 6 memoryClockRate(GHz): 1.8
+pciBusID: 0000:46:00.0
+totalMemory: 47.54GiB freeMemory: 47.27GiB
+2024-07-13 12:37:00.438686: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1312] Adding visible gpu devices: 0
+2024-07-13 12:37:00.890294: I tensorflow/core/common_runtime/gpu/gpu_device.cc:993] Creating TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 45923 MB memory) -> physical GPU (device: 0, name: NVIDIA RTX A6000, pci bus id: 0000:46:00.0, compute capability: 8.6)
+Training...
+ 70%|███████   | 646/920 [00:08<00:02, 104.13it/s, epoch=14, test_loss=nan, train_loss=nan]

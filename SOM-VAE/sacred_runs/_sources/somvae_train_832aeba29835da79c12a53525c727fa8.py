@@ -76,8 +76,8 @@ def ex_config():
         mnist (bool): Indicator if the model is trained on MNIST-like data.
     """
     num_epochs = 20
-    patience = 20
-    batch_size = 128 # 64
+    patience = 100
+    batch_size = 64 # 64
     latent_dim = 64 #64
     som_dim = [3,3]
     learning_rate = 0.00005
@@ -174,10 +174,8 @@ if num_samples > 1:
     labels_train = labels_train[indices]
 
     data_train, data_val, labels_train, labels_val = train_test_split(data_train_reshaped, labels_train,
-                                                                         test_size=0.5, random_state=42)
-    print("label train shape")
-    print(labels_train.shape)
-    print(f"data_train.shape: {data_train.shape}, data_val.shape: {data_val.shape}")
+                                                                         test_size=0.2, random_state=42)
+
     '''if len(data_train_reshaped) > 1:
         data_train, data_val, labels_train, labels_val = train_test_split(data_total, labels_total,
                                                                           test_size=0.17,
@@ -193,9 +191,9 @@ if num_samples > 1:
         if not np.any(data_test):
             print("Warning: Test set contains only zeros.")
     else:
-        print("Not enough samples to create a validation set.")'''
+        print("Not enough samples to create a validation set.")
 else:
-    print("Not enough samples to create a test set.")
+    print("Not enough samples to create a test set.")'''
 
 
 @ex.capture
