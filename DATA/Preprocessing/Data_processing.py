@@ -35,8 +35,8 @@ print(f"y_test shape: {y_test.shape}")
 
 mean_values = np.mean(data_train_reshaped, axis=0)
 
-plt.imshow(mean_values, cmap='viridis', aspect='auto')
-plt.colorbar()
+plt.imshow(mean_values, cmap='viridis', aspect='auto', vmin=0, vmax=1)
+plt.colorbar(ticks=[0, 0.2, 0.4, 0.6, 0.8, 1])
 plt.title('Mean Values of Input Features in a 28x28 Image')
 plt.show()
 
@@ -62,19 +62,26 @@ plt.title('Mean Feature Values by Label')
 plt.legend(loc='upper right', bbox_to_anchor=(1.1, 1))
 plt.show()
 
-labels = np.unique(labels_train)
+labels = np.arange(9)
 
 for label in labels:
-    mean_values_per_label[label] = np.mean(data_train_reshaped[labels_train == label], axis=0)
+    if np.any(labels_train == label):
+        mean_values_per_label[label] = np.mean(data_train_reshaped[labels_train == label], axis=0)
+    else:
+        mean_values_per_label[label] = np.zeros((28, 28))
 
-# Plot the mean values as heatmaps
 fig, axes = plt.subplots(3, 3, figsize=(15, 15))
 axes = axes.ravel()
 
 for i, label in enumerate(labels):
-    axes[i].imshow(mean_values_per_label[label], cmap='viridis', aspect='auto')
+    im = axes[i].imshow(mean_values_per_label[label], cmap='viridis', aspect='auto', vmin=0, vmax=1)
     axes[i].set_title(f'Label {label}')
     axes[i].axis('off')
 
-plt.tight_layout()
+fig.subplots_adjust(bottom=0.1)  # Adjust bottom to make room for colorbar
+cbar_ax = fig.add_axes([0.2, 0.05, 0.6, 0.02])  # Position colorbar at bottom
+cbar = fig.colorbar(im, cax=cbar_ax, orientation='horizontal')
+cbar.set_ticks([0, 0.2, 0.4, 0.6, 0.8, 1])
+
+plt.tight_layout(rect=[0, 0.1, 1, 1])  # Adjust layout to make room for colorbar
 plt.show()

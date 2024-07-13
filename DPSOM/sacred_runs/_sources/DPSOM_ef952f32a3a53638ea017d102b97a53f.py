@@ -65,15 +65,15 @@ def ex_config():
         more_runs (bool): Indicator whether to run the job once (False) or multiple times (True) outputting mean and
                           variance.
     """
-    num_epochs = 50 # 300
+    num_epochs = 80 # 300
     batch_size = 64 # 300
     latent_dim = 100 # 100
     som_dim = [3, 3] # [8, 8]
-    learning_rate = 0.001 # .001
-    learning_rate_pretrain = 0.001 # .001
+    learning_rate = 0.0001 # .001
+    learning_rate_pretrain = 0.0001 # .001
     alpha = 10
     beta = 0.25
-    gamma = 20
+    gamma = 20 # 20
     theta = 1
     epochs_pretrain = 15
     decay_factor = 0.99
@@ -562,6 +562,8 @@ def evaluate_model(model, generator, len_data_val, x, modelpath, epochs, batch_s
     f.close()
     pca = PCA(n_components=2)
     data_val_pca = pca.fit_transform(data_val_all_reshaped)
+    print(f"data_val_pca.shape: {data_val_pca.shape}")
+    print(f"test_k_all: {test_k_all.shape}")
 
     plt.figure(figsize=(14, 6))
 
@@ -696,12 +698,12 @@ def main(latent_dim, som_dim, learning_rate, decay_factor, alpha, beta, gamma, t
 
             # Split the data
             data_total, data_test, labels_total, labels_test = train_test_split(data_train_reshaped, labels_train,
-                                                                                test_size=0.4, random_state=42)
+                                                                                test_size=0.5, random_state=42)
 
             # Ensure data_total is not empty before further splitting
             if len(data_total) > 1:
                 data_train, data_val, labels_train, labels_val = train_test_split(data_total, labels_total,
-                                                                                  test_size=0.17,
+                                                                                  test_size=0.15,
                                                                                   random_state=42)
                 print(
                     f"data_train.shape: {data_train.shape}, data_val.shape: {data_val.shape}, data_test.shape: {data_test.shape}")

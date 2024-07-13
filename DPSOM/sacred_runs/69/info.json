@@ -1,0 +1,8 @@
+{
+  "tensorflow": {
+    "logdirs": [
+      "../logs/hyperopt_100_3-3_2024-07-12_bf043/train",
+      "../logs/hyperopt_100_3-3_2024-07-12_bf043/test"
+    ]
+  }
+}

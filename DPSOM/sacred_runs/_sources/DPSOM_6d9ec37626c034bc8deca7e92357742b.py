@@ -73,7 +73,7 @@ def ex_config():
     learning_rate_pretrain = 0.001 # .001
     alpha = 10
     beta = 0.25
-    gamma = 20
+    gamma = 20 # 20
     theta = 1
     epochs_pretrain = 15
     decay_factor = 0.99

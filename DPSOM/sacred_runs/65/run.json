@@ -1,0 +1,103 @@
+{
+  "artifacts": [],
+  "command": "main",
+  "experiment": {
+    "base_dir": "/Users/paulgramlich/Developer/git/aiforgood_patientclustering/DPSOM/dpsom",
+    "dependencies": [
+      "numpy==1.26.4",
+      "sacred==0.8.5",
+      "tensorflow==2.16.1",
+      "tqdm==4.66.4"
+    ],
+    "mainfile": "DPSOM.py",
+    "name": "hyperopt",
+    "repositories": [
+      {
+        "commit": "bf2b3276d3d6cf13e8c579a3d9443f1b19678bc4",
+        "dirty": true,
+        "url": "https://github.com/paulgramlich/aiforgood_patientclustering.git"
+      },
+      {
+        "commit": "bf2b3276d3d6cf13e8c579a3d9443f1b19678bc4",
+        "dirty": true,
+        "url": "https://github.com/paulgramlich/aiforgood_patientclustering.git"
+      },
+      {
+        "commit": "bf2b3276d3d6cf13e8c579a3d9443f1b19678bc4",
+        "dirty": true,
+        "url": "https://github.com/paulgramlich/aiforgood_patientclustering.git"
+      }
+    ],
+    "sources": [
+      [
+        "DPSOM.py",
+        "_sources/DPSOM_ef952f32a3a53638ea017d102b97a53f.py"
+      ],
+      [
+        "DPSOM_model.py",
+        "_sources/DPSOM_model_2ffc7d7fb117fb7a38af53630797ee96.py"
+      ],
+      [
+        "utils.py",
+        "_sources/utils_2f759a81fc66d2edc2eafd629a36f1eb.py"
+      ]
+    ]
+  },
+  "fail_trace": [
+    "Traceback (most recent call last):\n",
+    "  File \"/Users/paulgramlich/Developer/git/aiforgood/venv/lib/python3.12/site-packages/sacred/config/captured_function.py\", line 42, in captured_function\n    result = wrapped(*args, **kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^\n",
+    "  File \"/Users/paulgramlich/Developer/git/aiforgood_patientclustering/DPSOM/dpsom/DPSOM.py\", line 765, in main\n    results = train_model(model, data_train, data_val, data_generator, lr_val)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n",
+    "  File \"/Users/paulgramlich/Developer/git/aiforgood/venv/lib/python3.12/site-packages/sacred/config/captured_function.py\", line 42, in captured_function\n    result = wrapped(*args, **kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^\n",
+    "  File \"/Users/paulgramlich/Developer/git/aiforgood_patientclustering/DPSOM/dpsom/DPSOM.py\", line 441, in train_model\n    results = evaluate_model(model, generator, len_data_val, x, modelpath, epochs)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n",
+    "  File \"/Users/paulgramlich/Developer/git/aiforgood/venv/lib/python3.12/site-packages/sacred/config/captured_function.py\", line 42, in captured_function\n    result = wrapped(*args, **kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^\n",
+    "  File \"/Users/paulgramlich/Developer/git/aiforgood_patientclustering/DPSOM/dpsom/DPSOM.py\", line 566, in evaluate_model\n    print(f\"test_k_all: {test_k_all.shape}\")\n                         ^^^^^^^^^^^^^^^^\n",
+    "AttributeError: 'list' object has no attribute 'shape'\n"
+  ],
+  "heartbeat": "2024-07-12T13:33:16.098250",
+  "host": {
+    "ENV": {},
+    "cpu": "Apple M3",
+    "hostname": "Pauls-Laptop.lan",
+    "os": [
+      "Darwin",
+      "macOS-14.3-arm64-arm-64bit"
+    ],
+    "python_version": "3.12.2"
+  },
+  "meta": {
+    "command": "main",
+    "config_updates": {},
+    "named_configs": [],
+    "options": {
+      "--beat-interval": null,
+      "--capture": null,
+      "--comment": null,
+      "--debug": false,
+      "--enforce_clean": false,
+      "--file_storage": null,
+      "--force": false,
+      "--help": false,
+      "--id": null,
+      "--loglevel": null,
+      "--mongo_db": null,
+      "--name": null,
+      "--pdb": false,
+      "--print-config": false,
+      "--priority": null,
+      "--queue": false,
+      "--s3": null,
+      "--sql": null,
+      "--tiny_db": null,
+      "--unobserved": false,
+      "COMMAND": null,
+      "UPDATE": [],
+      "help": false,
+      "with": false
+    }
+  },
+  "resources": [],
+  "result": null,
+  "start_time": "2024-07-12T13:32:11.198190",
+  "status": "FAILED",
+  "stop_time": "2024-07-12T13:33:16.101118"
+}
