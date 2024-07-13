@@ -1,0 +1,32 @@
+INFO - hyperopt - Running command 'main'
+INFO - hyperopt - Started run with ID "15"
+2024-07-13 11:53:28.950092: I tensorflow/core/platform/cpu_feature_guard.cc:140] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2024-07-13 11:53:29.099288: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1212] Found device 0 with properties: 
+name: NVIDIA RTX A6000 major: 8 minor: 6 memoryClockRate(GHz): 1.8
+pciBusID: 0000:46:00.0
+totalMemory: 47.54GiB freeMemory: 47.27GiB
+2024-07-13 11:53:29.099326: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1312] Adding visible gpu devices: 0
+2024-07-13 11:56:18.343735: I tensorflow/core/common_runtime/gpu/gpu_device.cc:993] Creating TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 45923 MB memory) -> physical GPU (device: 0, name: NVIDIA RTX A6000, pci bus id: 0000:46:00.0, compute capability: 8.6)
+Training...
+100%|██████████| 180/180 [10:09<00:00,  3.38s/it, epoch=19, test_loss=nan, train_loss=nan]   
+2024-07-13 12:06:28.224211: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1312] Adding visible gpu devices: 0
+2024-07-13 12:06:28.224407: I tensorflow/core/common_runtime/gpu/gpu_device.cc:993] Creating TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 1914 MB memory) -> physical GPU (device: 0, name: NVIDIA RTX A6000, pci bus id: 0000:46:00.0, compute capability: 8.6)
+INFO:tensorflow:Restoring parameters from ../models/hyperopt_9_3-3_2024-07-13_cb8f1/hyperopt_9_3-3_2024-07-13_cb8f1.ckpt
+INFO - tensorflow - Restoring parameters from ../models/hyperopt_9_3-3_2024-07-13_cb8f1/hyperopt_9_3-3_2024-07-13_cb8f1.ckpt
+Evaluation...
+Warning: NaN or infinity values found in test_rec, skipping this batch.
+Warning: NaN or infinity values found in test_rec, skipping this batch.
+/root/aiforgood_patientclustering/SOM-VAE/som_vae/utils.py:235: RuntimeWarning: invalid value encountered in double_scalars
+  return (between_cluster_dispersion / (num_clusters - 1)) / (within_cluster_dispersion / (num_samples - num_clusters))
+100%|██████████| 180/180 [10:09<00:00,  3.38s/it, epoch=19, test_loss=nan, train_loss=nan]
+2024-07-13 12:06:28.224211: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1312] Adding visible gpu devices: 0
+2024-07-13 12:06:28.224407: I tensorflow/core/common_runtime/gpu/gpu_device.cc:993] Creating TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 1914 MB memory) -> physical GPU (device: 0, name: NVIDIA RTX A6000, pci bus id: 0000:46:00.0, compute capability: 8.6)
+INFO:tensorflow:Restoring parameters from ../models/hyperopt_9_3-3_2024-07-13_cb8f1/hyperopt_9_3-3_2024-07-13_cb8f1.ckpt
+INFO - tensorflow - Restoring parameters from ../models/hyperopt_9_3-3_2024-07-13_cb8f1/hyperopt_9_3-3_2024-07-13_cb8f1.ckpt
+Evaluation...
+Warning: NaN or infinity values found in test_rec, skipping this batch.
+Warning: NaN or infinity values found in test_rec, skipping this batch.
+/root/aiforgood_patientclustering/SOM-VAE/som_vae/utils.py:235: RuntimeWarning: invalid value encountered in double_scalars
+  return (between_cluster_dispersion / (num_clusters - 1)) / (within_cluster_dispersion / (num_samples - num_clusters))
+INFO - hyperopt - Result: {'NMI': 0.0, 'AMI': 0.0, 'Purity': 0.34375, 'Silhouette': 0, 'Calinski_Harabasz': nan, 'Davies_Bouldin': 0.0}
+INFO - hyperopt - Completed after 0:13:00

@@ -1,0 +1,94 @@
+{
+  "artifacts": [],
+  "command": "main",
+  "experiment": {
+    "base_dir": "/root/aiforgood_patientclustering/SOM-VAE/som_vae",
+    "dependencies": [
+      "matplotlib==2.1.1",
+      "numpy==1.14.3",
+      "pandas==0.21.0",
+      "sacred==0.7.2",
+      "scikit-learn==0.19.1",
+      "scipy==1.0.0",
+      "tensorflow-gpu==1.6.0",
+      "tqdm==4.19.4"
+    ],
+    "mainfile": "somvae_train.py",
+    "name": "hyperopt",
+    "repositories": [],
+    "sources": [
+      [
+        "somvae_model.py",
+        "_sources/somvae_model_7c0abf09f30d558812573eb193f8abea.py"
+      ],
+      [
+        "somvae_train.py",
+        "_sources/somvae_train_c5ff95e38b9330e130600b03e7482516.py"
+      ],
+      [
+        "utils.py",
+        "_sources/utils_c544ebf66527f089199d1bd32e9c4590.py"
+      ]
+    ]
+  },
+  "heartbeat": "2024-07-13T12:06:28.751566",
+  "host": {
+    "ENV": {},
+    "cpu": "AMD EPYC 7543 32-Core Processor",
+    "gpus": {
+      "driver_version": "535.54.03",
+      "gpus": [
+        {
+          "model": "NVIDIA RTX A6000",
+          "persistence_mode": true,
+          "total_memory": 49140
+        }
+      ]
+    },
+    "hostname": "55310c6bdc87",
+    "os": [
+      "Linux",
+      "Linux-5.4.0-155-generic-x86_64-with-debian-stretch-sid"
+    ],
+    "python_version": "3.6.10"
+  },
+  "meta": {
+    "command": "main",
+    "options": {
+      "--beat_interval": null,
+      "--capture": null,
+      "--comment": null,
+      "--debug": false,
+      "--enforce_clean": false,
+      "--file_storage": null,
+      "--force": false,
+      "--help": false,
+      "--loglevel": null,
+      "--mongo_db": null,
+      "--name": null,
+      "--pdb": false,
+      "--print_config": false,
+      "--priority": null,
+      "--queue": false,
+      "--sql": null,
+      "--tiny_db": null,
+      "--unobserved": false,
+      "COMMAND": null,
+      "UPDATE": [],
+      "help": false,
+      "with": false
+    }
+  },
+  "resources": [],
+  "result": {
+    "AMI": 0.0,
+    "Calinski_Harabasz": NaN,
+    "Davies_Bouldin": 0.0,
+    "NMI": 0.0,
+    "Purity": 0.34375,
+    "Silhouette": 0
+  },
+  "start_time": "2024-07-13T11:53:28.348776",
+  "status": "COMPLETED",
+  "stop_time": "2024-07-13T12:06:28.748339"
+}
