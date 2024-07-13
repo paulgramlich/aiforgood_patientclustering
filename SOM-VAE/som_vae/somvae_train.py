@@ -171,12 +171,12 @@ if num_samples > 1:
     data_train_reshaped = data_train_reshaped[indices]
     labels_train = labels_train[indices]
 
-    data_total, data_val, labels_total, labels_val = train_test_split(data_train_reshaped, labels_train,
-                                                                         test_size=0.5, random_state=42)
+    data_total, data_test, labels_total, labels_test = train_test_split(data_train_reshaped, labels_train,
+                                                                         test_size=0.6, random_state=42)
 
-    '''if len(data_train_reshaped) > 1:
+    if len(data_train_reshaped) > 1:
         data_train, data_val, labels_train, labels_val = train_test_split(data_total, labels_total,
-                                                                          test_size=0.5,
+                                                                          test_size=0.17,
                                                                           random_state=42)
         print(
             f"data_train.shape: {data_train.shape}, data_val.shape: {data_val.shape}")
@@ -191,7 +191,7 @@ if num_samples > 1:
     else:
         print("Not enough samples to create a validation set.")
 else:
-    print("Not enough samples to create a test set.")'''
+    print("Not enough samples to create a test set.")
 
 
 @ex.capture
