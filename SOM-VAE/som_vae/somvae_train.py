@@ -390,7 +390,7 @@ def evaluate_model(model, x, modelpath, batch_size):
             plt.ylabel('PCA Component 2')
             plt.colorbar(scatter2)
 
-        plt.savefig('somvae_clustering.png')
+        plt.savefig(f'/plots/somvae_clustering_nmi_{test_nmi:.4f}_purity_{test_purity:.4f}.png')
         plt.close()
 
     results = {}
