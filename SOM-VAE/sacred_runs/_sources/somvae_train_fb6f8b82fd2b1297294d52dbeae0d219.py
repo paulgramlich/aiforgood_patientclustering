@@ -80,7 +80,7 @@ def ex_config():
     batch_size = 64 # 64
     latent_dim = 64 #64
     som_dim = [3,3]
-    learning_rate = 0.00005
+    learning_rate = 0.0005
     alpha = 1.0
     beta = 0.9
     gamma = 1.8
