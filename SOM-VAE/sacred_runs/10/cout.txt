@@ -1,2 +1,0 @@
-INFO - hyperopt - Running command 'main'
-INFO - hyperopt - Started run with ID "10"

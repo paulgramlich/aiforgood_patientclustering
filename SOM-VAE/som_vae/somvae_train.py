@@ -75,17 +75,17 @@ def ex_config():
             MNIST time series.
         mnist (bool): Indicator if the model is trained on MNIST-like data.
     """
-    num_epochs = 20
+    num_epochs = 50
     patience = 20
-    batch_size = 128 # 64
-    latent_dim = 64 #64
+    batch_size = 256 # 64
+    latent_dim = 100 #64
     som_dim = [3,3]
     learning_rate = 0.00005
     alpha = 1.0
-    beta = 0.9
-    gamma = 1.8
-    tau = 1.4
-    decay_factor = 0.9
+    beta = 0.25 # 0.9
+    gamma = 20 # 1.8
+    tau = 1 # 1.4
+    decay_factor = 0.99 # 0.9
     name = ex.get_experiment_info()["name"]
     ex_name = "{}_{}_{}-{}_{}_{}".format(name, latent_dim, som_dim[0], som_dim[1], str(date.today()), uuid.uuid4().hex[:5])
     logdir = "../logs/{}".format(ex_name)

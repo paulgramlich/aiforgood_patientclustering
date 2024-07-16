@@ -1,0 +1,127 @@
+INFO - hyperopt - Running command 'main'
+INFO - hyperopt - Started run with ID "73"
+using LBP
+num_features: 358
+data_train_padded.shape: (928, 784)
+data_train.shape: (461, 28, 28, 1), data_val.shape: (95, 28, 28, 1), data_test.shape: (372, 28, 28, 1)
+Initializing global variables...
+2024-07-16 14:36:22.535296: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:388] MLIR V1 optimization pass is not enabled
+Variables initialized.
+
+**********Starting job hyperopt_100_3-3_2024-07-16_31aa8********* 
+
+  0%|          | 0/105 [00:00<?, ?it/s]Number of batches: 1
+
+
+Autoencoder Pretraining...
+
+Starting epoch 1/15
+Batch 1/1
+Batch data shape: (256, 28, 28, 1)
+Train Loss: 561.6597900390625
+Running validation...
+Epoch 1, Step 0: Train Loss = 550.2224731445312, Test Loss = 550.330810546875
+  1%|          | 1/105 [00:00<00:49,  2.09it/s, epoch=0, test_loss=550, train_loss=550]Starting epoch 2/15
+Batch 1/1
+Batch data shape: (256, 28, 28, 1)
+Train Loss: 550.260986328125
+Running validation...
+Epoch 2, Step 0: Train Loss = 543.6046752929688, Test Loss = 543.716796875
+  2%|▏         | 2/105 [00:00<00:27,  3.76it/s, epoch=1, test_loss=544, train_loss=544]Starting epoch 3/15
+Batch 1/1
+Batch data shape: (256, 28, 28, 1)
+Train Loss: 543.6156616210938
+Running validation...
+Epoch 3, Step 0: Train Loss = 532.9627685546875, Test Loss = 533.0662841796875
+  3%|▎         | 3/105 [00:00<00:20,  5.06it/s, epoch=2, test_loss=533, train_loss=533]Starting epoch 4/15
+Batch 1/1
+Batch data shape: (256, 28, 28, 1)
+Train Loss: 533.11474609375
+Running validation...
+Epoch 4, Step 0: Train Loss = 513.4190063476562, Test Loss = 513.0726928710938
+  4%|▍         | 4/105 [00:00<00:16,  6.01it/s, epoch=3, test_loss=513, train_loss=513]Starting epoch 5/15
+Batch 1/1
+Batch data shape: (256, 28, 28, 1)
+Train Loss: 513.6099853515625
+Running validation...
+Epoch 5, Step 0: Train Loss = 473.7008972167969, Test Loss = 474.12701416015625
+  5%|▍         | 5/105 [00:00<00:14,  6.70it/s, epoch=4, test_loss=474, train_loss=474]Starting epoch 6/15
+Batch 1/1
+Batch data shape: (256, 28, 28, 1)
+Train Loss: 473.855224609375
+Running validation...
+Epoch 6, Step 0: Train Loss = 402.69366455078125, Test Loss = 397.2049560546875
+  6%|▌         | 6/105 [00:01<00:13,  7.16it/s, epoch=5, test_loss=397, train_loss=403]Starting epoch 7/15
+Batch 1/1
+Batch data shape: (256, 28, 28, 1)
+Train Loss: 402.8856201171875
+Running validation...
+Epoch 7, Step 0: Train Loss = 361.28802490234375, Test Loss = 347.34228515625
+  7%|▋         | 7/105 [00:01<00:13,  7.49it/s, epoch=6, test_loss=347, train_loss=361]Starting epoch 8/15
+Batch 1/1
+Batch data shape: (256, 28, 28, 1)
+Train Loss: 357.516845703125
+Running validation...
+Epoch 8, Step 0: Train Loss = 270.8150329589844, Test Loss = 264.8961486816406
+  8%|▊         | 8/105 [00:01<00:12,  7.69it/s, epoch=7, test_loss=265, train_loss=271]Starting epoch 9/15
+Batch 1/1
+Batch data shape: (256, 28, 28, 1)
+Train Loss: 270.55889892578125
+Running validation...
+Epoch 9, Step 0: Train Loss = 218.4421844482422, Test Loss = 215.1194305419922
+  9%|▊         | 9/105 [00:01<00:12,  7.86it/s, epoch=8, test_loss=215, train_loss=218]Starting epoch 10/15
+Batch 1/1
+Batch data shape: (256, 28, 28, 1)
+Train Loss: 218.66639709472656
+Running validation...
+Epoch 10, Step 0: Train Loss = 192.21823120117188, Test Loss = 189.11041259765625
+ 10%|▉         | 10/105 [00:01<00:12,  7.72it/s, epoch=9, test_loss=189, train_loss=192]Starting epoch 11/15
+Batch 1/1
+Batch data shape: (256, 28, 28, 1)
+Train Loss: 191.9309539794922
+Running validation...
+Epoch 11, Step 0: Train Loss = 177.37432861328125, Test Loss = 174.25611877441406
+ 10%|█         | 11/105 [00:01<00:11,  7.92it/s, epoch=10, test_loss=174, train_loss=177]Starting epoch 12/15
+Batch 1/1
+Batch data shape: (256, 28, 28, 1)
+Train Loss: 176.70738220214844
+Running validation...
+Epoch 12, Step 0: Train Loss = 170.83843994140625, Test Loss = 166.46334838867188
+ 11%|█▏        | 12/105 [00:01<00:11,  8.10it/s, epoch=11, test_loss=166, train_loss=171]Starting epoch 13/15
+Batch 1/1
+Batch data shape: (256, 28, 28, 1)
+Train Loss: 170.83091735839844
+Running validation...
+Epoch 13, Step 0: Train Loss = 165.22518920898438, Test Loss = 159.62734985351562
+ 12%|█▏        | 13/105 [00:01<00:11,  8.36it/s, epoch=12, test_loss=160, train_loss=165]Starting epoch 14/15
+Batch 1/1
+Batch data shape: (256, 28, 28, 1)
+Train Loss: 164.3192901611328
+Running validation...
+Epoch 14, Step 0: Train Loss = 161.3507843017578, Test Loss = 158.3682403564453
+ 13%|█▎        | 14/105 [00:02<00:10,  8.50it/s, epoch=13, test_loss=158, train_loss=161]Starting epoch 15/15
+Batch 1/1
+Batch data shape: (256, 28, 28, 1)
+Train Loss: 160.87539672851562
+Running validation...
+Epoch 15, Step 0: Train Loss = 160.56068420410156, Test Loss = 157.28062438964844
+ 14%|█▍        | 15/105 [00:02<00:10,  8.58it/s, epoch=14, test_loss=157, train_loss=161]
+
+SOM initialization...
+
+ 32%|███▏      | 34/105 [00:03<00:04, 15.63it/s, epoch=3, test_loss=1.3, train_loss=1.3]  
+
+Training...
+
+ 44%|████▍     | 46/105 [00:09<00:27,  2.17it/s, cah=[0.938117], cr_ratio=47.6, cs_ratio=0.458, epoch=10, ssom=[2.2058694], test_loss=147, train_loss=151, vae=[146.99022], vc_ratio=152]  LBP
+INFO:tensorflow:Restoring parameters from ../models/hyperopt_100_3-3_2024-07-16_31aa8/hyperopt_100_3-3_2024-07-16_31aa8.ckpt
+INFO - tensorflow - Restoring parameters from ../models/hyperopt_100_3-3_2024-07-16_31aa8/hyperopt_100_3-3_2024-07-16_31aa8.ckpt
+Evaluation...
+ 81%|████████  | 85/105 [00:30<00:07,  2.79it/s, cah=[0.4174692], cr_ratio=49.7, cs_ratio=0.285, epoch=49, ssom=[2.2014165], test_loss=133, train_loss=132, vae=[129.24455], vc_ratio=249]
+
+ NMI: 0.06594762289661972, AMI: 0.008512575463042687, PUR: 0.41015625.  Name: %r.
+
+
+ Time: 31.28288197517395
+INFO - hyperopt - Result: {'NMI': 0.06594762289661972, 'Purity': 0.41015625, 'AMI': 0.008512575463042687, 'Silhouette Score': -0.06329557584210294, 'Calinski-Harabasz Index': 1.5720594155090326, 'Davies-Bouldin Index': 7.26546268978319}
+INFO - hyperopt - Completed after 0:00:31
