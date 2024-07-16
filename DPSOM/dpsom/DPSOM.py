@@ -663,7 +663,6 @@ def main(latent_dim, som_dim, learning_rate, decay_factor, alpha, beta, gamma, t
         print(f"num_features: {num_features}")
         target_num_features = 28 * 28
 
-        # Check if padding is needed and apply accordingly
         if num_features < target_num_features:
             data_train_padded = np.pad(data_train, ((0, 0), (0, target_num_features - num_features)), 'constant',
                                        constant_values=0)
@@ -674,7 +673,6 @@ def main(latent_dim, som_dim, learning_rate, decay_factor, alpha, beta, gamma, t
         else:
             data_train_padded = data_train
 
-        # Reshape the data
         data_train_reshaped = np.reshape(data_train_padded, (num_samples, 28, 28, 1))
 
         # img = data_train_reshaped[0]
