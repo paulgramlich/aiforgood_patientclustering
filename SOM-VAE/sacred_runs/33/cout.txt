@@ -1,0 +1,18 @@
+INFO - hyperopt - Running command 'main'
+INFO - hyperopt - Started run with ID "33"
+2024-07-16 10:09:58.307478: I tensorflow/core/platform/cpu_feature_guard.cc:140] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2024-07-16 10:09:58.513310: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1212] Found device 0 with properties: 
+name: NVIDIA RTX A5000 major: 8 minor: 6 memoryClockRate(GHz): 1.695
+pciBusID: 0000:23:00.0
+totalMemory: 23.67GiB freeMemory: 23.47GiB
+2024-07-16 10:09:58.513357: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1312] Adding visible gpu devices: 0
+2024-07-16 10:09:59.103168: I tensorflow/core/common_runtime/gpu/gpu_device.cc:993] Creating TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 22766 MB memory) -> physical GPU (device: 0, name: NVIDIA RTX A5000, pci bus id: 0000:23:00.0, compute capability: 8.6)
+Training...
+100%|██████████| 20/20 [00:05<00:00,  3.46it/s, epoch=19, test_loss=8.14, train_loss=8.15]
+2024-07-16 10:10:05.764601: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1312] Adding visible gpu devices: 0
+2024-07-16 10:10:05.764795: I tensorflow/core/common_runtime/gpu/gpu_device.cc:993] Creating TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 776 MB memory) -> physical GPU (device: 0, name: NVIDIA RTX A5000, pci bus id: 0000:23:00.0, compute capability: 8.6)
+INFO:tensorflow:Restoring parameters from ../models/hyperopt_64_3-3_2024-07-16_a1258/hyperopt_64_3-3_2024-07-16_a1258.ckpt
+INFO - tensorflow - Restoring parameters from ../models/hyperopt_64_3-3_2024-07-16_a1258/hyperopt_64_3-3_2024-07-16_a1258.ckpt
+Evaluation...
+INFO - hyperopt - Result: {'NMI': 0.05325535204749219, 'AMI': -0.00012623730296943783, 'Purity': 0.39453125, 'Silhouette': -0.046180838215531456, 'Calinski_Harabasz': 1.2669790980660536, 'Davies_Bouldin': 6.505592459706567}
+INFO - hyperopt - Completed after 0:00:09
