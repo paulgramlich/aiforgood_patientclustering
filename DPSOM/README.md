@@ -1,3 +1,5 @@
+# Original README from Manduchi et al. (2021)
+
 # T-DPSOM - An Interpretable Clustering Method for Unsupervised Learning of Patient Health States
 
 ## Reference

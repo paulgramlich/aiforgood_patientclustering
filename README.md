@@ -9,6 +9,9 @@ This project contains the application of a new approach (SOM-VAE) for patient cl
 
 ### Dataset 
 
+#### `/Data/Preprocession/Data_Analysis.R`
+In this file, the existing preprocessing of the casey_master.csv takes place. We additionally, analysed our LBP dataset using common summary statistics and plots, e.g. histograms, box plots, and missing value heat maps.
+
 #### `/Data/Preprocession/Data_preprocessing.py`
 We used a Low Back Pain (LBP) patient dataset, that was preprocessed to convert categorical variables into numerical values. 
 Furthermore, NAs were removed and replaced with `0` and scaled the data from `[0,1]`.
