@@ -10,7 +10,7 @@ processed_data = pd.read_csv(processed_file_path, index_col=0)
 labels_train = processed_data.iloc[:, 0].values
 data_train = processed_data.iloc[:, 1:].values
 
-print(processed_data)# .iloc[:, 0]
+print(processed_data)
 
 num_samples = data_train.shape[0]
 num_features = data_train.shape[1]
@@ -40,18 +40,14 @@ plt.colorbar(ticks=[0, 0.2, 0.4, 0.6, 0.8, 1])
 plt.title('Mean Values of Input Features in a 28x28 Image')
 plt.show()
 
-# Combine the data and labels for easier manipulation
 data_with_labels = np.hstack((labels_train.reshape(-1, 1), data_train_padded))
 
-# Calculate mean feature values for each label
 mean_values_per_label = {}
 for label in np.unique(labels_train):
     mean_values_per_label[label] = np.mean(data_with_labels[data_with_labels[:, 0] == label][:, 1:], axis=0)
 
-# Convert to a DataFrame for easier plotting
 mean_values_df = pd.DataFrame(mean_values_per_label).T
 
-# Plot the mean values
 plt.figure(figsize=(12, 8))
 for i in range(mean_values_df.shape[1]):
     plt.plot(mean_values_df.index, mean_values_df[i], label=f'Feature {i}')
@@ -62,7 +58,7 @@ plt.title('Mean Feature Values by Label')
 plt.legend(loc='upper right', bbox_to_anchor=(1.1, 1))
 plt.show()
 
-labels = np.arange(9)
+labels = np.arange(8)
 
 for label in labels:
     if np.any(labels_train == label):
@@ -78,10 +74,10 @@ for i, label in enumerate(labels):
     axes[i].set_title(f'Label {label}')
     axes[i].axis('off')
 
-fig.subplots_adjust(bottom=0.1)  # Adjust bottom to make room for colorbar
-cbar_ax = fig.add_axes([0.2, 0.05, 0.6, 0.02])  # Position colorbar at bottom
+fig.subplots_adjust(bottom=0.1)
+cbar_ax = fig.add_axes([0.2, 0.05, 0.6, 0.02])
 cbar = fig.colorbar(im, cax=cbar_ax, orientation='horizontal')
 cbar.set_ticks([0, 0.2, 0.4, 0.6, 0.8, 1])
 
-plt.tight_layout(rect=[0, 0.1, 1, 1])  # Adjust layout to make room for colorbar
+plt.tight_layout(rect=[0, 0.1, 1, 1])
 plt.show()

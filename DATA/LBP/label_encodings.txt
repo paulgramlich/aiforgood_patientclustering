@@ -1,4 +1,4 @@
-Column: gen12
+Column: gen12m
   Completely recovered -> 7
   Much improved -> 6
   Slightly improved -> 5
@@ -112,6 +112,19 @@ Column: romsidegll
   Leg pain with or without back pain -> 2
   No pain -> 3
 
+Column: okom0_full
+  0 -> 0
+  1 -> 1
+  11 -> 2
+  2 -> 3
+  3 -> 4
+  4 -> 5
+  5 -> 6
+  6 -> 7
+  7 -> 8
+  8 -> 9
+  9 -> 10
+
 Column: romrotr
   0 -> 0
   Back pain -> 1
@@ -142,17 +155,4 @@ Column: START_risk
 Column: recovered.12m
   RECOVERED -> 0
   SUFFERING -> 1
-
-Column: okom0_full
-  0 -> 0
-  1 -> 1
-  11 -> 2
-  2 -> 3
-  3 -> 4
-  4 -> 5
-  5 -> 6
-  6 -> 7
-  7 -> 8
-  8 -> 9
-  9 -> 10
 

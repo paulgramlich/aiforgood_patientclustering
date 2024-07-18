@@ -12,7 +12,7 @@ df = pd.read_csv(file_path, index_col=0)
 X = df.drop(columns=['gen12m'])
 X = X.drop(columns=['recovered.12m'])
 y_true = df['gen12m']
-n_clusters = 9
+n_clusters = 8
 
 '''X = df.drop(columns=['recovered.12m'])
 df = df.drop(columns=['gen12m'])
