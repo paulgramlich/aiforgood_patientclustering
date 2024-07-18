@@ -1,8 +1,11 @@
 
-# AI FOR GOOD: Patient clustering with SOM-VAE
+# Patient clustering with SOM-VAE
 ### Felix Steckenbiller & Paul Gramlich - Ludwig-Maximilians-Universität München
 
-This project contains the application of a new approach (SOM-VAE) to patient clustering. In comparison, we use a baseline k-means and a more advanced SOM (DPSOM) model. 
+This project contains the application of a new approach (SOM-VAE) for patient clustering. In comparison, we use a baseline k-means and a more advanced deep probabilistic clustering model (DPSOM).
+
+
+---
 
 ### Dataset 
 
@@ -27,6 +30,7 @@ Our main research focuses on SOM-VAE and is compared to a more advanced model (D
 
 #### **SOM-VAE**: 
 * Python 3.6 with CUDA 9 and CuDNN 7.0.5 
+
 *Installation of right CuDNN-version:*
 * If needed: find installed CuDNN-version with `dpkg -l | grep cudnn` and deinstall with `dpkg --revome your-cudnn-version`
 * Change directory: `cd /SOMVAE`
@@ -42,3 +46,6 @@ Our main research focuses on SOM-VAE and is compared to a more advanced model (D
 * SOM-VAE: `cd /SOMVAE/somvae` -> `python somvae_train.py`
 * DPSOM: `cd /DPSOM/dpsom` -> `python DPSOM.py`
 * KMEANS: `cd /KMEANS` -> `python kmeans.py`
+
+## License
+This project is licensed under the MIT License.
