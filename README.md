@@ -51,4 +51,4 @@ Our main research focuses on SOM-VAE and is compared to a more advanced model (D
 * KMEANS: `cd /KMEANS` -> `python kmeans.py`
 
 ## License
-This project is licensed under the MIT License.
+Some models of this project are licensed under the MIT License.
