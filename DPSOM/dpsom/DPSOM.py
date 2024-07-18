@@ -65,12 +65,12 @@ def ex_config():
         more_runs (bool): Indicator whether to run the job once (False) or multiple times (True) outputting mean and
                           variance.
     """
-    num_epochs = 50 # 300
-    batch_size = 256 # 300
-    latent_dim = 100 # 100
-    som_dim = [3, 3] # [8, 8]
-    learning_rate = 0.001 # .001
-    learning_rate_pretrain = 0.001 # .001
+    num_epochs = 50
+    batch_size = 256
+    latent_dim = 100
+    som_dim = [3, 3]
+    learning_rate = 0.001
+    learning_rate_pretrain = 0.001
     alpha = 10
     beta = 0.25
     gamma = 20
@@ -83,7 +83,7 @@ def ex_config():
                                          uuid.uuid4().hex[:5])
     logdir = "../logs/{}".format(ex_name)
     modelpath = "../models/{}/{}.ckpt".format(ex_name, ex_name)
-    data_set = "LBP" # MNIST
+    data_set = "LBP"
     validation = False
     dropout = 0.4
     prior_var = 1

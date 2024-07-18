@@ -112,10 +112,9 @@ def ex_config():
 #     decay_factor = hyper.UniformFloat(lower=0.8, upper=1.)
 #     interactive = False
 
-'''old mnist dataset'''
+'''old mnist dataset
 
-
-'''mnist = input_data.read_data_sets(f"../data/{ex_config()['data_set']}")
+mnist = input_data.read_data_sets(f"../data/{ex_config()['data_set']}")
 mnist.shape()
 
 data_train = np.reshape(mnist.train.images, [-1,28,28,1])
