@@ -4,7 +4,6 @@
 
 This project contains the application of a new approach (SOM-VAE) for patient clustering. In comparison, we use a baseline k-means and a more advanced deep probabilistic clustering model (DPSOM).
 
-
 ---
 
 ### Dataset 
