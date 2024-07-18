@@ -23,10 +23,10 @@ Our main research focuses on SOM-VAE and is compared to a more advanced model (D
 
 ### Technical requirements
 #### **DPSOM and KMEANS**: 
-*Current Python version (3.12.X) and current installation of all packages that were used
+* Current Python version (3.12.X) and current installation of all packages that were used
 
 #### **SOM-VAE**: 
-*Python 3.6 with CUDA 9 and CuDNN 7.0.5 
+* Python 3.6 with CUDA 9 and CuDNN 7.0.5 
 *Installation of right CuDNN-version:*
 * If needed: find installed CuDNN-version with `dpkg -l | grep cudnn` and deinstall with `dpkg --revome your-cudnn-version`
 * Change directory: `cd /SOMVAE`
