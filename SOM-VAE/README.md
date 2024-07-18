@@ -1,3 +1,5 @@
+# Original README from Fortuin et al. (2019)
+
 # SOM-VAE model
 
 This repository contains a TensorFlow implementation of the self-organizing map variational autoencoder as described in the paper [SOM-VAE: Interpretable Discrete Representation Learning on Time Series](https://arxiv.org/abs/1806.02199).
