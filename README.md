@@ -7,7 +7,7 @@ This project contains the application of a new approach (SOM-VAE) to patient clu
 ### Dataset 
 
 #### `/Data/preprocessing.py`
-We used a Lower Back Pain (LBP) patient dataset, that was preprocessed by us to convert categorical variables into numerical values. 
+We used a Low Back Pain (LBP) patient dataset, that was preprocessed to convert categorical variables into numerical values. 
 Furthermore, NAs were removed and replaced with `0` and scaled the data from `[0,1]`.
 Scaled and unscaled versions for plotting can be found in `/Data/LBP`.
 
